@@ -4599,7 +4599,7 @@
               <ref role="37wK5l" to="mhbf:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode)" resolve="addRootNode" />
               <node concept="2pJPEk" id="6fYiNFaeCQm" role="37wK5m">
                 <node concept="2pJPED" id="6fYiNFaeCQn" role="2pJPEn">
-                  <ref role="2pJxaS" to="234s:6fYiNFad_9U" resolve="LionWebLanguageKey" />
+                  <ref role="2pJxaS" to="234s:6fYiNFad_9U" resolve="LionWebLanguage" />
                   <node concept="2pJxcG" id="6fYiNFaeQ8$" role="2pJxcM">
                     <ref role="2pJxcJ" to="234s:6fYiNFad_a2" resolve="key" />
                     <node concept="WxPPo" id="6fYiNFaeSy5" role="28ntcv">
@@ -4609,6 +4609,19 @@
                         </node>
                         <node concept="3TrcHB" id="6fYiNFaf03w" role="2OqNvi">
                           <ref role="3TsBF5" to="h3y3:2ju2syjkkk9" resolve="key" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2pJxcG" id="6jbF0BnTgMz" role="2pJxcM">
+                    <ref role="2pJxcJ" to="234s:6jbF0BnT6Ct" resolve="version" />
+                    <node concept="WxPPo" id="6jbF0BnTj7H" role="28ntcv">
+                      <node concept="2OqwBi" id="6jbF0BnTl1h" role="WxPPp">
+                        <node concept="37vLTw" id="6jbF0BnTj7F" role="2Oq$k0">
+                          <ref role="3cqZAo" node="DUXtH0$iPr" resolve="lcLanguage" />
+                        </node>
+                        <node concept="3TrcHB" id="6jbF0BnTp51" role="2OqNvi">
+                          <ref role="3TsBF5" to="h3y3:2chztJeDvZC" resolve="version" />
                         </node>
                       </node>
                     </node>

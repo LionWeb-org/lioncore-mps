@@ -219,6 +219,7 @@
           <module ref="9abaaae2-decf-4e97-bf80-9109e8b759cc(jetbrains.mps.lang.messages.api)" kind="rt" />
           <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="7350a1d7-537e-4f0d-9965-e91c82522d7d(io.lionweb.mps.m3.runtime)" kind="cl" />
           <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" kind="cl" />
           <module ref="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" kind="cl" />
           <module ref="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" kind="cl" />
@@ -3232,7 +3233,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.io.lionweb.mps.m3, java.compile.io.lionweb.mps.m3.runtime, java.compile.io.lionweb.mps.structure.attribute, java.compile.io.lionweb.mps.specific, java.compile.io.lionweb.mps.server.plugin, java.compile.io.lionweb.mps.converter, java.compile.io.lionweb.mps.json, java.compile.java.modules.cycle.1, java.compile.io.lionweb.mps.converter.lang, java.compile.io.lionweb.mps.converter.lang.runtime, java.compile.io.lionweb.mps.client.connector, java.compile.io.lionweb.mps.client.ideaPlugin, java.compile.io.lionweb.mps.client.persistence, java.compile.io.lionweb.mps.cmdline, java.compile.io.lionweb.mps.build, java.compile.io.lionweb.mps.converter.TestAllBuiltins, java.compile.io.lionweb.mps.testsupport, java.compile.io.lionweb.mps.testsupport.generator, java.compile.io.lionweb.mps.converter.TestLang, java.compile.io.lionweb.mps.converter.TestLang2, java.compile.io.lionweb.mps.converter.TestLang3, java.compile.library, java.compile.MultiRefLang, java.compile.io.lionweb.mps.converter.TestCoreRefLang, java.compile.io.lionweb.mps.converter.TestCustomDatatype, java.compile.io.lionweb.mps.converter.TestAnnotation, java.compile.io.lionweb.mps.converter.TestRefs, java.compile.io.lionweb.mps.converter.deps.AnnotationAnnotates, java.compile.io.lionweb.mps.converter.deps.AnnotationAnnotates_Node, java.compile.io.lionweb.mps.converter.deps.AnnotationExtends, java.compile.io.lionweb.mps.converter.deps.AnnotationImplements, java.compile.io.lionweb.mps.converter.deps.ConceptExtends, java.compile.io.lionweb.mps.converter.deps.ConceptImplements, java.compile.io.lionweb.mps.converter.deps.ContainmentType, java.compile.io.lionweb.mps.converter.deps.InterfaceExtends, java.compile.io.lionweb.mps.converter.deps.LanguageDepends, java.compile.io.lionweb.mps.converter.deps.OnlyBuiltins, java.compile.io.lionweb.mps.converter.deps.PropertyType, java.compile.io.lionweb.mps.converter.deps.ReferenceType, java.compile.io.lionweb.mps.converter.deps.SmartReferenceType, java.compile.io.lionweb.mps.converter.deps.Standalone, java.compile.io.lionweb.mps.converter.deps.AvoidMultipleConcepts, java.compile.io.lionweb.mps.converter.TestAbstract, java.compile.io.lionweb.mps.converter.TestComputedProperty, java.compile.io.lionweb.mps.converter.TestLanguageAnnotation, java.compile.io.lionweb.mps.converter.TestDeprecated, java.compile.io.lionweb.mps.converter.TestEnum, java.compile.io.lionweb.mps.converter.test.support, java.compile.io.lionweb.mps.json.test.support, java.compile.io.lionweb.mps.lang.test, java.compile.io.lionweb.mps.json.test, java.compile.io.lionweb.mps.converter.test" />
+  <target name="compileJava" depends="java.compile.io.lionweb.mps.m3, java.compile.java.modules.cycle.1, java.compile.io.lionweb.mps.m3.runtime, java.compile.io.lionweb.mps.structure.attribute, java.compile.io.lionweb.mps.specific, java.compile.io.lionweb.mps.server.plugin, java.compile.io.lionweb.mps.converter, java.compile.io.lionweb.mps.json, java.compile.java.modules.cycle.2, java.compile.io.lionweb.mps.converter.lang, java.compile.io.lionweb.mps.converter.lang.runtime, java.compile.io.lionweb.mps.client.connector, java.compile.io.lionweb.mps.client.ideaPlugin, java.compile.io.lionweb.mps.client.persistence, java.compile.io.lionweb.mps.cmdline, java.compile.io.lionweb.mps.build, java.compile.io.lionweb.mps.converter.TestAllBuiltins, java.compile.io.lionweb.mps.testsupport, java.compile.io.lionweb.mps.testsupport.generator, java.compile.io.lionweb.mps.converter.TestLang, java.compile.io.lionweb.mps.converter.TestLang2, java.compile.io.lionweb.mps.converter.TestLang3, java.compile.library, java.compile.MultiRefLang, java.compile.io.lionweb.mps.converter.TestCoreRefLang, java.compile.io.lionweb.mps.converter.TestCustomDatatype, java.compile.io.lionweb.mps.converter.TestAnnotation, java.compile.io.lionweb.mps.converter.TestRefs, java.compile.io.lionweb.mps.converter.deps.AnnotationAnnotates, java.compile.io.lionweb.mps.converter.deps.AnnotationAnnotates_Node, java.compile.io.lionweb.mps.converter.deps.AnnotationExtends, java.compile.io.lionweb.mps.converter.deps.AnnotationImplements, java.compile.io.lionweb.mps.converter.deps.ConceptExtends, java.compile.io.lionweb.mps.converter.deps.ConceptImplements, java.compile.io.lionweb.mps.converter.deps.ContainmentType, java.compile.io.lionweb.mps.converter.deps.InterfaceExtends, java.compile.io.lionweb.mps.converter.deps.LanguageDepends, java.compile.io.lionweb.mps.converter.deps.OnlyBuiltins, java.compile.io.lionweb.mps.converter.deps.PropertyType, java.compile.io.lionweb.mps.converter.deps.ReferenceType, java.compile.io.lionweb.mps.converter.deps.SmartReferenceType, java.compile.io.lionweb.mps.converter.deps.Standalone, java.compile.io.lionweb.mps.converter.deps.AvoidMultipleConcepts, java.compile.io.lionweb.mps.converter.TestAbstract, java.compile.io.lionweb.mps.converter.TestComputedProperty, java.compile.io.lionweb.mps.converter.TestLanguageAnnotation, java.compile.io.lionweb.mps.converter.TestDeprecated, java.compile.io.lionweb.mps.converter.TestEnum, java.compile.io.lionweb.mps.converter.test.support, java.compile.io.lionweb.mps.json.test.support, java.compile.io.lionweb.mps.lang.test, java.compile.io.lionweb.mps.json.test, java.compile.io.lionweb.mps.converter.test" />
   
   <target name="processResources" />
   
@@ -3377,6 +3378,9 @@
         <module file="${lionweb-mps.home}/languages/io.lionweb.mps.converter.TestLang/io.lionweb.mps.converter.TestLang.mpl" />
         <module file="${lionweb-mps.home}/languages/io.lionweb.mps.converter.TestLanguageAnnotation/io.lionweb.mps.converter.TestLanguageAnnotation.mpl" bootstrap="true" />
         <module file="${lionweb-mps.home}/languages/io.lionweb.mps.converter.deps.AvoidMultipleConcepts/io.lionweb.mps.converter.deps.AvoidMultipleConcepts.mpl" />
+        <module file="${lionweb-mps.home}/languages/io.lionweb.mps.m3/io.lionweb.mps.m3.mpl" bootstrap="true" />
+        <module file="${lionweb-mps.home}/solutions/io.lionweb.mps.m3.runtime/io.lionweb.mps.m3.runtime.msd" />
+        <module file="${lionweb-mps.home}/languages/io.lionweb.mps.specific/io.lionweb.mps.specific.mpl" bootstrap="true" />
         <module file="${lionweb-mps.home}/languages/io.lionweb.mps.structure.attribute/io.lionweb.mps.structure.attribute.mpl" />
         <module file="${lionweb-mps.home}/languages/io.lionweb.mps.testsupport/io.lionweb.mps.testsupport.mpl" />
         <module file="${lionweb-mps.home}/languages/library/library.mpl" />
@@ -3417,15 +3421,12 @@
         <module file="${lionweb-mps.home}/solutions/io.lionweb.mps.converter.test.support/io.lionweb.mps.converter.test.support.msd" />
         <module file="${lionweb-mps.home}/solutions/io.lionweb.mps.json/io.lionweb.mps.json.msd" />
         <module file="${lionweb-mps.home}/solutions/io.lionweb.mps.json.test.support/io.lionweb.mps.json.test.support.msd" />
-        <module file="${lionweb-mps.home}/languages/io.lionweb.mps.m3/io.lionweb.mps.m3.mpl" />
-        <module file="${lionweb-mps.home}/solutions/io.lionweb.mps.m3.runtime/io.lionweb.mps.m3.runtime.msd" />
+        <module file="${lionweb-mps.home}/solutions/io.lionweb.mps.lang.test/io.lionweb.mps.lang.test.msd" />
         <module file="${lionweb-mps.home}/solutions/io.lionweb.mps.server.plugin/io.lionweb.mps.server.plugin.msd" />
-        <module file="${lionweb-mps.home}/languages/io.lionweb.mps.specific/io.lionweb.mps.specific.mpl" />
       </chunk>
       <chunk>
         <module file="${lionweb-mps.home}/solutions/io.lionweb.mps.converter.test/io.lionweb.mps.converter.test.msd" />
         <module file="${lionweb-mps.home}/solutions/io.lionweb.mps.json.test/io.lionweb.mps.json.test.msd" />
-        <module file="${lionweb-mps.home}/solutions/io.lionweb.mps.lang.test/io.lionweb.mps.lang.test.msd" />
       </chunk>
       <jvmargs>
         <arg value="-ea" />
@@ -3501,75 +3502,12 @@
     </copy>
   </target>
   
-  <target name="java.compile.io.lionweb.mps.m3.runtime" depends="java.compile.io.lionweb.mps.m3, java.compile.io.lionweb.mps.specific, java.compile.io.lionweb.mps.structure.attribute, fetchDependencies">
-    <mkdir dir="${lionweb-mps.home}/solutions/io.lionweb.mps.m3.runtime/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/io.lionweb.mps.m3.runtime" />
-    <javac destdir="${build.tmp}/java/out/io.lionweb.mps.m3.runtime" fork="false" encoding="utf8" includeantruntime="false" debug="true">
+  <target name="java.compile.java.modules.cycle.1" depends="java.compile.io.lionweb.mps.m3, java.compile.io.lionweb.mps.specific, fetchDependencies">
+    <mkdir dir="${build.tmp}/java.modules.cycle.1" />
+    <javac destdir="${build.tmp}/java.modules.cycle.1" fork="false" encoding="utf8" nowarn="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${lionweb-mps.home}/solutions/io.lionweb.mps.m3.runtime/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <pathelement path="${build.tmp}/java/out/io.lionweb.mps.m3" />
-        <pathelement path="${build.tmp}/java/out/io.lionweb.mps.specific" />
-        <pathelement path="${build.tmp}/java/out/io.lionweb.mps.structure.attribute" />
-        <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
-        <fileset file="${artifacts.IDEA}/lib/log4j.jar" />
-        <fileset file="${artifacts.IDEA}/lib/jdom.jar" />
-        <fileset file="${artifacts.IDEA}/lib/trove4j.jar" />
-        <fileset file="${artifacts.IDEA}/lib/ecj-4.16.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/java/lib/ecj-4.16.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.modelapi.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-      </classpath>
-    </javac>
-    <copy todir="${build.tmp}/java/out/io.lionweb.mps.m3.runtime">
-      <fileset dir="${lionweb-mps.home}/solutions/io.lionweb.mps.m3.runtime/source_gen" excludes="**/*.java" />
-    </copy>
-  </target>
-  
-  <target name="java.compile.io.lionweb.mps.structure.attribute" depends="fetchDependencies">
-    <mkdir dir="${lionweb-mps.home}/languages/io.lionweb.mps.structure.attribute/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/io.lionweb.mps.structure.attribute" />
-    <javac destdir="${build.tmp}/java/out/io.lionweb.mps.structure.attribute" fork="false" encoding="utf8" includeantruntime="false" debug="true">
-      <compilerarg value="-Xlint:none" />
-      <src>
         <path location="${lionweb-mps.home}/languages/io.lionweb.mps.structure.attribute/source_gen" />
       </src>
       <classpath>
@@ -3607,12 +3545,138 @@
         <fileset file="${artifacts.IDEA}/lib/trove4j.jar" />
         <fileset file="${artifacts.IDEA}/lib/ecj-4.16.jar" />
         <fileset file="${artifacts.IDEA}/plugins/java/lib/ecj-4.16.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.modelapi.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
+        <pathelement path="${build.tmp}/java/out/io.lionweb.mps.m3" />
+        <pathelement path="${build.tmp}/java/out/io.lionweb.mps.specific" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.io.lionweb.mps.m3.runtime" depends="java.compile.io.lionweb.mps.m3, java.compile.io.lionweb.mps.specific, java.compile.java.modules.cycle.1, fetchDependencies">
+    <mkdir dir="${lionweb-mps.home}/solutions/io.lionweb.mps.m3.runtime/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/io.lionweb.mps.m3.runtime" />
+    <javac destdir="${build.tmp}/java/out/io.lionweb.mps.m3.runtime" fork="false" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${lionweb-mps.home}/solutions/io.lionweb.mps.m3.runtime/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
+        <pathelement path="${build.tmp}/java/out/io.lionweb.mps.m3" />
+        <pathelement path="${build.tmp}/java/out/io.lionweb.mps.specific" />
+        <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
+        <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
+        <fileset file="${artifacts.IDEA}/lib/log4j.jar" />
+        <fileset file="${artifacts.IDEA}/lib/jdom.jar" />
+        <fileset file="${artifacts.IDEA}/lib/trove4j.jar" />
+        <fileset file="${artifacts.IDEA}/lib/ecj-4.16.jar" />
+        <fileset file="${artifacts.IDEA}/plugins/java/lib/ecj-4.16.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.modelapi.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <pathelement path="${build.tmp}/java.modules.cycle.1" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/io.lionweb.mps.m3.runtime">
+      <fileset dir="${lionweb-mps.home}/solutions/io.lionweb.mps.m3.runtime/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.io.lionweb.mps.structure.attribute" depends="java.compile.java.modules.cycle.1, fetchDependencies">
+    <mkdir dir="${lionweb-mps.home}/languages/io.lionweb.mps.structure.attribute/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/io.lionweb.mps.structure.attribute" />
+    <javac destdir="${build.tmp}/java/out/io.lionweb.mps.structure.attribute" fork="false" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${lionweb-mps.home}/languages/io.lionweb.mps.structure.attribute/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
+        <fileset file="${artifacts.IDEA}/lib/log4j.jar" />
+        <fileset file="${artifacts.IDEA}/lib/jdom.jar" />
+        <fileset file="${artifacts.IDEA}/lib/trove4j.jar" />
+        <fileset file="${artifacts.IDEA}/lib/ecj-4.16.jar" />
+        <fileset file="${artifacts.IDEA}/plugins/java/lib/ecj-4.16.jar" />
+        <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/io.lionweb.mps.structure.attribute">
@@ -3838,9 +3902,9 @@
     </copy>
   </target>
   
-  <target name="java.compile.java.modules.cycle.1" depends="java.compile.io.lionweb.mps.converter, java.compile.io.lionweb.mps.json, java.compile.io.lionweb.mps.m3, java.compile.io.lionweb.mps.m3.runtime, fetchDependencies">
-    <mkdir dir="${build.tmp}/java.modules.cycle.1" />
-    <javac destdir="${build.tmp}/java.modules.cycle.1" fork="false" encoding="utf8" nowarn="true" includeantruntime="false">
+  <target name="java.compile.java.modules.cycle.2" depends="java.compile.io.lionweb.mps.converter, java.compile.io.lionweb.mps.json, java.compile.io.lionweb.mps.m3, java.compile.io.lionweb.mps.m3.runtime, fetchDependencies">
+    <mkdir dir="${build.tmp}/java.modules.cycle.2" />
+    <javac destdir="${build.tmp}/java.modules.cycle.2" fork="false" encoding="utf8" nowarn="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${lionweb-mps.home}/languages/io.lionweb.mps.converter.lang/source_gen" />
@@ -3905,7 +3969,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.io.lionweb.mps.converter.lang" depends="java.compile.io.lionweb.mps.converter, java.compile.io.lionweb.mps.json, java.compile.io.lionweb.mps.m3, java.compile.io.lionweb.mps.m3.runtime, java.compile.java.modules.cycle.1, fetchDependencies">
+  <target name="java.compile.io.lionweb.mps.converter.lang" depends="java.compile.io.lionweb.mps.converter, java.compile.io.lionweb.mps.json, java.compile.io.lionweb.mps.m3, java.compile.io.lionweb.mps.m3.runtime, java.compile.java.modules.cycle.2, fetchDependencies">
     <mkdir dir="${lionweb-mps.home}/languages/io.lionweb.mps.converter.lang/source_gen" />
     <mkdir dir="${build.tmp}/java/out/io.lionweb.mps.converter.lang" />
     <javac destdir="${build.tmp}/java/out/io.lionweb.mps.converter.lang" fork="false" encoding="utf8" includeantruntime="false" debug="true">
@@ -3968,7 +4032,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.1" />
+        <pathelement path="${build.tmp}/java.modules.cycle.2" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/io.lionweb.mps.converter.lang">
@@ -3976,7 +4040,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.io.lionweb.mps.converter.lang.runtime" depends="java.compile.io.lionweb.mps.converter, java.compile.io.lionweb.mps.m3, java.compile.io.lionweb.mps.m3.runtime, java.compile.java.modules.cycle.1, fetchDependencies">
+  <target name="java.compile.io.lionweb.mps.converter.lang.runtime" depends="java.compile.io.lionweb.mps.converter, java.compile.io.lionweb.mps.m3, java.compile.io.lionweb.mps.m3.runtime, java.compile.java.modules.cycle.2, fetchDependencies">
     <mkdir dir="${lionweb-mps.home}/solutions/io.lionweb.mps.converter.lang.runtime/source_gen" />
     <mkdir dir="${build.tmp}/java/out/io.lionweb.mps.converter.lang.runtime" />
     <javac destdir="${build.tmp}/java/out/io.lionweb.mps.converter.lang.runtime" fork="false" encoding="utf8" includeantruntime="false" debug="true">
@@ -4035,7 +4099,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.1" />
+        <pathelement path="${build.tmp}/java.modules.cycle.2" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/io.lionweb.mps.converter.lang.runtime">
@@ -6287,15 +6351,12 @@
     <delete dir="${lionweb-mps.home}/solutions/io.lionweb.mps.converter.test.support/source_gen" />
     <delete dir="${lionweb-mps.home}/solutions/io.lionweb.mps.json/source_gen" />
     <delete dir="${lionweb-mps.home}/solutions/io.lionweb.mps.json.test.support/source_gen" />
-    <delete dir="${lionweb-mps.home}/languages/io.lionweb.mps.m3/source_gen" />
-    <delete dir="${lionweb-mps.home}/solutions/io.lionweb.mps.m3.runtime/source_gen" />
+    <delete dir="${lionweb-mps.home}/solutions/io.lionweb.mps.lang.test/test_gen" />
     <delete dir="${lionweb-mps.home}/solutions/io.lionweb.mps.server.plugin/source_gen" />
-    <delete dir="${lionweb-mps.home}/languages/io.lionweb.mps.specific/source_gen" />
     <delete dir="${lionweb-mps.home}/solutions/io.lionweb.mps.converter.test/test_gen" />
     <delete dir="${lionweb-mps.home}/solutions/io.lionweb.mps.json.test/test_gen" />
     <delete dir="${lionweb-mps.home}/solutions/io.lionweb.mps.lang.test/test_gen" />
     <delete dir="${lionweb-mps.home}/solutions/io.lionweb.mps.converter.test/test_gen" />
     <delete dir="${lionweb-mps.home}/solutions/io.lionweb.mps.json.test/test_gen" />
-    <delete dir="${lionweb-mps.home}/solutions/io.lionweb.mps.lang.test/test_gen" />
   </target>
 </project>

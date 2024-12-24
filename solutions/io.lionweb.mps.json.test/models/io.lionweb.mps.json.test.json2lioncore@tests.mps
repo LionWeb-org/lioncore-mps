@@ -1486,7 +1486,7 @@
     <node concept="1qefOq" id="5sACIIs_h1$" role="1SKRRt">
       <node concept="2RzRRF" id="5sACIIs$PgG" role="1qenE9">
         <property role="TrG5h" value="LionCore_M3" />
-        <property role="3HH78N" value="1" />
+        <property role="3HH78N" value="2023.1" />
         <property role="2RzON1" value="LionCore-M3" />
         <node concept="3xLA65" id="5sACIIs_is2" role="lGtFl">
           <property role="TrG5h" value="lionCore" />
@@ -1748,7 +1748,7 @@
       <node concept="2RzRRF" id="4R9posqf3NK" role="1qenE9">
         <property role="2RzON1" value="My-TestLang3" />
         <property role="TrG5h" value="io.lionweb.mps.converter.TestLang3" />
-        <property role="3HH78N" value="0" />
+        <property role="3HH78N" value="00 my! VERSION 😀" />
         <node concept="3xLA65" id="4R9posqf3YV" role="lGtFl">
           <property role="TrG5h" value="TestLang3" />
         </node>
