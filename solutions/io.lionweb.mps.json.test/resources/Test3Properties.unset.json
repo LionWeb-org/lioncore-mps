@@ -3,7 +3,7 @@
   "languages": [
     {
       "key": "My-TestLang3",
-      "version": "0"
+      "version": "00 my! VERSION 😀"
     }
   ],
   "nodes": [
@@ -11,14 +11,14 @@
       "id": "{id-Test3Properties}",
       "classifier": {
         "language": "My-TestLang3",
-        "version": "0",
+        "version": "00 my! VERSION 😀",
         "key": "MDk5NDkwYTMtMWUzOS00ZWQxLWJlYmMtODAyNzY2NWNlY2Y5LzcyNzI5MTcxNjczMTc4NDU3NTY"
       },
       "properties": [
         {
           "property": {
             "language": "My-TestLang3",
-            "version": "0",
+            "version": "00 my! VERSION 😀",
             "key": "MDk5NDkwYTMtMWUzOS00ZWQxLWJlYmMtODAyNzY2NWNlY2Y5LzcyNzI5MTcxNjczMTc4NDU3NTYvNzI3MjkxNzE2NzMxNzg0NTc2NA"
           },
           "value": null
@@ -26,7 +26,7 @@
         {
           "property": {
             "language": "My-TestLang3",
-            "version": "0",
+            "version": "00 my! VERSION 😀",
             "key": "MDk5NDkwYTMtMWUzOS00ZWQxLWJlYmMtODAyNzY2NWNlY2Y5LzcyNzI5MTcxNjczMTc4NDU3NTYvNzI3MjkxNzE2NzMxNzg0NTc3MQ"
           },
           "value": null
@@ -34,7 +34,7 @@
         {
           "property": {
             "language": "My-TestLang3",
-            "version": "0",
+            "version": "00 my! VERSION 😀",
             "key": "MDk5NDkwYTMtMWUzOS00ZWQxLWJlYmMtODAyNzY2NWNlY2Y5LzcyNzI5MTcxNjczMTc4NDU3NTYvNzI3MjkxNzE2NzMxNzg0NTc4Ng"
           },
           "value": "false"
@@ -42,7 +42,7 @@
         {
           "property": {
             "language": "My-TestLang3",
-            "version": "0",
+            "version": "00 my! VERSION 😀",
             "key": "MDk5NDkwYTMtMWUzOS00ZWQxLWJlYmMtODAyNzY2NWNlY2Y5LzcyNzI5MTcxNjczMTc4NDU3NTYvNzI3MjkxNzE2NzMxNzg0NTc4OA"
           },
           "value": "false"
@@ -50,7 +50,7 @@
         {
           "property": {
             "language": "My-TestLang3",
-            "version": "0",
+            "version": "00 my! VERSION 😀",
             "key": "MDk5NDkwYTMtMWUzOS00ZWQxLWJlYmMtODAyNzY2NWNlY2Y5LzcyNzI5MTcxNjczMTc4NDU3NTYvNzI3MjkxNzE2NzMxNzg0NTc5MA"
           },
           "value": "false"
@@ -58,7 +58,7 @@
         {
           "property": {
             "language": "My-TestLang3",
-            "version": "0",
+            "version": "00 my! VERSION 😀",
             "key": "MDk5NDkwYTMtMWUzOS00ZWQxLWJlYmMtODAyNzY2NWNlY2Y5LzcyNzI5MTcxNjczMTc4NDU3NTYvNzI3MjkxNzE2NzMxNzg0NTgwNg"
           },
           "value": null
