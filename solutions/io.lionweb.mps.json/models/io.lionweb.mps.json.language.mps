@@ -30,6 +30,7 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="teza" ref="r:84248d29-a48a-459b-8ba9-05c71de1fb63(io.lionweb.mps.converter.m2.idmapper)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -4781,8 +4782,7 @@
       <property role="TrG5h" value="linkLink" />
       <node concept="3clFbS" id="48csSBNReMB" role="3clF47">
         <node concept="3clFbJ" id="48csSBNReMC" role="3cqZAp">
-          <node concept="3y3z36" id="48csSBOaixi" role="3clFbw">
-            <node concept="10Nm6u" id="48csSBOakGa" role="3uHU7w" />
+          <node concept="3clFbC" id="4Ly6GHu1IZJ" role="3clFbw">
             <node concept="2OqwBi" id="48csSBNReME" role="3uHU7B">
               <node concept="37vLTw" id="48csSBNReMF" role="2Oq$k0">
                 <ref role="3cqZAo" node="48csSBNReNd" resolve="mps" />
@@ -4791,145 +4791,227 @@
                 <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept()" resolve="getTargetConcept" />
               </node>
             </node>
+            <node concept="10Nm6u" id="48csSBOakGa" role="3uHU7w" />
           </node>
-          <node concept="3clFbS" id="48csSBNReMI" role="3clFbx">
-            <node concept="3cpWs8" id="48csSBNReMJ" role="3cqZAp">
-              <node concept="3cpWsn" id="48csSBNReMK" role="3cpWs9">
-                <property role="TrG5h" value="classifier" />
-                <node concept="3uibUv" id="3IncSZJbAir" role="1tU5fm">
-                  <ref role="3uigEE" to="imb3:~Classifier" resolve="Classifier" />
-                </node>
-                <node concept="10Nm6u" id="4WflrVaKN0u" role="33vP2m" />
-              </node>
+          <node concept="3clFbS" id="4Ly6GHu1IZO" role="3clFbx">
+            <node concept="3cpWs6" id="4Ly6GHu1QEz" role="3cqZAp" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="4Ly6GHu2dp7" role="3cqZAp" />
+        <node concept="3cpWs8" id="48csSBNReMJ" role="3cqZAp">
+          <node concept="3cpWsn" id="48csSBNReMK" role="3cpWs9">
+            <property role="TrG5h" value="classifier" />
+            <node concept="3uibUv" id="3IncSZJbAir" role="1tU5fm">
+              <ref role="3uigEE" to="imb3:~Classifier" resolve="Classifier" />
             </node>
-            <node concept="3clFbJ" id="5AGBwuFjIRR" role="3cqZAp">
-              <node concept="3clFbS" id="5AGBwuFjIRT" role="3clFbx">
-                <node concept="3cpWs8" id="5AGBwuFlgga" role="3cqZAp">
-                  <node concept="3cpWsn" id="5AGBwuFlggb" role="3cpWs9">
-                    <property role="TrG5h" value="smartTarget" />
-                    <node concept="2OqwBi" id="5AGBwuFlggc" role="33vP2m">
-                      <node concept="37vLTw" id="5AGBwuFlggd" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5AGBwuFaSOK" resolve="attributeFinder" />
-                      </node>
-                      <node concept="liA8E" id="5AGBwuFlgge" role="2OqNvi">
-                        <ref role="37wK5l" to="y7p:5AGBwuFkotB" resolve="extractSmartTarget" />
-                        <node concept="37vLTw" id="5AGBwuFlggf" role="37wK5m">
-                          <ref role="3cqZAo" node="48csSBNReNd" resolve="mps" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3uibUv" id="4WflrVaJJFN" role="1tU5fm">
-                      <ref role="3uigEE" to="c17a:~SReferenceLink" resolve="SReferenceLink" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbJ" id="4WflrVaJZlp" role="3cqZAp">
-                  <node concept="3clFbS" id="4WflrVaJZlr" role="3clFbx">
-                    <node concept="3clFbF" id="5AGBwuFlEhL" role="3cqZAp">
-                      <node concept="37vLTI" id="5AGBwuFlIil" role="3clFbG">
-                        <node concept="3EllGN" id="5AGBwuFm38Z" role="37vLTx">
-                          <node concept="2OqwBi" id="5AGBwuFmdUh" role="3ElVtu">
-                            <node concept="37vLTw" id="5AGBwuFm8oW" role="2Oq$k0">
-                              <ref role="3cqZAo" node="5AGBwuFlggb" resolve="smartTarget" />
-                            </node>
-                            <node concept="liA8E" id="4WflrVaK$ib" role="2OqNvi">
-                              <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept()" resolve="getTargetConcept" />
-                            </node>
-                          </node>
-                          <node concept="2OqwBi" id="5AGBwuFlRZM" role="3ElQJh">
-                            <node concept="Xjq3P" id="5AGBwuFlOc7" role="2Oq$k0" />
-                            <node concept="2OwXpG" id="5AGBwuFlXr9" role="2OqNvi">
-                              <ref role="2Oxat5" node="48csSBNRezV" resolve="classifiers" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="37vLTw" id="5AGBwuFlEhI" role="37vLTJ">
-                          <ref role="3cqZAo" node="48csSBNReMK" resolve="classifier" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3y3z36" id="4WflrVaKj4L" role="3clFbw">
-                    <node concept="37vLTw" id="4WflrVaK4xa" role="3uHU7B">
-                      <ref role="3cqZAo" node="5AGBwuFlggb" resolve="smartTarget" />
-                    </node>
-                    <node concept="10Nm6u" id="4WflrVaKend" role="3uHU7w" />
-                  </node>
-                </node>
-              </node>
-              <node concept="1rXfSq" id="utjSYFdVlH" role="3clFbw">
-                <ref role="37wK5l" node="utjSYFcdeN" resolve="isSmartReferenceLink" />
-                <node concept="37vLTw" id="utjSYFe00L" role="37wK5m">
+            <node concept="10Nm6u" id="4WflrVaKN0u" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="4Ly6GHu2sNW" role="3cqZAp">
+          <node concept="2OqwBi" id="4Ly6GHu2sNT" role="3clFbG">
+            <node concept="10M0yZ" id="4Ly6GHu2sNU" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="4Ly6GHu2sNV" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+              <node concept="3cpWs3" id="4Ly6GHu35jN" role="37wK5m">
+                <node concept="37vLTw" id="4Ly6GHu3aGN" role="3uHU7w">
                   <ref role="3cqZAo" node="48csSBNReNd" resolve="mps" />
                 </node>
+                <node concept="Xl_RD" id="4Ly6GHu2$CA" role="3uHU7B">
+                  <property role="Xl_RC" value="link: " />
+                </node>
               </node>
-              <node concept="9aQIb" id="5AGBwuFmBJk" role="9aQIa">
-                <node concept="3clFbS" id="5AGBwuFmBJl" role="9aQI4">
-                  <node concept="3clFbF" id="5AGBwuFj$Xg" role="3cqZAp">
-                    <node concept="37vLTI" id="5AGBwuFj$Xi" role="3clFbG">
-                      <node concept="3EllGN" id="48csSBNReMM" role="37vLTx">
-                        <node concept="2OqwBi" id="48csSBNReMN" role="3ElVtu">
-                          <node concept="37vLTw" id="48csSBNReMO" role="2Oq$k0">
-                            <ref role="3cqZAo" node="48csSBNReNd" resolve="mps" />
-                          </node>
-                          <node concept="liA8E" id="48csSBOanpV" role="2OqNvi">
-                            <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept()" resolve="getTargetConcept" />
-                          </node>
-                        </node>
-                        <node concept="2OqwBi" id="48csSBNReMQ" role="3ElQJh">
-                          <node concept="Xjq3P" id="48csSBNReMR" role="2Oq$k0" />
-                          <node concept="2OwXpG" id="48csSBNReMS" role="2OqNvi">
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5AGBwuFjIRR" role="3cqZAp">
+          <node concept="3clFbS" id="5AGBwuFjIRT" role="3clFbx">
+            <node concept="3cpWs8" id="5AGBwuFlgga" role="3cqZAp">
+              <node concept="3cpWsn" id="5AGBwuFlggb" role="3cpWs9">
+                <property role="TrG5h" value="smartTarget" />
+                <node concept="2OqwBi" id="5AGBwuFlggc" role="33vP2m">
+                  <node concept="37vLTw" id="5AGBwuFlggd" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5AGBwuFaSOK" resolve="attributeFinder" />
+                  </node>
+                  <node concept="liA8E" id="5AGBwuFlgge" role="2OqNvi">
+                    <ref role="37wK5l" to="y7p:5AGBwuFkotB" resolve="extractSmartTarget" />
+                    <node concept="37vLTw" id="5AGBwuFlggf" role="37wK5m">
+                      <ref role="3cqZAo" node="48csSBNReNd" resolve="mps" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3uibUv" id="4WflrVaJJFN" role="1tU5fm">
+                  <ref role="3uigEE" to="c17a:~SReferenceLink" resolve="SReferenceLink" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4Ly6GHu3q7O" role="3cqZAp">
+              <node concept="2OqwBi" id="4Ly6GHu3q7L" role="3clFbG">
+                <node concept="10M0yZ" id="4Ly6GHu3q7M" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                </node>
+                <node concept="liA8E" id="4Ly6GHu3q7N" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                  <node concept="3cpWs3" id="4Ly6GHu3WYC" role="37wK5m">
+                    <node concept="37vLTw" id="4Ly6GHu45a6" role="3uHU7w">
+                      <ref role="3cqZAo" node="5AGBwuFlggb" resolve="smartTarget" />
+                    </node>
+                    <node concept="Xl_RD" id="4Ly6GHu3x5q" role="3uHU7B">
+                      <property role="Xl_RC" value="smartTarget: " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="4WflrVaJZlp" role="3cqZAp">
+              <node concept="3clFbS" id="4WflrVaJZlr" role="3clFbx">
+                <node concept="3clFbF" id="4Ly6GHu5KBY" role="3cqZAp">
+                  <node concept="2OqwBi" id="4Ly6GHu5KBV" role="3clFbG">
+                    <node concept="10M0yZ" id="4Ly6GHu5KBW" role="2Oq$k0">
+                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                    </node>
+                    <node concept="liA8E" id="4Ly6GHu5KBX" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                      <node concept="3cpWs3" id="4Ly6GHu67vm" role="37wK5m">
+                        <node concept="2OqwBi" id="4Ly6GHu6mi0" role="3uHU7w">
+                          <node concept="Xjq3P" id="4Ly6GHu6fge" role="2Oq$k0" />
+                          <node concept="2OwXpG" id="4Ly6GHu6sFr" role="2OqNvi">
                             <ref role="2Oxat5" node="48csSBNRezV" resolve="classifiers" />
                           </node>
                         </node>
-                      </node>
-                      <node concept="37vLTw" id="5AGBwuFj$Xm" role="37vLTJ">
-                        <ref role="3cqZAo" node="48csSBNReMK" resolve="classifier" />
+                        <node concept="Xl_RD" id="4Ly6GHu5Sor" role="3uHU7B">
+                          <property role="Xl_RC" value="classifiers: " />
+                        </node>
                       </node>
                     </node>
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="3clFbJ" id="48csSBNReMT" role="3cqZAp">
-              <node concept="3clFbS" id="48csSBNReMU" role="3clFbx">
-                <node concept="YS8fn" id="48csSBNReMV" role="3cqZAp">
-                  <node concept="2ShNRf" id="48csSBNReMW" role="YScLw">
-                    <node concept="1pGfFk" id="48csSBNReMX" role="2ShVmc">
-                      <ref role="37wK5l" to="en45:48csSBOj9lZ" resolve="TargetUnavailableException" />
-                      <node concept="37vLTw" id="48csSBNReMY" role="37wK5m">
-                        <ref role="3cqZAo" node="48csSBNReNd" resolve="mps" />
-                      </node>
-                      <node concept="2OqwBi" id="48csSBOaq6v" role="37wK5m">
-                        <node concept="37vLTw" id="48csSBOaq6w" role="2Oq$k0">
-                          <ref role="3cqZAo" node="48csSBNReNd" resolve="mps" />
+                <node concept="3clFbF" id="5AGBwuFlEhL" role="3cqZAp">
+                  <node concept="37vLTI" id="5AGBwuFlIil" role="3clFbG">
+                    <node concept="3EllGN" id="5AGBwuFm38Z" role="37vLTx">
+                      <node concept="2OqwBi" id="5AGBwuFmdUh" role="3ElVtu">
+                        <node concept="37vLTw" id="5AGBwuFm8oW" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5AGBwuFlggb" resolve="smartTarget" />
                         </node>
-                        <node concept="liA8E" id="48csSBOaq6x" role="2OqNvi">
+                        <node concept="liA8E" id="4WflrVaK$ib" role="2OqNvi">
                           <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept()" resolve="getTargetConcept" />
                         </node>
                       </node>
+                      <node concept="2OqwBi" id="5AGBwuFlRZM" role="3ElQJh">
+                        <node concept="Xjq3P" id="5AGBwuFlOc7" role="2Oq$k0" />
+                        <node concept="2OwXpG" id="5AGBwuFlXr9" role="2OqNvi">
+                          <ref role="2Oxat5" node="48csSBNRezV" resolve="classifiers" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="5AGBwuFlEhI" role="37vLTJ">
+                      <ref role="3cqZAo" node="48csSBNReMK" resolve="classifier" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbC" id="48csSBPOHdP" role="3clFbw">
-                <node concept="10Nm6u" id="48csSBPOKbr" role="3uHU7w" />
-                <node concept="37vLTw" id="48csSBNReN3" role="3uHU7B">
-                  <ref role="3cqZAo" node="48csSBNReMK" resolve="classifier" />
+              <node concept="3y3z36" id="4WflrVaKj4L" role="3clFbw">
+                <node concept="37vLTw" id="4WflrVaK4xa" role="3uHU7B">
+                  <ref role="3cqZAo" node="5AGBwuFlggb" resolve="smartTarget" />
                 </node>
+                <node concept="10Nm6u" id="4WflrVaKend" role="3uHU7w" />
               </node>
             </node>
-            <node concept="3clFbF" id="48csSBNReN5" role="3cqZAp">
-              <node concept="2OqwBi" id="48csSBPON68" role="3clFbG">
-                <node concept="37vLTw" id="48csSBNReN9" role="2Oq$k0">
-                  <ref role="3cqZAo" node="48csSBNReNf" resolve="json" />
-                </node>
-                <node concept="liA8E" id="48csSBPOS71" role="2OqNvi">
-                  <ref role="37wK5l" to="imb3:~Link.setType(io.lionweb.lioncore.java.language.Classifier)" resolve="setType" />
-                  <node concept="37vLTw" id="48csSBPOUS2" role="37wK5m">
+          </node>
+          <node concept="1rXfSq" id="utjSYFdVlH" role="3clFbw">
+            <ref role="37wK5l" node="utjSYFcdeN" resolve="isSmartReferenceLink" />
+            <node concept="37vLTw" id="utjSYFe00L" role="37wK5m">
+              <ref role="3cqZAo" node="48csSBNReNd" resolve="mps" />
+            </node>
+          </node>
+          <node concept="9aQIb" id="5AGBwuFmBJk" role="9aQIa">
+            <node concept="3clFbS" id="5AGBwuFmBJl" role="9aQI4">
+              <node concept="3clFbF" id="5AGBwuFj$Xg" role="3cqZAp">
+                <node concept="37vLTI" id="5AGBwuFj$Xi" role="3clFbG">
+                  <node concept="3EllGN" id="48csSBNReMM" role="37vLTx">
+                    <node concept="2OqwBi" id="48csSBNReMN" role="3ElVtu">
+                      <node concept="37vLTw" id="48csSBNReMO" role="2Oq$k0">
+                        <ref role="3cqZAo" node="48csSBNReNd" resolve="mps" />
+                      </node>
+                      <node concept="liA8E" id="48csSBOanpV" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept()" resolve="getTargetConcept" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="48csSBNReMQ" role="3ElQJh">
+                      <node concept="Xjq3P" id="48csSBNReMR" role="2Oq$k0" />
+                      <node concept="2OwXpG" id="48csSBNReMS" role="2OqNvi">
+                        <ref role="2Oxat5" node="48csSBNRezV" resolve="classifiers" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="5AGBwuFj$Xm" role="37vLTJ">
                     <ref role="3cqZAo" node="48csSBNReMK" resolve="classifier" />
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4Ly6GHu4kHv" role="3cqZAp">
+          <node concept="2OqwBi" id="4Ly6GHu4kHs" role="3clFbG">
+            <node concept="10M0yZ" id="4Ly6GHu4kHt" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="4Ly6GHu4kHu" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+              <node concept="3cpWs3" id="4Ly6GHu4JIc" role="37wK5m">
+                <node concept="37vLTw" id="4Ly6GHu4OV5" role="3uHU7w">
+                  <ref role="3cqZAo" node="48csSBNReMK" resolve="classifier" />
+                </node>
+                <node concept="Xl_RD" id="4Ly6GHu4srq" role="3uHU7B">
+                  <property role="Xl_RC" value="classifier: " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="48csSBNReMT" role="3cqZAp">
+          <node concept="3clFbS" id="48csSBNReMU" role="3clFbx">
+            <node concept="YS8fn" id="48csSBNReMV" role="3cqZAp">
+              <node concept="2ShNRf" id="48csSBNReMW" role="YScLw">
+                <node concept="1pGfFk" id="48csSBNReMX" role="2ShVmc">
+                  <ref role="37wK5l" to="en45:48csSBOj9lZ" resolve="TargetUnavailableException" />
+                  <node concept="37vLTw" id="48csSBNReMY" role="37wK5m">
+                    <ref role="3cqZAo" node="48csSBNReNd" resolve="mps" />
+                  </node>
+                  <node concept="2OqwBi" id="48csSBOaq6v" role="37wK5m">
+                    <node concept="37vLTw" id="48csSBOaq6w" role="2Oq$k0">
+                      <ref role="3cqZAo" node="48csSBNReNd" resolve="mps" />
+                    </node>
+                    <node concept="liA8E" id="48csSBOaq6x" role="2OqNvi">
+                      <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept()" resolve="getTargetConcept" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="48csSBPOHdP" role="3clFbw">
+            <node concept="10Nm6u" id="48csSBPOKbr" role="3uHU7w" />
+            <node concept="37vLTw" id="48csSBNReN3" role="3uHU7B">
+              <ref role="3cqZAo" node="48csSBNReMK" resolve="classifier" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="48csSBNReN5" role="3cqZAp">
+          <node concept="2OqwBi" id="48csSBPON68" role="3clFbG">
+            <node concept="37vLTw" id="48csSBNReN9" role="2Oq$k0">
+              <ref role="3cqZAo" node="48csSBNReNf" resolve="json" />
+            </node>
+            <node concept="liA8E" id="48csSBPOS71" role="2OqNvi">
+              <ref role="37wK5l" to="imb3:~Link.setType(io.lionweb.lioncore.java.language.Classifier)" resolve="setType" />
+              <node concept="37vLTw" id="48csSBPOUS2" role="37wK5m">
+                <ref role="3cqZAo" node="48csSBNReMK" resolve="classifier" />
               </node>
             </node>
           </node>

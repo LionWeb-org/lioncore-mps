@@ -3383,10 +3383,10 @@
     <node concept="312cEg" id="pPZz6cPzAy" role="jymVt">
       <property role="TrG5h" value="repository" />
       <property role="3TUv4t" value="true" />
-      <node concept="3Tmbuc" id="5sJP3aL_mXK" role="1B3o_S" />
       <node concept="3uibUv" id="pPZz6cPzA_" role="1tU5fm">
         <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
       </node>
+      <node concept="3Tmbuc" id="5sJP3aL_mXK" role="1B3o_S" />
     </node>
     <node concept="312cEg" id="5AGBwuFENz0" role="jymVt">
       <property role="TrG5h" value="constants" />
@@ -7373,6 +7373,52 @@
       </node>
     </node>
     <node concept="2tJIrI" id="34Q84zNQO5q" role="jymVt" />
+    <node concept="3clFb_" id="4Ly6GHu7$VE" role="jymVt">
+      <property role="TrG5h" value="getHelpUrl" />
+      <node concept="3clFbS" id="4Ly6GHu7$VH" role="3clF47" />
+      <node concept="3Tm1VV" id="4Ly6GHu7$VI" role="1B3o_S" />
+      <node concept="3uibUv" id="4Ly6GHu7$NF" role="3clF45">
+        <ref role="3uigEE" node="7OJcYqvRt75" resolve="PropertyStaple" />
+      </node>
+      <node concept="P$JXv" id="4Ly6GHu7_9s" role="lGtFl">
+        <node concept="TZ5HA" id="4Ly6GHu7_ca" role="TZ5H$">
+          <node concept="1dT_AC" id="4Ly6GHu7_cb" role="1dT_Ay">
+            <property role="1dT_AB" value="lc: io.lionweb.mps.specific.lang.MPS-specific annotations.ConceptDescription.helpUrl" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="4Ly6GHu7_cc" role="TZ5H$">
+          <node concept="1dT_AC" id="4Ly6GHu7_cd" role="1dT_Ay">
+            <property role="1dT_AB" value="mps: jetbrains.mps.lang.resources.structure.HelpURL.url" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="4Ly6GHu7_ce" role="TZ5H$">
+          <node concept="1dT_AC" id="4Ly6GHu7_cf" role="1dT_Ay">
+            <property role="1dT_AB" value="slang: jetbrains.mps.lang.resources.structure.HelpURL.url as " />
+          </node>
+          <node concept="1dT_AA" id="4Ly6GHu7_cg" role="1dT_Ay">
+            <node concept="92FcH" id="4Ly6GHu7_ch" role="qph3F">
+              <node concept="TZ5HA" id="4Ly6GHu7_ci" role="2XjZqd" />
+              <node concept="VXe08" id="4Ly6GHu7_cj" role="92FcQ">
+                <ref role="VXe09" to="c17a:~SProperty" resolve="SProperty" />
+              </node>
+            </node>
+          </node>
+          <node concept="1dT_AC" id="4Ly6GHu7_ck" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="4Ly6GHu7_cl" role="TZ5H$">
+          <node concept="1dT_AC" id="4Ly6GHu7_cm" role="1dT_Ay">
+            <property role="1dT_AB" value="lcKey: ConceptDescription-helpUrl" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="4Ly6GHu7_cn" role="TZ5H$">
+          <node concept="1dT_AC" id="4Ly6GHu7_co" role="1dT_Ay">
+            <property role="1dT_AB" value="mpsId: c72da2b9-7cce-4447-8389-f407dc1158b7/1169125787135/4628067390765907488" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3clFb_" id="7OJcYqxreEB" role="jymVt">
       <property role="TrG5h" value="listMpsM1AnnotationProperties" />
       <node concept="3clFbS" id="7OJcYqxreEE" role="3clF47" />
@@ -7408,10 +7454,6 @@
         </node>
       </node>
     </node>
-    <node concept="3Tm1VV" id="5JNiskhxHcY" role="1B3o_S" />
-    <node concept="3uibUv" id="5JNiski3mfI" role="3HQHJm">
-      <ref role="3uigEE" node="5JNiski3jVc" resolve="ILionCoreConstants_2023_1" />
-    </node>
     <node concept="2tJIrI" id="6LPkCA$5By3" role="jymVt" />
     <node concept="3clFb_" id="6LPkCA$5BOW" role="jymVt">
       <property role="TrG5h" value="listMpsM2Annotations" />
@@ -7429,6 +7471,10 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="3Tm1VV" id="5JNiskhxHcY" role="1B3o_S" />
+    <node concept="3uibUv" id="5JNiski3mfI" role="3HQHJm">
+      <ref role="3uigEE" node="5JNiski3jVc" resolve="ILionCoreConstants_2023_1" />
     </node>
   </node>
   <node concept="312cEu" id="5JNiskhYWOE">
@@ -10628,14 +10674,6 @@
         <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
       </node>
     </node>
-    <node concept="3Tm1VV" id="6jTTMHD72IT" role="1B3o_S" />
-    <node concept="3UR2Jj" id="6jTTMHD72JM" role="lGtFl">
-      <node concept="TZ5HA" id="6jTTMHD72JN" role="TZ5H$">
-        <node concept="1dT_AC" id="6jTTMHD72JO" role="1dT_Ay">
-          <property role="1dT_AB" value="Common place to access MPS language specifics" />
-        </node>
-      </node>
-    </node>
     <node concept="2tJIrI" id="6jbF0Bo0wtH" role="jymVt" />
     <node concept="2YIFZL" id="6jbF0Bo0uK5" role="jymVt">
       <property role="TrG5h" value="getLanguageVersionString" />
@@ -10714,6 +10752,14 @@
     </node>
     <node concept="2tJIrI" id="6jbF0Bo0uIK" role="jymVt" />
     <node concept="2tJIrI" id="6jbF0Bo0uJh" role="jymVt" />
+    <node concept="3Tm1VV" id="6jTTMHD72IT" role="1B3o_S" />
+    <node concept="3UR2Jj" id="6jTTMHD72JM" role="lGtFl">
+      <node concept="TZ5HA" id="6jTTMHD72JN" role="TZ5H$">
+        <node concept="1dT_AC" id="6jTTMHD72JO" role="1dT_Ay">
+          <property role="1dT_AB" value="Common place to access MPS language specifics" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="3HP615" id="7OJcYqvKf0O">
     <property role="TrG5h" value="IKeyedStaple" />
@@ -10791,6 +10837,15 @@
         <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
       </node>
     </node>
+    <node concept="3clFb_" id="6jbF0Boix1I" role="jymVt">
+      <property role="TrG5h" value="getLcLanguageVersion" />
+      <node concept="17QB3L" id="6jbF0Boix1J" role="3clF45" />
+      <node concept="3Tm1VV" id="6jbF0Boix1K" role="1B3o_S" />
+      <node concept="3clFbS" id="6jbF0Boix1L" role="3clF47" />
+      <node concept="2AHcQZ" id="6jbF0Boix1Q" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="7OJcYqvKf0P" role="1B3o_S" />
     <node concept="16euLQ" id="7OJcYqvKf2B" role="16eVyc">
       <property role="TrG5h" value="LC" />
@@ -10845,15 +10900,6 @@
         <node concept="VXe08" id="alE3w2lgP0" role="VUp5m">
           <ref role="VXe09" to="6peh:7OJcYqxTPY1" resolve="JsonStaple" />
         </node>
-      </node>
-    </node>
-    <node concept="3clFb_" id="6jbF0Boix1I" role="jymVt">
-      <property role="TrG5h" value="getLcLanguageVersion" />
-      <node concept="17QB3L" id="6jbF0Boix1J" role="3clF45" />
-      <node concept="3Tm1VV" id="6jbF0Boix1K" role="1B3o_S" />
-      <node concept="3clFbS" id="6jbF0Boix1L" role="3clF47" />
-      <node concept="2AHcQZ" id="6jbF0Boix1Q" role="2AJF6D">
-        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
       </node>
     </node>
   </node>
