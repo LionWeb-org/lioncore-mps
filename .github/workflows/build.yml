@@ -27,7 +27,7 @@ jobs:
         cache-disabled: false
 
     - name: Test languages
-      run:  xvfb-run ./gradlew checkMps publishToMavenLocal
+      run:  xvfb-run ./gradlew checkMps publishToMavenLocal --stacktrace --debug
 
     - name: Publish Test Results
       uses: EnricoMi/publish-unit-test-result-action@v2
