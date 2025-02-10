@@ -27,8 +27,14 @@ jobs:
         cache-disabled: false
 
     - name: Test languages
-      run:  xvfb-run ./gradlew checkMps publishToMavenLocal --stacktrace --debug
+      run:  xvfb-run ./gradlew checkMps publishToMavenLocal
 
+    - name: Archive MPS logs
+        uses: actions/upload-artifact@v4
+        with:
+          name: mps-logs
+          path: .mps-caches/logs/*
+          
     - name: Publish Test Results
       uses: EnricoMi/publish-unit-test-result-action@v2
       if: always()
