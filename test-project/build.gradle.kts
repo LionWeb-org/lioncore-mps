@@ -23,7 +23,7 @@ dependencies {
 
 tasks.assembleMps {
     antProperties.putAll(antProperties.get())
-    antProperties.put("lionweb-mps.home", "${projectDir.resolve("./../")}")
+    antProperties.put("lionweb-mps.home", "build/dependencies/io.lionweb.lionweb-mps")}")
 }
 
 task<JavaExec>("runCommandLineTool") {
