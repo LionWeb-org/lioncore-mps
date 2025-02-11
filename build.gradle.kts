@@ -59,16 +59,22 @@ task<Exec>("testCmdLineExport-foo") {
     commandLine("./scripts/export-foo.sh")
 }
 
-task<Exec>("testCmdLineExport-DependsOnMpsExtension") {
+task<Exec>("testCmdLineExport-DependsOnMpsExtension-externalLib") {
     workingDir("./test-project-externalLib")
     commandLine("./scripts/export-DependsOnMpsExtensions.sh")
+}
+
+task<Exec>("testCmdLineExport-foo-externalLib") {
+    workingDir("./test-project-externalLib")
+    commandLine("./scripts/export-foo.sh")
 }
 
 task("testCmdLineExport") {
     dependsOn("testCmdLineExport-library")
     dependsOn("testCmdLineExport-multiple")
     dependsOn("testCmdLineExport-foo")
-    dependsOn("testCmdLineExport-DependsOnMpsExtension")
+    dependsOn("testCmdLineExport-DependsOnMpsExtension-externalLib")
+    dependsOn("testCmdLineExport-foo-externalLib")
 }
 
 
