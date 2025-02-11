@@ -4,7 +4,7 @@
   <property name="build.tmp" location="${build.dir}/tmp/test-project" />
   <property name="build.layout" location="${build.dir}/artifacts/test-project" />
   <property name="mps_home" location="" />
-  <property name="lionweb-mps.home" location="${basedir}/../" />
+  <property name="lionweb-mps.home" location="" />
   <property name="mps.macro.lionweb-mps.home" location="${lionweb-mps.home}" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property name="artifacts.io.lionweb.mps" location="${lionweb-mps.home}" />
@@ -95,21 +95,21 @@
     <jar destfile="${build.layout}/test-project/languages/test-project/FooLanguage.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/FooLanguage" />
       <fileset dir="${basedir}/languages/FooLanguage" includes="icons/**, resources/**" />
-      <fileset dir="${lionweb-mps.home}/test-project/languages/FooLanguage/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${basedir}/languages/FooLanguage/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/FooLanguage.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/test-project-languages-FooLanguage-models">
-      <fileset dir="${lionweb-mps.home}/test-project/languages/FooLanguage/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-FooLanguage-models">
+      <fileset dir="${basedir}/languages/FooLanguage/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/test-project/languages/test-project/FooLanguage-src.jar" duplicate="preserve">
-      <fileset dir="${lionweb-mps.home}/test-project/languages/FooLanguage/source_gen">
+      <fileset dir="${basedir}/languages/FooLanguage/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/languages/FooLanguage/FooLanguage.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/test-project-languages-FooLanguage-models" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-FooLanguage-models" prefix="module/models" />
     </jar>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}io.lionweb.mps.version=${io.lionweb.mps.version}</echo>
   </target>
@@ -251,12 +251,12 @@
   <target name="makeDependents" />
   
   <target name="java.compile.FooLanguage" depends="fetchDependencies">
-    <mkdir dir="${lionweb-mps.home}/test-project/languages/FooLanguage/source_gen" />
+    <mkdir dir="${basedir}/languages/FooLanguage/source_gen" />
     <mkdir dir="${build.tmp}/java/out/FooLanguage" />
     <javac destdir="${build.tmp}/java/out/FooLanguage" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${lionweb-mps.home}/test-project/languages/FooLanguage/source_gen" />
+        <path location="${basedir}/languages/FooLanguage/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
@@ -290,6 +290,6 @@
   </target>
   
   <target name="cleanSources">
-    <delete dir="${lionweb-mps.home}/test-project/languages/FooLanguage/source_gen" />
+    <delete dir="${basedir}/languages/FooLanguage/source_gen" />
   </target>
 </project>
