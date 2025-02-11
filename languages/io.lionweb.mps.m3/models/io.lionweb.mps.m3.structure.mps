@@ -62,7 +62,9 @@
       </concept>
     </language>
     <language id="411e5b27-8a76-482e-8af8-1704262b4468" name="io.lionweb.mps.structure.attribute">
-      <concept id="7205279169712116346" name="io.lionweb.mps.structure.attribute.structure.LionWebLanguageKey" flags="ng" index="2DM1_0" />
+      <concept id="7205279169712116346" name="io.lionweb.mps.structure.attribute.structure.LionWebLanguage" flags="ng" index="2DM1_0">
+        <property id="7263087982341810717" name="version" index="2NbWok" />
+      </concept>
       <concept id="7205279169712116353" name="io.lionweb.mps.structure.attribute.structure.ILionWebKey" flags="ng" index="2DM1AV">
         <property id="7205279169712116354" name="key" index="2DM1AS" />
       </concept>
@@ -443,6 +445,7 @@
   </node>
   <node concept="2DM1_0" id="5AGBwuDAKCg">
     <property role="2DM1AS" value="LionCore-M3" />
+    <property role="2NbWok" value="2023.1" />
   </node>
   <node concept="1TIwiD" id="18UigYQyrxa">
     <property role="EcuMT" value="1313442573167736906" />

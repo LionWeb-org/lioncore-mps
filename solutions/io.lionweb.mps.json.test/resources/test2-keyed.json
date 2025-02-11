@@ -3,7 +3,7 @@
   "languages": [
     {
       "key": "My-TestLang3",
-      "version": "0"
+      "version": "00 my! VERSION 😀"
     },
     {
       "key": "NDhkMGY2ZWItNjE4Ni00Y2VjLTgzZDEtN2NhZWRiMDVhNDk0",
@@ -25,7 +25,7 @@
             "version": "0",
             "key": "My-KeyedProp"
           },
-          "value": "4R9pospAHRH/keyed"
+          "value": "My-EnumLiteralKeyed"
         },
         {
           "property": {
@@ -33,7 +33,7 @@
             "version": "0",
             "key": "NDhkMGY2ZWItNjE4Ni00Y2VjLTgzZDEtN2NhZWRiMDVhNDk0LzU2MDUxMjI4NDIxNTg3NDI5MzIvNTYwNTEyMjg0MjE2Mzg1NzA0OA"
           },
-          "value": "4R9pospAHRA/keyed"
+          "value": "My-EnumLiteralUnkeyed"
         }
       ],
       "containments": [
@@ -93,7 +93,7 @@
       "id": "{id-Plain}",
       "classifier": {
         "language": "My-TestLang3",
-        "version": "0",
+        "version": "00 my! VERSION 😀",
         "key": "MDk5NDkwYTMtMWUzOS00ZWQxLWJlYmMtODAyNzY2NWNlY2Y5LzI1ODUzNzgxNjU5NzMyMDQxMTI"
       },
       "properties": [],
@@ -106,7 +106,7 @@
       "id": "{id-NoExtends}",
       "classifier": {
         "language": "My-TestLang3",
-        "version": "0",
+        "version": "00 my! VERSION 😀",
         "key": "MDk5NDkwYTMtMWUzOS00ZWQxLWJlYmMtODAyNzY2NWNlY2Y5LzI1ODUzNzgxNjU5NzMyMDQ5MDM"
       },
       "properties": [],

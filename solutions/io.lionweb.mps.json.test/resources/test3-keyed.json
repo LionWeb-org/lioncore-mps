@@ -3,7 +3,7 @@
   "languages": [
     {
       "key": "My-TestLang3",
-      "version": "0"
+      "version": "00 my! VERSION 😀"
     }
   ],
   "nodes": [
@@ -11,32 +11,32 @@
       "id": "{id-keyed}",
       "classifier": {
         "language": "My-TestLang3",
-        "version": "0",
+        "version": "00 my! VERSION 😀",
         "key": "My-Test3ConceptKeyed"
       },
       "properties": [
         {
           "property": {
             "language": "My-TestLang3",
-            "version": "0",
+            "version": "00 my! VERSION 😀",
             "key": "MDk5NDkwYTMtMWUzOS00ZWQxLWJlYmMtODAyNzY2NWNlY2Y5LzU2MDUxMjI4NDIxNTg3NDI5MzIvNTYwNTEyMjg0MjE2Mzg1NzA0OA"
           },
-          "value": "4R9pospAHRA/keyed"
+          "value": "My-EnumLiteralUnkeyed"
         },
         {
           "property": {
             "language": "My-TestLang3",
-            "version": "0",
+            "version": "00 my! VERSION 😀",
             "key": "My-KeyedProp"
           },
-          "value": "4R9pospAHRH/keyed"
+          "value": "My-EnumLiteralKeyed"
         }
       ],
       "containments": [
         {
           "containment": {
             "language": "My-TestLang3",
-            "version": "0",
+            "version": "00 my! VERSION 😀",
             "key": "MDk5NDkwYTMtMWUzOS00ZWQxLWJlYmMtODAyNzY2NWNlY2Y5LzU2MDUxMjI4NDIxNTg3NDI5MzIvNTYwNTEyMjg0MjE1ODc0MjkzMw"
           },
           "children": [
@@ -46,7 +46,7 @@
         {
           "containment": {
             "language": "My-TestLang3",
-            "version": "0",
+            "version": "00 my! VERSION 😀",
             "key": "My-KeyedChild"
           },
           "children": [
@@ -58,7 +58,7 @@
         {
           "reference": {
             "language": "My-TestLang3",
-            "version": "0",
+            "version": "00 my! VERSION 😀",
             "key": "MDk5NDkwYTMtMWUzOS00ZWQxLWJlYmMtODAyNzY2NWNlY2Y5LzU2MDUxMjI4NDIxNTg3NDI5MzIvNTYwNTEyMjg0MjE2Mzg1NzA1NQ"
           },
           "targets": [
@@ -71,7 +71,7 @@
         {
           "reference": {
             "language": "My-TestLang3",
-            "version": "0",
+            "version": "00 my! VERSION 😀",
             "key": "My-KeyedRef"
           },
           "targets": [
@@ -89,7 +89,7 @@
       "id": "{id-Plain}",
       "classifier": {
         "language": "My-TestLang3",
-        "version": "0",
+        "version": "00 my! VERSION 😀",
         "key": "MDk5NDkwYTMtMWUzOS00ZWQxLWJlYmMtODAyNzY2NWNlY2Y5LzI1ODUzNzgxNjU5NzMyMDQxMTI"
       },
       "properties": [],
@@ -102,7 +102,7 @@
       "id": "{id-NoExtends}",
       "classifier": {
         "language": "My-TestLang3",
-        "version": "0",
+        "version": "00 my! VERSION 😀",
         "key": "MDk5NDkwYTMtMWUzOS00ZWQxLWJlYmMtODAyNzY2NWNlY2Y5LzI1ODUzNzgxNjU5NzMyMDQ5MDM"
       },
       "properties": [],

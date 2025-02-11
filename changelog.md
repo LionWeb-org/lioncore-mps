@@ -1,5 +1,16 @@
 # Changelog for LionWeb-MPS
 
+## 0.2.10-2023.1
+
+* Added optional `version` to LionWeb Language root in structure aspect.
+  This value, if set, takes precendence over the language's version.
+
+## 0.2.9-2023.1
+
+* Fixed using enumeration literal's key in all cases.
+
+* Added export of deprecation annotations.
+
 ## Up to 0.2.7-2023.1
 * Optionally export computed property values of instances to LionWeb JSON.
 
