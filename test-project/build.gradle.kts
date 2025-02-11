@@ -23,7 +23,6 @@ dependencies {
 
 tasks.assembleMps {
     antProperties.putAll(antProperties.get())
-    antProperties.put("mps-extensions.home", "${projectDir.resolve("build/dependencies/de.itemis.mps.extensions")}")
 }
 
 task<JavaExec>("runCommandLineTool") {
