@@ -11,6 +11,14 @@
             </Library>
           </value>
         </entry>
+        <entry key="foo">
+          <value>
+            <Library>
+              <option name="name" value="foo" />
+              <option name="path" value="${lionweb-mps.home}/test-project/languages/FooLanguage" />
+            </Library>
+          </value>
+        </entry>
         <entry key="mpsExtensions">
           <value>
             <Library>

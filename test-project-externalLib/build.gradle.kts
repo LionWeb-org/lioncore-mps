@@ -23,6 +23,10 @@ dependencies {
     "generation"("de.itemis.mps:extensions:$mpsExtensionsVersion")
 }
 
+tasks.generateBuildscript {
+    args("--macro=lionweb-mps.home::${projectDir.resolve("build/dependencies/io.lionweb.mps")}")
+}
+
 tasks.assembleMps {
     antProperties.putAll(antProperties.get())
     antProperties.put("mps-extensions.home", "${projectDir.resolve("build/dependencies/de.itemis.mps.extensions")}")
