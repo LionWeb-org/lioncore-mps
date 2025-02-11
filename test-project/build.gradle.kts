@@ -21,8 +21,9 @@ dependencies {
     "generation"("io.lionweb.lionweb-mps:lionweb-mps-$mpsVersionSuffix-lw$lionwebRelease:$lionwebVersion")
 }
 
-tasks.generateBuildscript {
-    args("--macro=lionweb-mps.home::${projectDir.parent}")
+tasks.assembleMps {
+    antProperties.putAll(antProperties.get())
+    antProperties.put("mps-extensions.home", "${projectDir.resolve("build/dependencies/de.itemis.mps.extensions")}")
 }
 
 task<JavaExec>("runCommandLineTool") {
