@@ -21,6 +21,10 @@ dependencies {
     "generation"("io.lionweb.lionweb-mps:lionweb-mps-$mpsVersionSuffix-lw$lionwebRelease:$lionwebVersion")
 }
 
+tasks.generateBuildscript {
+    args("--macro=lionweb-mps.home::${projectDir.resolve("build/dependencies/io.lionweb.mps")}")
+}
+
 tasks.assembleMps {
     antProperties.putAll(antProperties.get())
     antProperties.put("lionweb-mps.home", "${projectDir.resolve("build/dependencies/io.lionweb.mps")}")
