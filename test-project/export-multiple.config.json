@@ -1,7 +1,13 @@
 {
   "scope": "listed",
   "languages": [
-    "NTM3ZjljYjAtMGYyNS0zYzc2LThiODYtMzA4ZjQ1MDEwMTAw",
-    "MyHappyLittleMulti-Reference_Language"
+    {
+      "key": "NTM3ZjljYjAtMGYyNS0zYzc2LThiODYtMzA4ZjQ1MDEwMTAw",
+      "version": "0"
+    },
+    {
+      "key": "MyHappyLittleMulti-Reference_Language",
+      "version": "0"
+    }
   ]
 }
