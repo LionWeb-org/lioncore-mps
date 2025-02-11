@@ -10,15 +10,6 @@
     <import index="e6nc" ref="r:d70b5da3-1a32-4e12-b6d4-f80916aed790(io.lionweb.mps.build)" />
   </imports>
   <registry>
-    <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
-      <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
-        <property id="6666499814681415862" name="tagName" index="2pNNFO" />
-        <child id="1622293396948928802" name="content" index="3o6s8t" />
-      </concept>
-      <concept id="1622293396948952339" name="jetbrains.mps.core.xml.structure.XmlText" flags="nn" index="3o6iSG">
-        <property id="1622293396948953704" name="value" index="3o6i5n" />
-      </concept>
-    </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
       <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
       <concept id="7321017245476976379" name="jetbrains.mps.build.structure.BuildRelativePath" flags="ng" index="iG8Mu">
@@ -82,7 +73,6 @@
       </concept>
       <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
         <property id="6592112598314498927" name="id" index="m$_wk" />
-        <child id="1359186315025500371" name="xml" index="20twgj" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
         <child id="6592112598314499050" name="content" index="m$_yh" />
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
@@ -134,14 +124,11 @@
     </node>
     <node concept="398rNT" id="3Dlb8T1lioB" role="1l3spd">
       <property role="TrG5h" value="lionweb-mps.home" />
-      <node concept="55IIr" id="6LPkCA$48wU" role="398pKh">
-        <node concept="2Ry0Ak" id="6LPkCA$4fCO" role="iGT6I">
-          <property role="2Ry0Am" value="build" />
-          <node concept="2Ry0Ak" id="6LPkCA$4fCT" role="2Ry0An">
-            <property role="2Ry0Am" value="dependencies" />
-            <node concept="2Ry0Ak" id="6LPkCA$4fCY" role="2Ry0An">
-              <property role="2Ry0Am" value="io.lionweb.mps" />
-            </node>
+      <node concept="55IIr" id="6LPkCA$43uK" role="398pKh">
+        <node concept="2Ry0Ak" id="6LPkCA$43uN" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="6LPkCA$43uQ" role="2Ry0An">
+            <property role="2Ry0Am" value="" />
           </node>
         </node>
       </node>
@@ -251,12 +238,6 @@
       <node concept="3_J27D" id="3Dlb8T1lipe" role="m_cZH">
         <node concept="3Mxwew" id="3Dlb8T1lipf" role="3MwsjC">
           <property role="3MwjfP" value="test-project" />
-        </node>
-      </node>
-      <node concept="2pNNFK" id="3Dlb8T1lipg" role="20twgj">
-        <property role="2pNNFO" value="depends" />
-        <node concept="3o6iSG" id="3Dlb8T1liph" role="3o6s8t">
-          <property role="3o6i5n" value="com.intellij.modules.platform" />
         </node>
       </node>
     </node>
