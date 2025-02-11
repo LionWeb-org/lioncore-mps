@@ -26,15 +26,8 @@ jobs:
       with:
         cache-disabled: false
 
-    - name: Test languages
+    - name: Build and test LionWeb-MPS
       run:  xvfb-run ./gradlew checkMps publishToMavenLocal
-
-    - name: Archive MPS logs
-      uses: actions/upload-artifact@v4
-      if: always()
-      with:
-        name: mps-logs
-        path: .mps-caches/logs/*
           
     - name: Publish Test Results
       uses: EnricoMi/publish-unit-test-result-action@v2
