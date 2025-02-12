@@ -1690,8 +1690,13 @@
                   </node>
                   <node concept="liA8E" id="5hylulqtRe7" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.substring(int)" resolve="substring" />
-                    <node concept="37vLTw" id="5hylulqtUtj" role="37wK5m">
-                      <ref role="3cqZAo" node="5hylulqsbw9" resolve="versionSeparator" />
+                    <node concept="3cpWs3" id="5sk7Gqo53VF" role="37wK5m">
+                      <node concept="3cmrfG" id="5sk7Gqo53W3" role="3uHU7w">
+                        <property role="3cmrfH" value="1" />
+                      </node>
+                      <node concept="37vLTw" id="5hylulqtUtj" role="3uHU7B">
+                        <ref role="3cqZAo" node="5hylulqsbw9" resolve="versionSeparator" />
+                      </node>
                     </node>
                   </node>
                 </node>
