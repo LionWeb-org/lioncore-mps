@@ -11571,6 +11571,14 @@
                   <ref role="37wK5l" to="xfsv:~MetaPointer.getLanguage()" resolve="getLanguage" />
                 </node>
               </node>
+              <node concept="2OqwBi" id="5hylulqnMLZ" role="37wK5m">
+                <node concept="37vLTw" id="5hylulqnLY4" role="2Oq$k0">
+                  <ref role="3cqZAo" node="KVKr66xvwk" resolve="metaPointer" />
+                </node>
+                <node concept="liA8E" id="5hylulqnOPG" role="2OqNvi">
+                  <ref role="37wK5l" to="xfsv:~MetaPointer.getVersion()" resolve="getVersion" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
