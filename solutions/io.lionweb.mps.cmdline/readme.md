@@ -178,7 +178,7 @@ pluginManagement {
 
 and some `gradle.properties` (adjust the versions accordingly):
 ```properties
-lionwebVersion=0.2.8
+lionwebVersion=0.2.10
 lionwebRelease=2023.1
 mpsVersionSuffix=2021.1
 mpsVersion=2021.1.4
