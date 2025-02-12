@@ -43,7 +43,7 @@
   </node>
   <node concept="2DM1_0" id="3_hUoKnhJRU">
     <property role="2DM1AS" value="foo-language" />
-    <property role="2NbWok" value="hello!version" />
+    <property role="2NbWok" value="hello@version" />
   </node>
 </model>
 
