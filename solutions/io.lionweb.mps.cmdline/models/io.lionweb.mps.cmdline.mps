@@ -21,8 +21,8 @@
     <import index="c9jv" ref="9d6d7230-3178-4b3f-a837-7c0180c86207/java:com.google.gson.stream(io.lionweb.lionweb.java/)" />
     <import index="wy2b" ref="9d6d7230-3178-4b3f-a837-7c0180c86207/java:com.google.gson(io.lionweb.lionweb.java/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -3172,25 +3172,6 @@
             <node concept="2ShNRf" id="53Tt6VyTVyo" role="37vLTx">
               <node concept="32HrFt" id="53Tt6VyTVyp" role="2ShVmc">
                 <node concept="2OqwBi" id="53Tt6VyTVyq" role="I$8f6">
-                  <node concept="2OqwBi" id="30j65oOM0FN" role="2Oq$k0">
-                    <node concept="1eOMI4" id="53Tt6VyTVyr" role="2Oq$k0">
-                      <node concept="10QFUN" id="53Tt6VyTVys" role="1eOMHV">
-                        <node concept="37vLTw" id="53Tt6VyTVyt" role="10QFUP">
-                          <ref role="3cqZAo" node="53Tt6VyTVyf" resolve="languageArray" />
-                        </node>
-                        <node concept="A3Dl8" id="53Tt6VyTVyu" role="10QFUM">
-                          <node concept="3uibUv" id="53Tt6VyTVyv" role="A3Ik2">
-                            <ref role="3uigEE" to="wy2b:~JsonElement" resolve="JsonElement" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="UnYns" id="30j65oOM1O$" role="2OqNvi">
-                      <node concept="3uibUv" id="30j65oOM28d" role="UnYnz">
-                        <ref role="3uigEE" to="wy2b:~JsonObject" resolve="JsonObject" />
-                      </node>
-                    </node>
-                  </node>
                   <node concept="3$u5V9" id="53Tt6VyTVyw" role="2OqNvi">
                     <node concept="1bVj0M" id="53Tt6VyTVyx" role="23t8la">
                       <node concept="3clFbS" id="53Tt6VyTVyy" role="1bW5cS">
@@ -3280,6 +3261,25 @@
                       <node concept="Rh6nW" id="53Tt6VyTVyB" role="1bW2Oz">
                         <property role="TrG5h" value="it" />
                         <node concept="2jxLKc" id="53Tt6VyTVyC" role="1tU5fm" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="30j65oOM0FN" role="2Oq$k0">
+                    <node concept="1eOMI4" id="53Tt6VyTVyr" role="2Oq$k0">
+                      <node concept="10QFUN" id="53Tt6VyTVys" role="1eOMHV">
+                        <node concept="37vLTw" id="53Tt6VyTVyt" role="10QFUP">
+                          <ref role="3cqZAo" node="53Tt6VyTVyf" resolve="languageArray" />
+                        </node>
+                        <node concept="A3Dl8" id="53Tt6VyTVyu" role="10QFUM">
+                          <node concept="3uibUv" id="53Tt6VyTVyv" role="A3Ik2">
+                            <ref role="3uigEE" to="wy2b:~JsonElement" resolve="JsonElement" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="UnYns" id="30j65oOM1O$" role="2OqNvi">
+                      <node concept="3uibUv" id="30j65oOM28d" role="UnYnz">
+                        <ref role="3uigEE" to="wy2b:~JsonObject" resolve="JsonObject" />
                       </node>
                     </node>
                   </node>
