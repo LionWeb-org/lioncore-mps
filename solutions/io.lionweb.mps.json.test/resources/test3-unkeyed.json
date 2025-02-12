@@ -3,7 +3,7 @@
   "languages": [
     {
       "key": "My-TestLang3",
-      "version": "0"
+      "version": "00 my! VERSION 😀"
     }
   ],
   "nodes": [
@@ -11,32 +11,32 @@
       "id": "{id-unkeyed}",
       "classifier": {
         "language": "My-TestLang3",
-        "version": "0",
+        "version": "00 my! VERSION 😀",
         "key": "MDk5NDkwYTMtMWUzOS00ZWQxLWJlYmMtODAyNzY2NWNlY2Y5LzU2MDUxMjI4NDIxNTg3ODAyODA"
       },
       "properties": [
         {
           "property": {
             "language": "My-TestLang3",
-            "version": "0",
+            "version": "00 my! VERSION 😀",
             "key": "MDk5NDkwYTMtMWUzOS00ZWQxLWJlYmMtODAyNzY2NWNlY2Y5LzU2MDUxMjI4NDIxNTg3ODAyODAvNTYwNTEyMjg0MjE2Mzg1NzA2OA"
           },
-          "value": "4R9pospAHR_/unkeyed"
+          "value": "MDk5NDkwYTMtMWUzOS00ZWQxLWJlYmMtODAyNzY2NWNlY2Y5LzU2MDUxMjI4NDIxNjM4NjMwMTIvNTYwNTEyMjg0MjE2Mzg2MzAxMw"
         },
         {
           "property": {
             "language": "My-TestLang3",
-            "version": "0",
+            "version": "00 my! VERSION 😀",
             "key": "My-UnkeyedProp"
           },
-          "value": "4R9pospAHRG/unkeyed"
+          "value": "MDk5NDkwYTMtMWUzOS00ZWQxLWJlYmMtODAyNzY2NWNlY2Y5LzU2MDUxMjI4NDIxNjM4NjMwMTkvNTYwNTEyMjg0MjE2Mzg2MzAyMA"
         }
       ],
       "containments": [
         {
           "containment": {
             "language": "My-TestLang3",
-            "version": "0",
+            "version": "00 my! VERSION 😀",
             "key": "MDk5NDkwYTMtMWUzOS00ZWQxLWJlYmMtODAyNzY2NWNlY2Y5LzU2MDUxMjI4NDIxNTg3ODAyODAvNTYwNTEyMjg0MjE1ODc4MDI4MQ"
           },
           "children": [
@@ -46,7 +46,7 @@
         {
           "containment": {
             "language": "My-TestLang3",
-            "version": "0",
+            "version": "00 my! VERSION 😀",
             "key": "My-UnkeyedChild"
           },
           "children": [
@@ -58,7 +58,7 @@
         {
           "reference": {
             "language": "My-TestLang3",
-            "version": "0",
+            "version": "00 my! VERSION 😀",
             "key": "MDk5NDkwYTMtMWUzOS00ZWQxLWJlYmMtODAyNzY2NWNlY2Y5LzU2MDUxMjI4NDIxNTg3ODAyODAvNTYwNTEyMjg0MjE2Mzg1NzA3NA"
           },
           "targets": [
@@ -71,7 +71,7 @@
         {
           "reference": {
             "language": "My-TestLang3",
-            "version": "0",
+            "version": "00 my! VERSION 😀",
             "key": "My-UnkeyedRef"
           },
           "targets": [
@@ -89,7 +89,7 @@
       "id": "{id-Plain}",
       "classifier": {
         "language": "My-TestLang3",
-        "version": "0",
+        "version": "00 my! VERSION 😀",
         "key": "MDk5NDkwYTMtMWUzOS00ZWQxLWJlYmMtODAyNzY2NWNlY2Y5LzI1ODUzNzgxNjU5NzMyMDQxMTI"
       },
       "properties": [],
@@ -102,7 +102,7 @@
       "id": "{id-NoExtends}",
       "classifier": {
         "language": "My-TestLang3",
-        "version": "0",
+        "version": "00 my! VERSION 😀",
         "key": "MDk5NDkwYTMtMWUzOS00ZWQxLWJlYmMtODAyNzY2NWNlY2Y5LzI1ODUzNzgxNjU5NzMyMDQ5MDM"
       },
       "properties": [],
