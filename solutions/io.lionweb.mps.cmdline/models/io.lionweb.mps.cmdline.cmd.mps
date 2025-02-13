@@ -253,6 +253,7 @@
       <concept id="1240687580870" name="jetbrains.mps.baseLanguage.collections.structure.JoinOperation" flags="nn" index="3uJxvA">
         <child id="1240687658305" name="delimiter" index="3uJOhx" />
       </concept>
+      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
@@ -817,6 +818,23 @@
     <node concept="3clFb_" id="12kZjFJf6oI" role="jymVt">
       <property role="TrG5h" value="convertExplicitLanguages" />
       <node concept="3clFbS" id="12kZjFJf6oL" role="3clF47">
+        <node concept="3clFbJ" id="rW84$cjFtS" role="3cqZAp">
+          <node concept="3clFbS" id="rW84$cjFtU" role="3clFbx">
+            <node concept="3cpWs6" id="rW84$cjM_$" role="3cqZAp">
+              <node concept="2YIFZM" id="rW84$cjSmS" role="3cqZAk">
+                <ref role="37wK5l" to="33ny:~Collections.emptyList()" resolve="emptyList" />
+                <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="rW84$cjJ4l" role="3clFbw">
+            <node concept="37vLTw" id="rW84$cjGHQ" role="2Oq$k0">
+              <ref role="3cqZAo" node="12kZjFJer5P" resolve="languageKeysAndVersions" />
+            </node>
+            <node concept="1v1jN8" id="rW84$cjLne" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="rW84$cjT$_" role="3cqZAp" />
         <node concept="3cpWs8" id="V4Ro9JjprR" role="3cqZAp">
           <node concept="3cpWsn" id="V4Ro9JjprS" role="3cpWs9">
             <property role="TrG5h" value="repository" />
@@ -1254,7 +1272,7 @@
                                         </node>
                                       </node>
                                       <node concept="2qgKlT" id="rW84$c4ZBm" role="2OqNvi">
-                                        <ref role="37wK5l" to="aoz0:5N2LjD7MLuD" resolve="export" />
+                                        <ref role="37wK5l" to="aoz0:5N2LjD7MF5g" resolve="export" />
                                       </node>
                                     </node>
                                   </node>
