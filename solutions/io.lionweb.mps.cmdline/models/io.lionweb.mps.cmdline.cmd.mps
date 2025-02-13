@@ -503,11 +503,15 @@
       </node>
       <node concept="37vLTG" id="rW84$c1xvU" role="3clF46">
         <property role="TrG5h" value="languageConfigs" />
-        <node concept="10P_77" id="rW84$c1xvV" role="1tU5fm" />
+        <node concept="3uibUv" id="rW84$cdLZf" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+        </node>
       </node>
       <node concept="37vLTG" id="rW84$c1xvW" role="3clF46">
         <property role="TrG5h" value="instanceConfigs" />
-        <node concept="10P_77" id="rW84$c1xvX" role="1tU5fm" />
+        <node concept="3uibUv" id="rW84$cdMhj" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+        </node>
       </node>
       <node concept="3uibUv" id="V4Ro9JjPXJ" role="Sfmx6">
         <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
