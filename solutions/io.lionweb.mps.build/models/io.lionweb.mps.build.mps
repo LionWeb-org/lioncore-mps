@@ -1657,6 +1657,11 @@
             <ref role="3bR37D" node="5wsogBcGDLk" resolve="io.lionweb.mps.converter" />
           </node>
         </node>
+        <node concept="1SiIV0" id="rW84$cc7tJ" role="3bR37C">
+          <node concept="3bR9La" id="rW84$cc7tK" role="1SiIV1">
+            <ref role="3bR37D" node="5wsogBcGDM$" resolve="io.lionweb.mps.converter.lang" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6YbypMzsMYH" role="2G$12L">
         <property role="BnDLt" value="true" />

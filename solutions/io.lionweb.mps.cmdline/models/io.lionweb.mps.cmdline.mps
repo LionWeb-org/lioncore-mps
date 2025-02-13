@@ -932,6 +932,12 @@
                 <node concept="3VsKOn" id="3GefPEtEbpC" role="37wK5m">
                   <ref role="3VsUkX" to="wyt6:~String" resolve="String" />
                 </node>
+                <node concept="3VsKOn" id="rW84$c1fNF" role="37wK5m">
+                  <ref role="3VsUkX" to="wyt6:~Boolean" resolve="Boolean" />
+                </node>
+                <node concept="3VsKOn" id="rW84$c1hYc" role="37wK5m">
+                  <ref role="3VsUkX" to="wyt6:~Boolean" resolve="Boolean" />
+                </node>
               </node>
             </node>
           </node>
@@ -969,6 +975,22 @@
                 </node>
                 <node concept="liA8E" id="7Ds4q7uIRIp" role="2OqNvi">
                   <ref role="37wK5l" node="7Ds4q7uHwIN" resolve="getScope" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="rW84$c1k2a" role="37wK5m">
+                <node concept="37vLTw" id="rW84$c1jA6" role="2Oq$k0">
+                  <ref role="3cqZAo" node="53Tt6VyTcR7" resolve="options" />
+                </node>
+                <node concept="liA8E" id="rW84$c1kDW" role="2OqNvi">
+                  <ref role="37wK5l" node="rW84$c0XXM" resolve="isLanguageConfigs" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="rW84$c1mW6" role="37wK5m">
+                <node concept="37vLTw" id="rW84$c1mjw" role="2Oq$k0">
+                  <ref role="3cqZAo" node="53Tt6VyTcR7" resolve="options" />
+                </node>
+                <node concept="liA8E" id="rW84$c1nPm" role="2OqNvi">
+                  <ref role="37wK5l" node="rW84$c0XXU" resolve="isInstanceConfigs" />
                 </node>
               </node>
             </node>
@@ -1181,6 +1203,24 @@
         <property role="Xl_RC" value="s" />
       </node>
     </node>
+    <node concept="Wx3nA" id="rW84$bXpTv" role="jymVt">
+      <property role="TrG5h" value="LANGUAGE_CONFIGS" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="rW84$bXlON" role="1B3o_S" />
+      <node concept="17QB3L" id="rW84$bXpP0" role="1tU5fm" />
+      <node concept="Xl_RD" id="rW84$bXtnQ" role="33vP2m">
+        <property role="Xl_RC" value="lc" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="rW84$bXtx0" role="jymVt">
+      <property role="TrG5h" value="INSTANCE_CONFIGS" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="rW84$bXtx1" role="1B3o_S" />
+      <node concept="17QB3L" id="rW84$bXtx2" role="1tU5fm" />
+      <node concept="Xl_RD" id="rW84$bXtx3" role="33vP2m">
+        <property role="Xl_RC" value="ic" />
+      </node>
+    </node>
     <node concept="Wx3nA" id="30j65oOMzYI" role="jymVt">
       <property role="3TUv4t" value="true" />
       <property role="TrG5h" value="DEFAULT_VERSION" />
@@ -1271,6 +1311,18 @@
       <node concept="17QB3L" id="49hEpWa63hs" role="1tU5fm" />
       <node concept="10Nm6u" id="7Ds4q7uFYmt" role="33vP2m" />
     </node>
+    <node concept="312cEg" id="rW84$bZlku" role="jymVt">
+      <property role="TrG5h" value="languageConfigs" />
+      <node concept="3Tm6S6" id="rW84$bZj5y" role="1B3o_S" />
+      <node concept="10P_77" id="rW84$bZlfE" role="1tU5fm" />
+      <node concept="3clFbT" id="rW84$bZpon" role="33vP2m" />
+    </node>
+    <node concept="312cEg" id="rW84$bZvzX" role="jymVt">
+      <property role="TrG5h" value="instanceConfigs" />
+      <node concept="3Tm6S6" id="rW84$bZtbx" role="1B3o_S" />
+      <node concept="10P_77" id="rW84$bZvva" role="1tU5fm" />
+      <node concept="3clFbT" id="rW84$bZxD8" role="33vP2m" />
+    </node>
     <node concept="2tJIrI" id="53Tt6VyP$hy" role="jymVt" />
     <node concept="3clFb_" id="6YbypMzh5lK" role="jymVt">
       <property role="TrG5h" value="build" />
@@ -1324,6 +1376,12 @@
               </node>
             </node>
             <node concept="3clFbH" id="6YbypMziCB2" role="3cqZAp" />
+            <node concept="3clFbF" id="rW84$c0EyA" role="3cqZAp">
+              <node concept="1rXfSq" id="rW84$c0Ey$" role="3clFbG">
+                <ref role="37wK5l" node="rW84$bZD6n" resolve="parseConfigs" />
+              </node>
+            </node>
+            <node concept="3clFbH" id="rW84$c0GY$" role="3cqZAp" />
             <node concept="3clFbF" id="53Tt6VyNXbT" role="3cqZAp">
               <node concept="1rXfSq" id="53Tt6VyNXbS" role="3clFbG">
                 <ref role="37wK5l" node="53Tt6VyNXbO" resolve="parseMacros" />
@@ -1431,6 +1489,64 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="2tJIrI" id="rW84$bZysB" role="jymVt" />
+    <node concept="3clFb_" id="rW84$bZD6n" role="jymVt">
+      <property role="TrG5h" value="parseConfigs" />
+      <node concept="3clFbS" id="rW84$bZD6q" role="3clF47">
+        <node concept="3clFbJ" id="rW84$bZGcl" role="3cqZAp">
+          <node concept="2OqwBi" id="rW84$bZLpt" role="3clFbw">
+            <node concept="37vLTw" id="rW84$bZJhg" role="2Oq$k0">
+              <ref role="3cqZAo" node="53Tt6VyQoOT" resolve="line" />
+            </node>
+            <node concept="liA8E" id="rW84$bZOCb" role="2OqNvi">
+              <ref role="37wK5l" to="gb0k:~CommandLine.hasOption(java.lang.String)" resolve="hasOption" />
+              <node concept="37vLTw" id="rW84$bZRAu" role="37wK5m">
+                <ref role="3cqZAo" node="rW84$bXpTv" resolve="LANGUAGE_CONFIGS" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="rW84$bZGcn" role="3clFbx">
+            <node concept="3clFbF" id="rW84$bZVDn" role="3cqZAp">
+              <node concept="37vLTI" id="rW84$bZYiB" role="3clFbG">
+                <node concept="3clFbT" id="rW84$c01R8" role="37vLTx">
+                  <property role="3clFbU" value="true" />
+                </node>
+                <node concept="37vLTw" id="rW84$bZVDm" role="37vLTJ">
+                  <ref role="3cqZAo" node="rW84$bZlku" resolve="languageConfigs" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="rW84$c08ov" role="3cqZAp">
+          <node concept="3clFbS" id="rW84$c08ox" role="3clFbx">
+            <node concept="3clFbF" id="rW84$c0rBy" role="3cqZAp">
+              <node concept="37vLTI" id="rW84$c0vuG" role="3clFbG">
+                <node concept="3clFbT" id="rW84$c0xY5" role="37vLTx">
+                  <property role="3clFbU" value="true" />
+                </node>
+                <node concept="37vLTw" id="rW84$c0rBw" role="37vLTJ">
+                  <ref role="3cqZAo" node="rW84$bZvzX" resolve="instanceConfigs" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="rW84$c0eup" role="3clFbw">
+            <node concept="37vLTw" id="rW84$c0bCs" role="2Oq$k0">
+              <ref role="3cqZAo" node="53Tt6VyQoOT" resolve="line" />
+            </node>
+            <node concept="liA8E" id="rW84$c0gJH" role="2OqNvi">
+              <ref role="37wK5l" to="gb0k:~CommandLine.hasOption(java.lang.String)" resolve="hasOption" />
+              <node concept="37vLTw" id="rW84$c0l5q" role="37wK5m">
+                <ref role="3cqZAo" node="rW84$bXtx0" resolve="INSTANCE_CONFIGS" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="rW84$bZ_TO" role="1B3o_S" />
+      <node concept="3cqZAl" id="rW84$bZD1$" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="53Tt6VySF6G" role="jymVt" />
     <node concept="3clFb_" id="53Tt6VyNXbO" role="jymVt">
@@ -2135,6 +2251,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="rW84$bZ7Ka" role="3cqZAp" />
         <node concept="3clFbJ" id="53Tt6VyRQiD" role="3cqZAp">
           <node concept="3clFbS" id="53Tt6VyRQiE" role="3clFbx">
             <node concept="3clFbF" id="53Tt6VyRQiF" role="3cqZAp">
@@ -2326,8 +2443,17 @@
             <node concept="3clFbF" id="53Tt6VyRQjQ" role="3cqZAp">
               <node concept="1rXfSq" id="53Tt6VyRQjR" role="3clFbG">
                 <ref role="37wK5l" node="6YbypMziErk" resolve="printHelp" />
-                <node concept="3clFbT" id="53Tt6VyRQjS" role="37wK5m">
-                  <property role="3clFbU" value="true" />
+                <node concept="3fqX7Q" id="rW84$cdGsp" role="37wK5m">
+                  <node concept="1eOMI4" id="rW84$cdGsr" role="3fr31v">
+                    <node concept="22lmx$" id="rW84$cdGsm" role="1eOMHV">
+                      <node concept="37vLTw" id="rW84$cdGsn" role="3uHU7B">
+                        <ref role="3cqZAo" node="rW84$bZlku" resolve="languageConfigs" />
+                      </node>
+                      <node concept="37vLTw" id="rW84$cdGso" role="3uHU7w">
+                        <ref role="3cqZAo" node="rW84$bZvzX" resolve="instanceConfigs" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -2430,6 +2556,37 @@
             <node concept="Xjq3P" id="7Ds4q7uHwIL" role="2Oq$k0" />
             <node concept="2OwXpG" id="7Ds4q7uHwIM" role="2OqNvi">
               <ref role="2Oxat5" node="7Ds4q7uFW6e" resolve="scope" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="rW84$c115M" role="jymVt" />
+    <node concept="3clFb_" id="rW84$c0XXM" role="jymVt">
+      <property role="TrG5h" value="isLanguageConfigs" />
+      <node concept="10P_77" id="rW84$c0XXN" role="3clF45" />
+      <node concept="3Tm1VV" id="rW84$c0XXO" role="1B3o_S" />
+      <node concept="3clFbS" id="rW84$c0XXP" role="3clF47">
+        <node concept="3clFbF" id="rW84$c0XXQ" role="3cqZAp">
+          <node concept="2OqwBi" id="rW84$c0XXJ" role="3clFbG">
+            <node concept="Xjq3P" id="rW84$c0XXK" role="2Oq$k0" />
+            <node concept="2OwXpG" id="rW84$c0XXL" role="2OqNvi">
+              <ref role="2Oxat5" node="rW84$bZlku" resolve="languageConfigs" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="rW84$c0XXU" role="jymVt">
+      <property role="TrG5h" value="isInstanceConfigs" />
+      <node concept="10P_77" id="rW84$c0XXV" role="3clF45" />
+      <node concept="3Tm1VV" id="rW84$c0XXW" role="1B3o_S" />
+      <node concept="3clFbS" id="rW84$c0XXX" role="3clF47">
+        <node concept="3clFbF" id="rW84$c0XXY" role="3cqZAp">
+          <node concept="2OqwBi" id="rW84$c0XXR" role="3clFbG">
+            <node concept="Xjq3P" id="rW84$c0XXS" role="2Oq$k0" />
+            <node concept="2OwXpG" id="rW84$c0XXT" role="2OqNvi">
+              <ref role="2Oxat5" node="rW84$bZvzX" resolve="instanceConfigs" />
             </node>
           </node>
         </node>
@@ -2670,7 +2827,83 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="6YbypMzhboH" role="3cqZAp" />
+        <node concept="3clFbF" id="rW84$bX_1a" role="3cqZAp">
+          <node concept="2OqwBi" id="rW84$bXBMA" role="3clFbG">
+            <node concept="37vLTw" id="rW84$bX_18" role="2Oq$k0">
+              <ref role="3cqZAo" node="6YbypMziv1W" resolve="options" />
+            </node>
+            <node concept="liA8E" id="rW84$bXEKp" role="2OqNvi">
+              <ref role="37wK5l" to="gb0k:~Options.addOption(org.apache.commons.cli.Option)" resolve="addOption" />
+              <node concept="2OqwBi" id="rW84$bYOof" role="37wK5m">
+                <node concept="2OqwBi" id="rW84$bYdr7" role="2Oq$k0">
+                  <node concept="2OqwBi" id="rW84$bXWH5" role="2Oq$k0">
+                    <node concept="2YIFZM" id="rW84$bXSq9" role="2Oq$k0">
+                      <ref role="1Pybhc" to="gb0k:~Option" resolve="Option" />
+                      <ref role="37wK5l" to="gb0k:~Option.builder(java.lang.String)" resolve="builder" />
+                      <node concept="37vLTw" id="rW84$bXU3T" role="37wK5m">
+                        <ref role="3cqZAo" node="rW84$bXpTv" resolve="LANGUAGE_CONFIGS" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="rW84$bY0eW" role="2OqNvi">
+                      <ref role="37wK5l" to="gb0k:~Option$Builder.longOpt(java.lang.String)" resolve="longOpt" />
+                      <node concept="Xl_RD" id="rW84$bY34M" role="37wK5m">
+                        <property role="Xl_RC" value="languageConfigs" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="rW84$bYfXr" role="2OqNvi">
+                    <ref role="37wK5l" to="gb0k:~Option$Builder.desc(java.lang.String)" resolve="desc" />
+                    <node concept="Xl_RD" id="rW84$bYiTL" role="37wK5m">
+                      <property role="Xl_RC" value="executes all 'Export Language to JSON' configurations" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="rW84$bYSed" role="2OqNvi">
+                  <ref role="37wK5l" to="gb0k:~Option$Builder.build()" resolve="build" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="rW84$bYY9M" role="3cqZAp">
+          <node concept="2OqwBi" id="rW84$bYY9N" role="3clFbG">
+            <node concept="37vLTw" id="rW84$bYY9O" role="2Oq$k0">
+              <ref role="3cqZAo" node="6YbypMziv1W" resolve="options" />
+            </node>
+            <node concept="liA8E" id="rW84$bYY9P" role="2OqNvi">
+              <ref role="37wK5l" to="gb0k:~Options.addOption(org.apache.commons.cli.Option)" resolve="addOption" />
+              <node concept="2OqwBi" id="rW84$bYY9Q" role="37wK5m">
+                <node concept="2OqwBi" id="rW84$bYY9R" role="2Oq$k0">
+                  <node concept="2OqwBi" id="rW84$bYY9S" role="2Oq$k0">
+                    <node concept="2YIFZM" id="rW84$bYY9T" role="2Oq$k0">
+                      <ref role="1Pybhc" to="gb0k:~Option" resolve="Option" />
+                      <ref role="37wK5l" to="gb0k:~Option.builder(java.lang.String)" resolve="builder" />
+                      <node concept="37vLTw" id="rW84$bYY9U" role="37wK5m">
+                        <ref role="3cqZAo" node="rW84$bXtx0" resolve="INSTANCE_CONFIGS" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="rW84$bYY9V" role="2OqNvi">
+                      <ref role="37wK5l" to="gb0k:~Option$Builder.longOpt(java.lang.String)" resolve="longOpt" />
+                      <node concept="Xl_RD" id="rW84$bYY9W" role="37wK5m">
+                        <property role="Xl_RC" value="instanceConfigs" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="rW84$bYY9X" role="2OqNvi">
+                    <ref role="37wK5l" to="gb0k:~Option$Builder.desc(java.lang.String)" resolve="desc" />
+                    <node concept="Xl_RD" id="rW84$bYY9Y" role="37wK5m">
+                      <property role="Xl_RC" value="executes all 'Export Instance to JSON' configurations" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="rW84$bYY9Z" role="2OqNvi">
+                  <ref role="37wK5l" to="gb0k:~Option$Builder.build()" resolve="build" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="rW84$bXxdk" role="3cqZAp" />
         <node concept="3cpWs6" id="6YbypMziJJj" role="3cqZAp">
           <node concept="37vLTw" id="6YbypMziKn7" role="3cqZAk">
             <ref role="3cqZAo" node="6YbypMziv1W" resolve="options" />

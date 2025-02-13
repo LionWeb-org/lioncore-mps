@@ -748,6 +748,7 @@
           <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="cl" />
           <module ref="9d6d7230-3178-4b3f-a837-7c0180c86207(io.lionweb.lionweb.java)" kind="cl" />
           <module ref="4d96f781-5fa4-4d94-817a-c51f74fdf43f(io.lionweb.mps.converter)" kind="cl" />
+          <module ref="97ef2b8d-23e1-433e-8d23-48f916dd314d(io.lionweb.mps.converter.lang)" kind="cl" />
           <module ref="39d4fcb0-6a78-41ac-8e8f-01bb784b65fc(io.lionweb.mps.json)" kind="cl" />
           <module ref="7350a1d7-537e-4f0d-9965-e91c82522d7d(io.lionweb.mps.m3.runtime)" kind="cl" />
           <module ref="fdaaf35f-8ee3-4c37-b09d-9efaeaaa7a41(jetbrains.mps.core.tool.environment)" kind="cl" />
@@ -4277,7 +4278,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.io.lionweb.mps.cmdline" depends="java.compile.io.lionweb.mps.converter, java.compile.io.lionweb.mps.json, java.compile.io.lionweb.mps.m3.runtime, fetchDependencies">
+  <target name="java.compile.io.lionweb.mps.cmdline" depends="java.compile.io.lionweb.mps.converter, java.compile.io.lionweb.mps.converter.lang, java.compile.io.lionweb.mps.json, java.compile.io.lionweb.mps.m3.runtime, fetchDependencies">
     <mkdir dir="${lionweb-mps.home}/solutions/io.lionweb.mps.cmdline/source_gen" />
     <mkdir dir="${build.tmp}/java/out/io.lionweb.mps.cmdline" />
     <javac destdir="${build.tmp}/java/out/io.lionweb.mps.cmdline" fork="false" encoding="utf8" includeantruntime="false" debug="true">
@@ -4310,6 +4311,13 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <pathelement path="${build.tmp}/java/out/io.lionweb.mps.converter" />
+        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <pathelement path="${build.tmp}/java/out/io.lionweb.mps.converter.lang" />
         <pathelement path="${build.tmp}/java/out/io.lionweb.mps.json" />
         <pathelement path="${build.tmp}/java/out/io.lionweb.mps.m3.runtime" />
         <fileset file="${lionweb-mps.home}/solutions/io.lionweb.lionweb.java/libs/gson.jar" />
@@ -4322,6 +4330,7 @@
         <fileset file="${artifacts.IDEA}/lib/trove4j.jar" />
         <fileset file="${artifacts.IDEA}/lib/ecj-4.16.jar" />
         <fileset file="${artifacts.IDEA}/plugins/java/lib/ecj-4.16.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/io.lionweb.mps.cmdline">

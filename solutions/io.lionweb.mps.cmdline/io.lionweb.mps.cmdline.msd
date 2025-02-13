@@ -22,6 +22,7 @@
     <dependency reexport="false">9d6d7230-3178-4b3f-a837-7c0180c86207(io.lionweb.lionweb.java)</dependency>
     <dependency reexport="false">1508a497-2508-4d6b-9b20-103cea864f85(org.apache.commons.cli)</dependency>
     <dependency reexport="false">4d96f781-5fa4-4d94-817a-c51f74fdf43f(io.lionweb.mps.converter)</dependency>
+    <dependency reexport="false">97ef2b8d-23e1-433e-8d23-48f916dd314d(io.lionweb.mps.converter.lang)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
@@ -45,10 +46,12 @@
     <module reference="9d6d7230-3178-4b3f-a837-7c0180c86207(io.lionweb.lionweb.java)" version="0" />
     <module reference="27e6f9d4-17e0-4eba-b857-d984dd2b2e5c(io.lionweb.mps.cmdline)" version="0" />
     <module reference="4d96f781-5fa4-4d94-817a-c51f74fdf43f(io.lionweb.mps.converter)" version="0" />
+    <module reference="97ef2b8d-23e1-433e-8d23-48f916dd314d(io.lionweb.mps.converter.lang)" version="0" />
     <module reference="39d4fcb0-6a78-41ac-8e8f-01bb784b65fc(io.lionweb.mps.json)" version="0" />
     <module reference="7350a1d7-537e-4f0d-9965-e91c82522d7d(io.lionweb.mps.m3.runtime)" version="0" />
     <module reference="fdaaf35f-8ee3-4c37-b09d-9efaeaaa7a41(jetbrains.mps.core.tool.environment)" version="0" />
     <module reference="8d29d73f-ed99-4652-ae0a-083cdfe53c34(jetbrains.mps.ide.platform)" version="0" />
+    <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" version="0" />
     <module reference="1508a497-2508-4d6b-9b20-103cea864f85(org.apache.commons.cli)" version="0" />
   </dependencyVersions>
