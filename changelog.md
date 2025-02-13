@@ -5,6 +5,7 @@
 * Added optional `version` to LionWeb Language root in structure aspect.
   This value, if set, takes precendence over the language's version.
 * Set up testing of commandline export of languages.
+* Added commandline parameters `-lc` (`--languageConfig`) and `-ic` (`--instanceConfig`) to export all language / instance configs in the project.
 
 ## 0.2.9-2023.1
 
