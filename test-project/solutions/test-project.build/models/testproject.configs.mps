@@ -5,7 +5,7 @@
     <use id="97ef2b8d-23e1-433e-8d23-48f916dd314d" name="io.lionweb.mps.converter.lang" version="0" />
   </languages>
   <imports>
-    <import index="ydw7" ref="r:ba798031-35ff-4dfc-bf9b-7b4416cb6b5e(test-project.build)" />
+    <import index="cy3f" ref="r:242ddde1-c6a6-4260-9af7-da4f4fcea655(testproject.instance)" />
   </imports>
   <registry>
     <language id="97ef2b8d-23e1-433e-8d23-48f916dd314d" name="io.lionweb.mps.converter.lang">
@@ -38,10 +38,10 @@
     </language>
   </registry>
   <node concept="pgt$m" id="rW84$ckaC1">
-    <property role="TrG5h" value="Build" />
-    <property role="VS7hl" value="${lionweb-mps.home}/test-project/actual/build.json" />
-    <node concept="pgsVv" id="rW84$ckaC2" role="pgtdD">
-      <ref role="pgsW4" to="ydw7:3Dlb8T1liow" resolve="test-project" />
+    <property role="TrG5h" value="Instance" />
+    <property role="VS7hl" value="${lionweb-mps.home}/test-project/actual/instance.json" />
+    <node concept="pgsVv" id="rW84$clfeq" role="pgtdD">
+      <ref role="pgsW4" to="cy3f:rW84$clfep" />
     </node>
   </node>
   <node concept="3IuRE0" id="rW84$ckaC5">
