@@ -4,6 +4,7 @@
 
 * Added optional `version` to LionWeb Language root in structure aspect.
   This value, if set, takes precendence over the language's version.
+* Set up testing of commandline export of languages.
 
 ## 0.2.9-2023.1
 
@@ -12,6 +13,7 @@
 * Added export of deprecation annotations.
 
 ## Up to 0.2.7-2023.1
+
 * Optionally export computed property values of instances to LionWeb JSON.
 
 * For concepts with alias and/or short description, optinally export annotation with that information.  
