@@ -1,6 +1,8 @@
 name: Build
 
-on: [push]
+on:
+  - push
+  - workflow_dispatch
 
 jobs:
   build:
@@ -24,8 +26,8 @@ jobs:
       with:
         cache-disabled: false
 
-    - name: Test languages
-      run:  xvfb-run ./gradlew checkMps
+    - name: Build and test LionWeb-MPS
+      run:  xvfb-run ./gradlew checkMps publishToMavenLocal
 
     - name: Publish Test Results
       uses: EnricoMi/publish-unit-test-result-action@v2
@@ -39,5 +41,5 @@ jobs:
         check_run_annotations: all tests, skipped tests
         action_fail: "true"
 
-#    - name: Test command-line export
-#      run:  xvfb-run ./gradlew testCmdlineExport
+    - name: Test command-line export
+      run:  xvfb-run ./gradlew testCmdlineExport --stacktrace

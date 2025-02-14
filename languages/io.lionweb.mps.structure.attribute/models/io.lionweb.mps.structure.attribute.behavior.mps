@@ -59,7 +59,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="3M8YG$9uJLd">
-    <ref role="13h7C2" to="234s:6fYiNFad_9U" resolve="LionWebLanguageKey" />
+    <ref role="13h7C2" to="234s:6fYiNFad_9U" resolve="LionWebLanguage" />
     <node concept="13hLZK" id="3M8YG$9uJLe" role="13h7CW">
       <node concept="3clFbS" id="3M8YG$9uJLf" role="2VODD2" />
     </node>
