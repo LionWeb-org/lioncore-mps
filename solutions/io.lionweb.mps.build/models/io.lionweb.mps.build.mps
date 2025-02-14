@@ -1662,6 +1662,11 @@
             <ref role="3bR37D" node="5wsogBcGDM$" resolve="io.lionweb.mps.converter.lang" />
           </node>
         </node>
+        <node concept="1SiIV0" id="rW84$cpq8J" role="3bR37C">
+          <node concept="3bR9La" id="rW84$cpq8K" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6YbypMzsMYH" role="2G$12L">
         <property role="BnDLt" value="true" />
