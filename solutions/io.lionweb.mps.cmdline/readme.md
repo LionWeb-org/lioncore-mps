@@ -180,9 +180,9 @@ and some `gradle.properties` (adjust the versions accordingly):
 ```properties
 lionwebVersion=0.2.10
 lionwebRelease=2023.1
-mpsVersionSuffix=2021.1
-mpsVersion=2021.1.4
-comSpecificlanguagesMpsVersion=1.6.0
+mpsVersionSuffix=2021.2
+mpsVersion=2021.2.6
+comSpecificlanguagesMpsVersion=1.5.0
 ```
 
 **Note:** The implementation strongly assumes that LionWeb will be deployed to directory `./build/dependencies/io.lionweb.mps`.
