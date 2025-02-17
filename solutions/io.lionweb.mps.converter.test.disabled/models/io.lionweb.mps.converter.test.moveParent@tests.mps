@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="doNotGenerate" value="false" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="01cf0d82-8d29-4fc4-be96-28abaf4ad33d" name="io.lionweb.mps.m3" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
@@ -27,6 +27,7 @@
       </concept>
       <concept id="1225469856668" name="jetbrains.mps.lang.test.structure.ModelExpression" flags="nn" index="1jGwE1" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -196,6 +197,7 @@
   </registry>
   <node concept="1lH9Xt" id="3ePT3MiTyKy">
     <property role="TrG5h" value="MoveParentFeatureContainer" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="3ePT3MiT$m7" role="1SL9yI">
       <property role="TrG5h" value="moveParent" />
       <node concept="3cqZAl" id="3ePT3MiT$m8" role="3clF45" />
@@ -441,6 +443,7 @@
   </node>
   <node concept="1lH9Xt" id="59Df55kqJic">
     <property role="TrG5h" value="Same" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="59Df55krRDD" role="1SL9yI">
       <property role="TrG5h" value="same" />
       <node concept="3cqZAl" id="59Df55krRDE" role="3clF45" />
@@ -642,6 +645,7 @@
   </node>
   <node concept="1lH9Xt" id="59Df55loTX4">
     <property role="TrG5h" value="MoveParentEnum" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="59Df55loTX5" role="1SL9yI">
       <property role="TrG5h" value="moveParent" />
       <node concept="3cqZAl" id="59Df55loTX6" role="3clF45" />
@@ -880,6 +884,7 @@
   </node>
   <node concept="1lH9Xt" id="59Df55loWI5">
     <property role="TrG5h" value="MoveMetamodel" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1X3_iC" id="5glO5qL3XSn" role="lGtFl">
       <property role="3V$3am" value="testMethods" />
       <property role="3V$3ak" value="8585453e-6bfb-4d80-98de-b16074f1d86c/1216913645126/1217501895093" />

@@ -2,7 +2,7 @@
 <model ref="r:33a47640-c2eb-4161-b057-919845657b81(io.lionweb.mps.lang.test.m3@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="01cf0d82-8d29-4fc4-be96-28abaf4ad33d" name="io.lionweb.mps.m3" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
@@ -34,6 +34,7 @@
       </concept>
       <concept id="1225469856668" name="jetbrains.mps.lang.test.structure.ModelExpression" flags="nn" index="1jGwE1" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -159,6 +160,7 @@
   </node>
   <node concept="1lH9Xt" id="18UigYP6von">
     <property role="TrG5h" value="DuplicateKey" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="18UigYP6vot" role="1SKRRt">
       <node concept="2RzRRF" id="18UigYP6vos" role="1qenE9">
         <property role="2RzON1" value="ddd" />
@@ -298,6 +300,7 @@
   </node>
   <node concept="1lH9Xt" id="18UigYP6EZU">
     <property role="TrG5h" value="ValidKey" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="18UigYP6EZV" role="1SKRRt">
       <node concept="2RzRRF" id="18UigYP6EZW" role="1qenE9">
         <property role="TrG5h" value="L" />
@@ -410,6 +413,7 @@
   </node>
   <node concept="1lH9Xt" id="18UigYQzk49">
     <property role="TrG5h" value="AllFeatures_Concept" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="18UigYQzzIh" role="1SL9yI">
       <property role="TrG5h" value="singleFeature" />
       <node concept="3cqZAl" id="18UigYQzzIi" role="3clF45" />
@@ -1306,6 +1310,7 @@
   </node>
   <node concept="1lH9Xt" id="18UigYQ$s2G">
     <property role="TrG5h" value="AllFeatures_loop" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="18UigYQ$s5A" role="1SL9yI">
       <property role="TrG5h" value="conceptLoop" />
       <node concept="3cqZAl" id="18UigYQ$s5B" role="3clF45" />
@@ -1552,6 +1557,7 @@
   </node>
   <node concept="1lH9Xt" id="18UigYQ$Lgm">
     <property role="TrG5h" value="AllFeatures_Annotation" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="18UigYQ$Lgn" role="1SL9yI">
       <property role="TrG5h" value="singleFeature" />
       <node concept="3cqZAl" id="18UigYQ$Lgo" role="3clF45" />
@@ -2411,6 +2417,7 @@
   </node>
   <node concept="1lH9Xt" id="6Pr6izIQF6f">
     <property role="TrG5h" value="Annotation_annotates" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="6Pr6izIQF6g" role="1SKRRt">
       <node concept="2RzRRF" id="6Pr6izIQF6k" role="1qenE9">
         <property role="2RzON1" value="7741747e-40f9-41bd-97f0-a3483e12b779" />
@@ -2432,6 +2439,7 @@
   </node>
   <node concept="1lH9Xt" id="6Pr6izIYBb9">
     <property role="TrG5h" value="DuplicateName" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="6Pr6izIYDF4" role="1SKRRt">
       <node concept="2RzRRF" id="6Pr6izIYDF8" role="1qenE9">
         <property role="2RzON1" value="caa34c1b-71c6-45c1-aa8d-733a4b3c296e" />
@@ -2719,6 +2727,7 @@
   </node>
   <node concept="1lH9Xt" id="jjAxTvgOVk">
     <property role="TrG5h" value="DependsOnScoping" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="jjAxTvgOVl" role="1SKRRt">
       <node concept="15s5l7" id="jjAxTvhWO8" role="lGtFl">
         <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  C (extends) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;extends&quot;;FLAVOUR_RULE_ID=&quot;[r:f981aeb2-0c97-4e1a-aefe-61c5e6d950ee(io.lionweb.mps.m3.constraints)/5938343903681975240]&quot;;" />

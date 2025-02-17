@@ -2,7 +2,7 @@
 <model ref="r:6602fab8-7e71-4c4e-955e-b5012dd07924(io.lionweb.mps.server.test.language@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
@@ -30,6 +30,7 @@
       </concept>
       <concept id="1225469856668" name="jetbrains.mps.lang.test.structure.ModelExpression" flags="nn" index="1jGwE1" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1216993439383" name="methods" index="1qtyYc" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -213,6 +214,7 @@
   <node concept="1lH9Xt" id="7OJcYq_$cDX">
     <property role="TrG5h" value="Instance" />
     <property role="26Nn1l" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="7OJcYq_$g2X" role="1SL9yI">
       <property role="TrG5h" value="readInstanceFromServer" />
       <node concept="3cqZAl" id="7OJcYq_$g2Y" role="3clF45" />
@@ -893,6 +895,7 @@
   <node concept="1lH9Xt" id="7OJcYq__hO0">
     <property role="TrG5h" value="LanguagesLionCore" />
     <property role="26Nn1l" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="7OJcYq__op0" role="1SL9yI">
       <property role="TrG5h" value="refToBuiltinPropertyType" />
       <node concept="3cqZAl" id="7OJcYq__op1" role="3clF45" />
