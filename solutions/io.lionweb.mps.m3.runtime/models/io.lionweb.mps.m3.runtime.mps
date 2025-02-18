@@ -41,7 +41,6 @@
     <import index="wb4m" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.structure.link(MPS.Core/)" />
     <import index="rzjr" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.structure.ref(MPS.Core/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
-    <import index="6peh" ref="r:677983a1-6578-432d-8175-68c906e0375c(io.lionweb.mps.json)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -258,9 +257,6 @@
       </concept>
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="2217234381367190443" name="jetbrains.mps.baseLanguage.javadoc.structure.SeeBlockDocTag" flags="ng" index="VUp57">
-        <child id="2217234381367190458" name="reference" index="VUp5m" />
       </concept>
       <concept id="2217234381367188008" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocReference" flags="ng" index="VUqz4" />
       <concept id="2217234381367049075" name="jetbrains.mps.baseLanguage.javadoc.structure.CodeInlineDocTag" flags="ng" index="VVOAv">
@@ -10803,6 +10799,11 @@
           <property role="1dT_AB" value="[1] &quot;Staples&quot; as in a stapler holding together a stack of paper." />
         </node>
       </node>
+      <node concept="TZ5HA" id="4GBMcnn8tes" role="TZ5H$">
+        <node concept="1dT_AC" id="4GBMcnn8tet" role="1dT_Ay">
+          <property role="1dT_AB" value="see io.lionweb.mps.json.JsonStaple" />
+        </node>
+      </node>
       <node concept="TUZQ0" id="alE3w2ldo3" role="3nqlJM">
         <property role="TUZQ4" value="LionCore as instances of &lt;tt&gt;io.lionweb.mps.m3&lt;/tt&gt;" />
         <node concept="zr_56" id="alE3w2ldo5" role="zr_5Q">
@@ -10819,11 +10820,6 @@
         <property role="TUZQ4" value="SLanguage as instances of &lt;tt&gt;org.jetbrains.mps.openapi.language&lt;/tt&gt;" />
         <node concept="zr_56" id="alE3w2ldob" role="zr_5Q">
           <ref role="zr_51" node="7OJcYqvKhss" resolve="SLANG" />
-        </node>
-      </node>
-      <node concept="VUp57" id="alE3w2lfs$" role="3nqlJM">
-        <node concept="VXe08" id="alE3w2lgP0" role="VUp5m">
-          <ref role="VXe09" to="6peh:7OJcYqxTPY1" resolve="JsonStaple" />
         </node>
       </node>
     </node>
