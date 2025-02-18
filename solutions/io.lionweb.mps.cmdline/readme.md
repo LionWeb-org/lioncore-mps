@@ -182,7 +182,7 @@ lionwebVersion=0.2.10
 lionwebRelease=2023.1
 mpsVersionSuffix=2021.1
 mpsVersion=2021.1.4
-comSpecificlanguagesMpsVersion=1.5.0
+comSpecificlanguagesMpsVersion=1.6.0
 ```
 
 **Note:** The implementation strongly assumes that LionWeb will be deployed to directory `./build/dependencies/io.lionweb.mps`.
