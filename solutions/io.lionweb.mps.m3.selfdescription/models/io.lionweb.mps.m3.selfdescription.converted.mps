@@ -3325,7 +3325,7 @@
   <node concept="2RzRRF" id="4R9posqf3NK">
     <property role="2RzON1" value="My-TestLang3" />
     <property role="TrG5h" value="io.lionweb.mps.converter.TestLang3" />
-    <property role="3HH78N" value="0" />
+    <property role="3HH78N" value="00 my! VERSION 😀" />
     <node concept="2RzPWn" id="4R9posqf3NL" role="2RzR6B">
       <property role="2RzP46" value="false" />
       <property role="TrG5h" value="TestConceptPlain" />

@@ -360,6 +360,9 @@
         <ref role="m_rDy" node="3RxvfZg815U" resolve="io.lionweb.mps.tests.contributions" />
         <node concept="pUk6x" id="24OSoZ60eqB" role="pUk7w" />
       </node>
+      <node concept="L2wRC" id="2yij8JWwvCz" role="39821P">
+        <ref role="L2wRA" node="oIR8hQg5OW" resolve="io.lionweb.mps.build" />
+      </node>
       <node concept="L2wRC" id="24OSoZ61CZr" role="39821P">
         <ref role="L2wRA" node="24OSoZ5UmCW" resolve="io.lionweb.mps.lang.test" />
       </node>
@@ -634,6 +637,11 @@
         <node concept="1SiIV0" id="5AGBwuFPhe$" role="3bR37C">
           <node concept="3bR9La" id="5AGBwuFPhe_" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6jbF0BozSm_" role="3bR37C">
+          <node concept="3bR9La" id="6jbF0BozSmA" role="1SiIV1">
+            <ref role="3bR37D" node="6jI_U5e9kIC" resolve="io.lionweb.mps.m3.runtime" />
           </node>
         </node>
       </node>
@@ -1138,6 +1146,26 @@
             <ref role="3bR37D" node="6jI_U5e9kIC" resolve="io.lionweb.mps.m3.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5N2LjD7NTM9" role="3bR37C">
+          <node concept="3bR9La" id="5N2LjD7NTMa" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5N2LjD7NTMb" role="3bR37C">
+          <node concept="3bR9La" id="5N2LjD7NTMc" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5N2LjD7NTMd" role="3bR37C">
+          <node concept="3bR9La" id="5N2LjD7NTMe" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5N2LjD7NTMf" role="3bR37C">
+          <node concept="3bR9La" id="5N2LjD7NTMg" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="5wsogBcGDNb" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1202,19 +1230,9 @@
             <ref role="3bR37D" node="5wsogBcGDLk" resolve="io.lionweb.mps.converter" />
           </node>
         </node>
-        <node concept="1SiIV0" id="3LWE6BDzx7F" role="3bR37C">
-          <node concept="3bR9La" id="3LWE6BDzx7G" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="3LWE6BDzx7H" role="3bR37C">
           <node concept="3bR9La" id="3LWE6BDzx7I" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3LWE6BDzx7J" role="3bR37C">
-          <node concept="3bR9La" id="3LWE6BDzx7K" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
           </node>
         </node>
         <node concept="1SiIV0" id="1f4Qr8WT8oA" role="3bR37C">
@@ -1637,6 +1655,16 @@
         <node concept="1SiIV0" id="3uYQSG0895B" role="3bR37C">
           <node concept="3bR9La" id="3uYQSG0895C" role="1SiIV1">
             <ref role="3bR37D" node="5wsogBcGDLk" resolve="io.lionweb.mps.converter" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="rW84$cc7tJ" role="3bR37C">
+          <node concept="3bR9La" id="rW84$cc7tK" role="1SiIV1">
+            <ref role="3bR37D" node="5wsogBcGDM$" resolve="io.lionweb.mps.converter.lang" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="rW84$cpq8J" role="3bR37C">
+          <node concept="3bR9La" id="rW84$cpq8K" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
       </node>

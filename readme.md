@@ -107,13 +107,17 @@ The example assumes we merge `mps2021.1` into `mps2021.2`.
 
 1. Open the _target_ MPS version (2021.2) on the _target_ branch (`mps2021.2`).
 2. Merge the _source_ branch (`mps2021.1`) into your _current_ branch (`mps2021.2`).
-3. Double-check `gradle.properties` still contains the proper entries for
+3. Double-check `gradle.properties` still contains the proper entries for:
    * `mpsVersionSuffix` should be the _target_ MPS version (`2021.2`)
    * `mpsVersion` full _target_ MPS version (`2021.2.6`)
    * `mpsExtensionsVersion` latest version of [MPS-extensions](https://jetbrains.github.io/MPS-extensions/) for the _target_ MPS version (`2021.2.2631.1360a64`)
-4. Run Migration Assistant
-5. Run all tests
-6. Update build model
+4. Run the Migration Assistant.
+5. Run all tests.
+6. Update the build model.
+7. Repeat steps 3-6 for the test projects, residing in `test-project/` and `test-project-externalLib/`.
+  **Note** Before opening these projects in MPS:
+    * Make sure to rename their build model files (the `.mps` files in the `models/` directory under the one solution under `solutions/` of either project) to not have the `-ignore` suffix.
+    * Make sure to put those suffixes back in place before committing.
 
 
 ## Publishing and Releasing

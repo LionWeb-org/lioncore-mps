@@ -1,4 +1,7 @@
-workspace.xml
+**/.mps/workspace.xml
+**/.mps/product-workspace.xml
+**/.mps/inspectionProfiles
+
 junitvmwatcher*.properties
 build.properties
 
@@ -14,6 +17,7 @@ test_gen
 test_gen.caches
 TEST-*.xml
 junit*.properties
+**/actual/*.json
 
 # IntelliJ projects (for debugging)
 *.iml

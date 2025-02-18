@@ -1,0 +1,24 @@
+{
+  "serializationFormatVersion": "2023.1",
+  "languages": [
+    {
+      "key": "foo-language",
+      "version": "hello@version"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "503312756470248345",
+      "classifier": {
+        "language": "foo-language",
+        "version": "hello@version",
+        "key": "ZGZkMmU2ZTktNTcyMS00OGQ5LTlkZTktMzZiZDU0MzQ1OTUwLzQxMzAzMzkxMjExNzAwNjExMTg"
+      },
+      "properties": [],
+      "containments": [],
+      "references": [],
+      "annotations": [],
+      "parent": null
+    }
+  ]
+}

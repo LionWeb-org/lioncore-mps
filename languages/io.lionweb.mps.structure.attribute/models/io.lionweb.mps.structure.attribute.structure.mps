@@ -67,11 +67,16 @@
   </registry>
   <node concept="1TIwiD" id="6fYiNFad_9U">
     <property role="EcuMT" value="7205279169712116346" />
-    <property role="TrG5h" value="LionWebLanguageKey" />
+    <property role="TrG5h" value="LionWebLanguage" />
     <property role="R4oN_" value="Key of Language imported from LionWeb" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="LionWeb Language Key" />
+    <property role="34LRSv" value="LionWeb Language" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6jbF0BnT6Ct" role="1TKVEl">
+      <property role="IQ2nx" value="7263087982341810717" />
+      <property role="TrG5h" value="version" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="PrWs8" id="6fYiNFad_a4" role="PzmwI">
       <ref role="PrY4T" node="6fYiNFad_a1" resolve="ILionWebKey" />
     </node>
