@@ -30,8 +30,7 @@
   
   <path id="path.mps.ant.path">
     <pathelement location="${artifacts.mps}/lib/ant/lib/ant-mps.jar" />
-    <pathelement location="${artifacts.mps}/lib/jdom.jar" />
-    <pathelement location="${artifacts.mps}/lib/log4j.jar" />
+    <pathelement location="${artifacts.mps}/lib/util.jar" />
   </path>
   
   <target name="assemble" depends="classes, declare-mps-tasks">
@@ -50,6 +49,25 @@
         </extensions>
       </idea-plugin>
     </echoxml>
+    <mkdir dir="${build.layout}/test-project/lib" />
+    <mkdir dir="${build.tmp}/default/test-project.jar" />
+    <mkdir dir="${build.tmp}/default/test-project.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/test-project.jar/META-INF/plugin.xml">
+      <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+        <id>testProject</id>
+        <name>test-project</name>
+        <version>1.0</version>
+        <depends>jetbrains.mps.core</depends>
+        <depends>io.lionweb.mps</depends>
+        
+        <extensions defaultExtensionNs="com.intellij">
+          <mps.LanguageLibrary dir="/languages" />
+        </extensions>
+      </idea-plugin>
+    </echoxml>
+    <jar destfile="${build.layout}/test-project/lib/test-project.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/default/test-project.jar" />
+    </jar>
     <mkdir dir="${build.layout}/test-project/languages" />
     <mkdir dir="${build.layout}/test-project/languages/test-project" />
     <mkdir dir="${build.tmp}/default/FooLanguage.jar" />
@@ -278,9 +296,8 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.16.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
