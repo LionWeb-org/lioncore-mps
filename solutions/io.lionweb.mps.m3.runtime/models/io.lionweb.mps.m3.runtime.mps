@@ -395,6 +395,9 @@
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
+      <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
+        <child id="1151689745422" name="elementType" index="A3Ik2" />
+      </concept>
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -411,18 +414,18 @@
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="4611582986551314327" name="jetbrains.mps.baseLanguage.collections.structure.OfTypeOperation" flags="nn" index="UnYns">
+        <child id="4611582986551314344" name="requestedType" index="UnYnz" />
+      </concept>
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
-      <concept id="7125221305512719026" name="jetbrains.mps.baseLanguage.collections.structure.CollectionType" flags="in" index="3vKaQO" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
-      <concept id="5686963296372573083" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerType" flags="in" index="3O5elB">
-        <child id="5686963296372573084" name="elementType" index="3O5elw" />
-      </concept>
+      <concept id="31378964227347002" name="jetbrains.mps.baseLanguage.collections.structure.SelectNotNullOperation" flags="ng" index="1KnU$U" />
     </language>
   </registry>
   <node concept="312cEu" id="DUXtGZOlwJ">
@@ -3380,7 +3383,7 @@
     <node concept="312cEg" id="pPZz6cPzAy" role="jymVt">
       <property role="TrG5h" value="repository" />
       <property role="3TUv4t" value="true" />
-      <node concept="3Tm6S6" id="pPZz6cPzAz" role="1B3o_S" />
+      <node concept="3Tmbuc" id="5sJP3aL_mXK" role="1B3o_S" />
       <node concept="3uibUv" id="pPZz6cPzA_" role="1tU5fm">
         <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
       </node>
@@ -3557,24 +3560,8 @@
           </node>
           <node concept="2OqwBi" id="5hylulqpnAx" role="2GsD0m">
             <node concept="1eOMI4" id="5hylulqpgLk" role="2Oq$k0">
-              <node concept="10QFUN" id="5hylulqpgLj" role="1eOMHV">
-                <node concept="2OqwBi" id="5hylulqpgLf" role="10QFUP">
-                  <node concept="2YIFZM" id="5hylulqpgLg" role="2Oq$k0">
-                    <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(org.jetbrains.mps.openapi.module.SRepository)" resolve="getInstance" />
-                    <ref role="1Pybhc" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
-                    <node concept="37vLTw" id="5hylulqpgLh" role="37wK5m">
-                      <ref role="3cqZAo" node="pPZz6cPzAy" resolve="repository" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="5hylulqpgLi" role="2OqNvi">
-                    <ref role="37wK5l" to="vndm:~LanguageRegistry.getAllLanguages()" resolve="getAllLanguages" />
-                  </node>
-                </node>
-                <node concept="3vKaQO" id="5hylulqpjm_" role="10QFUM">
-                  <node concept="3uibUv" id="5hylulqplXP" role="3O5elw">
-                    <ref role="3uigEE" to="c17a:~SLanguage" resolve="SLanguage" />
-                  </node>
-                </node>
+              <node concept="1rXfSq" id="5sJP3aL$LUS" role="1eOMHV">
+                <ref role="37wK5l" node="5sJP3aL$LUO" resolve="collectAllLanguages" />
               </node>
             </node>
             <node concept="3zZkjj" id="5hylulqppc0" role="2OqNvi">
@@ -6096,6 +6083,39 @@
       </node>
     </node>
     <node concept="2tJIrI" id="6fYiNFaGNYx" role="jymVt" />
+    <node concept="3clFb_" id="5sJP3aL$LUO" role="jymVt">
+      <property role="TrG5h" value="collectAllLanguages" />
+      <node concept="3Tmbuc" id="5sJP3aL$LUP" role="1B3o_S" />
+      <node concept="3clFbS" id="5sJP3aL$LUD" role="3clF47">
+        <node concept="3cpWs6" id="5sJP3aL$LUE" role="3cqZAp">
+          <node concept="10QFUN" id="5sJP3aL$LUF" role="3cqZAk">
+            <node concept="2OqwBi" id="5sJP3aL$LUG" role="10QFUP">
+              <node concept="2YIFZM" id="5sJP3aL$LUH" role="2Oq$k0">
+                <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(org.jetbrains.mps.openapi.module.SRepository)" resolve="getInstance" />
+                <ref role="1Pybhc" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
+                <node concept="37vLTw" id="5sJP3aL$LUI" role="37wK5m">
+                  <ref role="3cqZAo" node="pPZz6cPzAy" resolve="repository" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5sJP3aL$LUJ" role="2OqNvi">
+                <ref role="37wK5l" to="vndm:~LanguageRegistry.getAllLanguages()" resolve="getAllLanguages" />
+              </node>
+            </node>
+            <node concept="A3Dl8" id="5sJP3aL_BxI" role="10QFUM">
+              <node concept="3uibUv" id="5sJP3aL_BxJ" role="A3Ik2">
+                <ref role="3uigEE" to="c17a:~SLanguage" resolve="SLanguage" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="5sJP3aL_$My" role="3clF45">
+        <node concept="3uibUv" id="5sJP3aL_$Mz" role="A3Ik2">
+          <ref role="3uigEE" to="c17a:~SLanguage" resolve="SLanguage" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5sJP3aL_du_" role="jymVt" />
     <node concept="3clFb_" id="6fYiNFaGIg4" role="jymVt">
       <property role="TrG5h" value="findKeyFromNodeRef" />
       <node concept="3Tm6S6" id="6fYiNFaGIg5" role="1B3o_S" />
@@ -15680,6 +15700,168 @@
       <node concept="TZ5HA" id="4r3Tp$piWa8" role="TZ5H$">
         <node concept="1dT_AC" id="4r3Tp$piWa9" role="1dT_Ay">
           <property role="1dT_AB" value="i.e. specializations that have more specialization interfaces." />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="5sJP3aL$GNz">
+    <property role="TrG5h" value="LionWebAttributeFinderRegistry" />
+    <node concept="3Tm1VV" id="5sJP3aL$GN$" role="1B3o_S" />
+    <node concept="3uibUv" id="5sJP3aL$KJk" role="1zkMxy">
+      <ref role="3uigEE" node="pPZz6cPvUw" resolve="LionWebAttributeFinder" />
+    </node>
+    <node concept="3clFbW" id="5sJP3aL$Lid" role="jymVt">
+      <node concept="37vLTG" id="5sJP3aL$Lie" role="3clF46">
+        <property role="TrG5h" value="repository" />
+        <node concept="3uibUv" id="5sJP3aL$Lif" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+        <node concept="2AHcQZ" id="5sJP3aL$Lig" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5sJP3aL$Lih" role="3clF46">
+        <property role="TrG5h" value="constants" />
+        <node concept="2AHcQZ" id="5sJP3aL$Lii" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+        </node>
+        <node concept="3uibUv" id="5sJP3aL$Lij" role="1tU5fm">
+          <ref role="3uigEE" node="5JNiskhxHcX" resolve="ILionCoreConstants" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5sJP3aL$Lik" role="3clF46">
+        <property role="TrG5h" value="metaAdapterByDeclarationHelper" />
+        <node concept="3uibUv" id="5sJP3aL$Lil" role="1tU5fm">
+          <ref role="3uigEE" node="18UigYOOPKz" resolve="IMetaAdapterByDeclarationHelper" />
+        </node>
+        <node concept="2AHcQZ" id="5sJP3aL$Lim" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="5sJP3aL$Lin" role="3clF45" />
+      <node concept="3Tm1VV" id="5sJP3aL$Lio" role="1B3o_S" />
+      <node concept="3clFbS" id="5sJP3aL$LiG" role="3clF47">
+        <node concept="XkiVB" id="5sJP3aL$LiH" role="3cqZAp">
+          <ref role="37wK5l" node="5AGBwuFEKL7" resolve="LionWebAttributeFinder" />
+          <node concept="37vLTw" id="5sJP3aL$LiI" role="37wK5m">
+            <ref role="3cqZAo" node="5sJP3aL$Lie" resolve="repository" />
+          </node>
+          <node concept="37vLTw" id="5sJP3aL$LiJ" role="37wK5m">
+            <ref role="3cqZAo" node="5sJP3aL$Lih" resolve="constants" />
+          </node>
+          <node concept="37vLTw" id="5sJP3aL$LiK" role="37wK5m">
+            <ref role="3cqZAo" node="5sJP3aL$Lik" resolve="metaAdapterByDeclarationHelper" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5sJP3aL_Dh9" role="jymVt" />
+    <node concept="3clFb_" id="5sJP3aL_gnz" role="jymVt">
+      <property role="TrG5h" value="collectAllLanguages" />
+      <node concept="3Tmbuc" id="5sJP3aL_gn$" role="1B3o_S" />
+      <node concept="A3Dl8" id="5sJP3aL_$2I" role="3clF45">
+        <node concept="3uibUv" id="5sJP3aL_$2K" role="A3Ik2">
+          <ref role="3uigEE" to="c17a:~SLanguage" resolve="SLanguage" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5sJP3aL_gnK" role="3clF47">
+        <node concept="3cpWs8" id="5sJP3aL_uBO" role="3cqZAp">
+          <node concept="3cpWsn" id="5sJP3aL_uBP" role="3cpWs9">
+            <property role="TrG5h" value="languageConverter" />
+            <node concept="3uibUv" id="5sJP3aL_u$r" role="1tU5fm">
+              <ref role="3uigEE" node="39$JcGGnjRO" resolve="MpsLanguageConverter" />
+            </node>
+            <node concept="2YIFZM" id="5sJP3aL_uBQ" role="33vP2m">
+              <ref role="37wK5l" node="39$JcGGnzni" resolve="getInstance" />
+              <ref role="1Pybhc" node="39$JcGGnjRO" resolve="MpsLanguageConverter" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5sJP3aL_gnN" role="3cqZAp">
+          <node concept="2OqwBi" id="5sJP3aL_xWE" role="3clFbG">
+            <node concept="2OqwBi" id="5sJP3aL_te0" role="2Oq$k0">
+              <node concept="2OqwBi" id="5sJP3aL_rZ7" role="2Oq$k0">
+                <node concept="1eOMI4" id="5sJP3aL_r43" role="2Oq$k0">
+                  <node concept="10QFUN" id="5sJP3aL_r42" role="1eOMHV">
+                    <node concept="2OqwBi" id="5sJP3aL_r3Z" role="10QFUP">
+                      <node concept="37vLTw" id="5sJP3aL_r40" role="2Oq$k0">
+                        <ref role="3cqZAo" node="pPZz6cPzAy" resolve="repository" />
+                      </node>
+                      <node concept="liA8E" id="5sJP3aL_r41" role="2OqNvi">
+                        <ref role="37wK5l" to="lui2:~SRepository.getModules()" resolve="getModules" />
+                      </node>
+                    </node>
+                    <node concept="A3Dl8" id="5sJP3aL_r_r" role="10QFUM">
+                      <node concept="3uibUv" id="5sJP3aL_rJB" role="A3Ik2">
+                        <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="UnYns" id="5sJP3aL_sH6" role="2OqNvi">
+                  <node concept="3uibUv" id="5sJP3aL_sWw" role="UnYnz">
+                    <ref role="3uigEE" to="w1kc:~Language" resolve="Language" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3$u5V9" id="5sJP3aL_u5$" role="2OqNvi">
+                <node concept="1bVj0M" id="5sJP3aL_u5A" role="23t8la">
+                  <node concept="3clFbS" id="5sJP3aL_u5B" role="1bW5cS">
+                    <node concept="3clFbF" id="5sJP3aL_vmO" role="3cqZAp">
+                      <node concept="2OqwBi" id="5sJP3aL_vya" role="3clFbG">
+                        <node concept="37vLTw" id="5sJP3aL_vmN" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5sJP3aL_uBP" resolve="languageConverter" />
+                        </node>
+                        <node concept="liA8E" id="5sJP3aL_vIi" role="2OqNvi">
+                          <ref role="37wK5l" node="39$JcGGn$$e" resolve="toSLanguage" />
+                          <node concept="37vLTw" id="5sJP3aL_vSG" role="37wK5m">
+                            <ref role="3cqZAo" node="5sJP3aL_u5C" resolve="it" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="5sJP3aL_u5C" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="5sJP3aL_u5D" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1KnU$U" id="5sJP3aL_zbO" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5sJP3aL_gnL" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="5sJP3aL_DzV" role="lGtFl">
+      <node concept="TZ5HA" id="5sJP3aL_DzW" role="TZ5H$">
+        <node concept="1dT_AC" id="5sJP3aL_DzX" role="1dT_Ay">
+          <property role="1dT_AB" value="Uses " />
+        </node>
+        <node concept="1dT_AA" id="5sJP3aL_Ehq" role="1dT_Ay">
+          <node concept="92FcH" id="5sJP3aL_Eh_" role="qph3F">
+            <node concept="TZ5HA" id="5sJP3aL_EhB" role="2XjZqd" />
+            <node concept="VXe08" id="5sJP3aL_EhI" role="92FcQ">
+              <ref role="VXe09" to="lui2:~SRepository" resolve="SRepository" />
+            </node>
+          </node>
+        </node>
+        <node concept="1dT_AC" id="5sJP3aL_Ehp" role="1dT_Ay">
+          <property role="1dT_AB" value=" instead of " />
+        </node>
+        <node concept="1dT_AA" id="5sJP3aL_DFB" role="1dT_Ay">
+          <node concept="92FcH" id="5sJP3aL_DFH" role="qph3F">
+            <node concept="TZ5HA" id="5sJP3aL_DFJ" role="2XjZqd" />
+            <node concept="VXe08" id="5sJP3aL_EeH" role="92FcQ">
+              <ref role="VXe09" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
+            </node>
+          </node>
+        </node>
+        <node concept="1dT_AC" id="5sJP3aL_DFA" role="1dT_Ay">
+          <property role="1dT_AB" value=" to find languages." />
         </node>
       </node>
     </node>
