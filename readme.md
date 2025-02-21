@@ -93,7 +93,7 @@ We use the latest patch of each supported MPS version, e.g. MPS 2021.1.4.
 We implement all new functionality on a branch, based on the oldest supported "main" branch.
 Example: The new branch `niko/great-new-feature` is based on `mps2021.1`.
 
-Once we merged the feature branch back to "main" (in the example: `mps2021.1`), we merge the changes into the next higher mps version branch. 
+Once we merged the feature branch back to "main" (in the example: `mps2021.1`), we merge the changes into the next higher MPS version branch — _“cross-version migration”_.
 Example:
 
 1. Use MPS 2021.1 to develop on `niko/great-new-feature`, based on `mps2021.1`.
@@ -106,18 +106,25 @@ When merging into a newer MPS version, follow these steps.
 The example assumes we merge `mps2021.1` into `mps2021.2`.
 
 1. Open the _target_ MPS version (2021.2) on the _target_ branch (`mps2021.2`).
-2. Merge the _source_ branch (`mps2021.1`) into your _current_ branch (`mps2021.2`).
-3. Double-check `gradle.properties` still contains the proper entries for:
+2. Checkout a new branch off of the _target_ branch (`mps2021.2`), named `mps2021.2-migration` (or a name that's as least as good).
+3. Merge the _source_ branch (`mps2021.1`) into your _current_ branch (`mps2021.2-migration`).
+4. Double-check `gradle.properties` still contains the proper entries for:
    * `mpsVersionSuffix` should be the _target_ MPS version (`2021.2`)
    * `mpsVersion` full _target_ MPS version (`2021.2.6`)
    * `mpsExtensionsVersion` latest version of [MPS-extensions](https://jetbrains.github.io/MPS-extensions/) for the _target_ MPS version (`2021.2.2631.1360a64`)
-4. Run the Migration Assistant.
-5. Run all tests.
-6. Update the build model.
-7. Repeat steps 3-6 for the test projects, residing in `test-project/` and `test-project-externalLib/`.
-  **Note** Before opening these projects in MPS:
+5. Run the Migration Assistant.
+6. Run all tests. (*TODO* Some elucidation on how to do this precisely, and what tests should absolutely not fail, and what can be safely ignored.)
+7. Update the build model. (*TODO* Some elucidation might be required here as well.)
+8. Repeat steps 3-6 for the test projects, residing in `test-project/` and `test-project-externalLib/`.
+  **Note** Before and after opening these projects in MPS:
     * Make sure to rename their build model files (the `.mps` files in the `models/` directory under the one solution under `solutions/` of either project) to not have the `-ignore` suffix.
-    * Make sure to put those suffixes back in place before committing.
+    * Make sure to put those suffixes back in place before continuing with the next step (#9).
+9. Check that the following Gradle tasks execute without failure from the CLI: `publishToMavenLocal`, `testCmdLineExport`.
+10. Commit the changes, and push the branch (`mps2012.2-migration`).
+11. Check that the [GitHub Action triggered by the push](https://github.com/LionWeb-io/lionweb-mps/actions) runs successfully.
+  (If not: sorry to hear the build feels like that, and good luck with that... Some nasty debugging lies ahead of you...)
+12. *Provided everything works*, merge the `mps2021.2-migration` branch back into `mps2021.2`.
+13. Create a release — see the next section.
 
 
 ## Publishing and Releasing
