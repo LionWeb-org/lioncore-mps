@@ -1741,11 +1741,11 @@
           <node concept="3cpWsn" id="6jbF0BoE4Dx" role="3cpWs9">
             <property role="TrG5h" value="attributeFinder" />
             <node concept="3uibUv" id="6jbF0BoE4mc" role="1tU5fm">
-              <ref role="3uigEE" to="y7p:pPZz6cPvUw" resolve="LionWebAttributeFinder" />
+              <ref role="3uigEE" to="y7p:5sJP3aL$GNz" resolve="LionWebAttributeFinderRegistry" />
             </node>
             <node concept="2ShNRf" id="6jbF0BoE4Dy" role="33vP2m">
               <node concept="1pGfFk" id="6jbF0BoE4Dz" role="2ShVmc">
-                <ref role="37wK5l" to="y7p:5AGBwuFEKL7" resolve="LionWebAttributeFinder" />
+                <ref role="37wK5l" to="y7p:5sJP3aL$Lid" resolve="LionWebAttributeFinderRegistry" />
                 <node concept="37vLTw" id="6jbF0BoE4D$" role="37wK5m">
                   <ref role="3cqZAo" node="12kZjFJeNvA" resolve="repository" />
                 </node>
