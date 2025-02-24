@@ -3218,17 +3218,13 @@
               <node concept="Xl_RD" id="3FWZcLW4OeJ" role="37wK5m">
                 <property role="Xl_RC" value="io-lionweb-mps-specific" />
               </node>
-              <node concept="2YIFZM" id="3FWZcLW4O$v" role="37wK5m">
-                <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
-                <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                <node concept="2YIFZM" id="3FWZcLW4Okb" role="37wK5m">
-                  <ref role="1Pybhc" to="y7p:6jTTMHD72IS" resolve="MpsLanguageUtil" />
-                  <ref role="37wK5l" to="y7p:6jTTMHD72KX" resolve="getLanguageVersion" />
-                  <node concept="pHN19" id="3FWZcLW4Ou2" role="37wK5m">
-                    <node concept="2V$Bhx" id="3FWZcLW4OuU" role="2V$M_3">
-                      <property role="2V$B1T" value="e92f782f-6faf-41c2-bf76-2b1a350c0516" />
-                      <property role="2V$B1Q" value="io.lionweb.mps.specific" />
-                    </node>
+              <node concept="2YIFZM" id="6jbF0Bo26jJ" role="37wK5m">
+                <ref role="37wK5l" to="y7p:34Q84zMXVAC" resolve="getLanguageVersionString" />
+                <ref role="1Pybhc" to="y7p:6jTTMHD72IS" resolve="MpsLanguageUtil" />
+                <node concept="pHN19" id="6jbF0Bo26jK" role="37wK5m">
+                  <node concept="2V$Bhx" id="6jbF0Bo26jL" role="2V$M_3">
+                    <property role="2V$B1T" value="e92f782f-6faf-41c2-bf76-2b1a350c0516" />
+                    <property role="2V$B1Q" value="io.lionweb.mps.specific" />
                   </node>
                 </node>
               </node>
@@ -3270,15 +3266,14 @@
                   </node>
                 </node>
               </node>
-              <node concept="2YIFZM" id="3FWZcLVTYXq" role="37wK5m">
-                <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
-                <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                <node concept="2YIFZM" id="3FWZcLVTYF1" role="37wK5m">
-                  <ref role="1Pybhc" to="y7p:6jTTMHD72IS" resolve="MpsLanguageUtil" />
-                  <ref role="37wK5l" to="y7p:6jTTMHD72KX" resolve="getLanguageVersion" />
-                  <node concept="37vLTw" id="3FWZcLVUMb7" role="37wK5m">
-                    <ref role="3cqZAo" node="3FWZcLVUM1g" resolve="sLanguage" />
-                  </node>
+              <node concept="2YIFZM" id="6jbF0Bo2alx" role="37wK5m">
+                <ref role="1Pybhc" to="y7p:6jTTMHD72IS" resolve="MpsLanguageUtil" />
+                <ref role="37wK5l" to="y7p:6jbF0Bo0uK5" resolve="getLanguageVersionString" />
+                <node concept="37vLTw" id="6jbF0Bo2aly" role="37wK5m">
+                  <ref role="3cqZAo" node="3FWZcLVUM1g" resolve="sLanguage" />
+                </node>
+                <node concept="37vLTw" id="6jbF0Bo2arj" role="37wK5m">
+                  <ref role="3cqZAo" node="5AGBwuFaS4W" resolve="attributeFinder" />
                 </node>
               </node>
             </node>
@@ -3293,6 +3288,15 @@
         <property role="TrG5h" value="sLanguage" />
         <node concept="3uibUv" id="3FWZcLVUM1f" role="1tU5fm">
           <ref role="3uigEE" to="c17a:~SLanguage" resolve="SLanguage" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5AGBwuFaS4W" role="3clF46">
+        <property role="TrG5h" value="attributeFinder" />
+        <node concept="3uibUv" id="5AGBwuFaSMf" role="1tU5fm">
+          <ref role="3uigEE" to="y7p:pPZz6cPvUw" resolve="LionWebAttributeFinder" />
+        </node>
+        <node concept="2AHcQZ" id="1f4Qr8Vhi5l" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
         </node>
       </node>
     </node>
