@@ -344,7 +344,7 @@
     <node concept="1qefOq" id="48csSBOZRSQ" role="1SKRRt">
       <node concept="2RzRRF" id="2fx6VTTnYmk" role="1qenE9">
         <property role="TrG5h" value="io.lionweb.mps.m3" />
-        <property role="3HH78N" value="0" />
+        <property role="3HH78N" value="2023.1" />
         <property role="2RzON1" value="LionCore-M3" />
         <node concept="2RzPaY" id="7Cdxs9DYA_l" role="2RzR6B">
           <property role="2RzON1" value="IKeyed" />
