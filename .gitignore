@@ -18,6 +18,7 @@ test_gen.caches
 TEST-*.xml
 junit*.properties
 **/actual/*.json
+build.xml
 
 # IntelliJ projects (for debugging)
 *.iml
