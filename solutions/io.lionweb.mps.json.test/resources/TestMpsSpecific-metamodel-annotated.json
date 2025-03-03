@@ -16,6 +16,395 @@
   ],
   "nodes": [
     {
+      "id": "7304430018007898698",
+      "classifier": {
+        "language": "io-lionweb-mps-specific",
+        "version": "0",
+        "key": "KeyedDescription"
+      },
+      "properties": [
+        {
+          "property": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-documentation"
+          },
+          "value": "AllMpsSpecific documentation"
+        }
+      ],
+      "containments": [],
+      "references": [
+        {
+          "reference": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-seeAlso"
+          },
+          "targets": [
+            {
+              "resolveInfo": null,
+              "reference": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg2OTc"
+            },
+            {
+              "resolveInfo": null,
+              "reference": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg2OTcvNzMwNDQzMDAxODAwNzg5ODcwMA"
+            },
+            {
+              "resolveInfo": null,
+              "reference": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg3NTI"
+            },
+            {
+              "resolveInfo": null,
+              "reference": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg3NTIvNzMwNDQzMDAxODAwNzg5ODc1OQ"
+            }
+          ]
+        }
+      ],
+      "annotations": [],
+      "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg2OTc"
+    },
+    {
+      "id": "7304430018007898704",
+      "classifier": {
+        "language": "io-lionweb-mps-specific",
+        "version": "0",
+        "key": "KeyedDescription"
+      },
+      "properties": [
+        {
+          "property": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-documentation"
+          },
+          "value": "AllMpsSpecific.prop documentation"
+        }
+      ],
+      "containments": [],
+      "references": [
+        {
+          "reference": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-seeAlso"
+          },
+          "targets": []
+        }
+      ],
+      "annotations": [],
+      "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg2OTcvNzMwNDQzMDAxODAwNzg5ODcwMA"
+    },
+    {
+      "id": "7304430018007898708",
+      "classifier": {
+        "language": "io-lionweb-mps-specific",
+        "version": "0",
+        "key": "KeyedDescription"
+      },
+      "properties": [
+        {
+          "property": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-documentation"
+          },
+          "value": "AllMpsSpecific.child documentation"
+        }
+      ],
+      "containments": [],
+      "references": [
+        {
+          "reference": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-seeAlso"
+          },
+          "targets": []
+        }
+      ],
+      "annotations": [],
+      "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg2OTcvNzMwNDQzMDAxODAwNzg5ODcwNg"
+    },
+    {
+      "id": "7304430018007898714",
+      "classifier": {
+        "language": "io-lionweb-mps-specific",
+        "version": "0",
+        "key": "KeyedDescription"
+      },
+      "properties": [
+        {
+          "property": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-documentation"
+          },
+          "value": "AllMpsSpecific.ref documentation"
+        }
+      ],
+      "containments": [],
+      "references": [
+        {
+          "reference": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-seeAlso"
+          },
+          "targets": []
+        }
+      ],
+      "annotations": [],
+      "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg2OTcvNzMwNDQzMDAxODAwNzg5ODcxMA"
+    },
+    {
+      "id": "7304430018007898753",
+      "classifier": {
+        "language": "io-lionweb-mps-specific",
+        "version": "0",
+        "key": "KeyedDescription"
+      },
+      "properties": [
+        {
+          "property": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-documentation"
+          },
+          "value": "IMpsSpecific documentation"
+        }
+      ],
+      "containments": [],
+      "references": [
+        {
+          "reference": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-seeAlso"
+          },
+          "targets": []
+        }
+      ],
+      "annotations": [],
+      "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg3NTI"
+    },
+    {
+      "id": "7304430018007898756",
+      "classifier": {
+        "language": "io-lionweb-mps-specific",
+        "version": "0",
+        "key": "KeyedDescription"
+      },
+      "properties": [
+        {
+          "property": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-documentation"
+          },
+          "value": "IMpsSpecific.ifaceProp documentation"
+        }
+      ],
+      "containments": [],
+      "references": [
+        {
+          "reference": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-seeAlso"
+          },
+          "targets": []
+        }
+      ],
+      "annotations": [],
+      "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg3NTIvNzMwNDQzMDAxODAwNzg5ODc1NQ"
+    },
+    {
+      "id": "7304430018007898760",
+      "classifier": {
+        "language": "io-lionweb-mps-specific",
+        "version": "0",
+        "key": "KeyedDescription"
+      },
+      "properties": [
+        {
+          "property": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-documentation"
+          },
+          "value": "IMpsSpecific.ifaceChild documentation"
+        }
+      ],
+      "containments": [],
+      "references": [
+        {
+          "reference": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-seeAlso"
+          },
+          "targets": []
+        }
+      ],
+      "annotations": [],
+      "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg3NTIvNzMwNDQzMDAxODAwNzg5ODc1OQ"
+    },
+    {
+      "id": "7304430018007898764",
+      "classifier": {
+        "language": "io-lionweb-mps-specific",
+        "version": "0",
+        "key": "KeyedDescription"
+      },
+      "properties": [
+        {
+          "property": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-documentation"
+          },
+          "value": "IMpsSpecific.ifaceRef documentation"
+        }
+      ],
+      "containments": [],
+      "references": [
+        {
+          "reference": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-seeAlso"
+          },
+          "targets": []
+        }
+      ],
+      "annotations": [],
+      "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg3NTIvNzMwNDQzMDAxODAwNzg5ODc2Mw"
+    },
+    {
+      "id": "7304430018007898792",
+      "classifier": {
+        "language": "io-lionweb-mps-specific",
+        "version": "0",
+        "key": "KeyedDescription"
+      },
+      "properties": [
+        {
+          "property": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-documentation"
+          },
+          "value": "MpsSpecificAnnotation documentation"
+        }
+      ],
+      "containments": [],
+      "references": [
+        {
+          "reference": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-seeAlso"
+          },
+          "targets": []
+        }
+      ],
+      "annotations": [],
+      "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg3ODc"
+    },
+    {
+      "id": "7304430018007898797",
+      "classifier": {
+        "language": "io-lionweb-mps-specific",
+        "version": "0",
+        "key": "KeyedDescription"
+      },
+      "properties": [
+        {
+          "property": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-documentation"
+          },
+          "value": "MpsSpecificAnnotation.prop documentation"
+        }
+      ],
+      "containments": [],
+      "references": [
+        {
+          "reference": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-seeAlso"
+          },
+          "targets": []
+        }
+      ],
+      "annotations": [],
+      "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg3ODcvNzMwNDQzMDAxODAwNzg5ODc5Ng"
+    },
+    {
+      "id": "7304430018007898801",
+      "classifier": {
+        "language": "io-lionweb-mps-specific",
+        "version": "0",
+        "key": "KeyedDescription"
+      },
+      "properties": [
+        {
+          "property": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-documentation"
+          },
+          "value": "MpsSpecificAnnotation.child documentation"
+        }
+      ],
+      "containments": [],
+      "references": [
+        {
+          "reference": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-seeAlso"
+          },
+          "targets": []
+        }
+      ],
+      "annotations": [],
+      "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg3ODcvNzMwNDQzMDAxODAwNzg5ODgwMA"
+    },
+    {
+      "id": "7304430018007898805",
+      "classifier": {
+        "language": "io-lionweb-mps-specific",
+        "version": "0",
+        "key": "KeyedDescription"
+      },
+      "properties": [
+        {
+          "property": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-documentation"
+          },
+          "value": "MpsSpecificAnnotation.ref documentation"
+        }
+      ],
+      "containments": [],
+      "references": [
+        {
+          "reference": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "KeyedDescription-seeAlso"
+          },
+          "targets": []
+        }
+      ],
+      "annotations": [],
+      "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg3ODcvNzMwNDQzMDAxODAwNzg5ODgwNA"
+    },
+    {
       "id": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRi",
       "classifier": {
         "language": "LionCore-M3",
@@ -160,6 +549,7 @@
         }
       ],
       "annotations": [
+        "7304430018007898698",
         "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg2OTc-ConceptDescription"
       ],
       "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRi"
@@ -187,6 +577,14 @@
             "key": "ConceptDescription-conceptShortDescription"
           },
           "value": "AllMpsSpecific short description"
+        },
+        {
+          "property": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "ConceptDescription-helpUrl"
+          },
+          "value": "http://without/BaseUrl?query\u003dvalue#anchor"
         }
       ],
       "containments": [],
@@ -243,7 +641,9 @@
           ]
         }
       ],
-      "annotations": [],
+      "annotations": [
+        "7304430018007898704"
+      ],
       "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg2OTc"
     },
     {
@@ -303,7 +703,9 @@
           ]
         }
       ],
-      "annotations": [],
+      "annotations": [
+        "7304430018007898708"
+      ],
       "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg2OTc"
     },
     {
@@ -363,7 +765,9 @@
           ]
         }
       ],
-      "annotations": [],
+      "annotations": [
+        "7304430018007898714"
+      ],
       "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg2OTc"
     },
     {
@@ -416,6 +820,7 @@
         }
       ],
       "annotations": [
+        "7304430018007898753",
         "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg3NTI-ConceptDescription"
       ],
       "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRi"
@@ -443,6 +848,14 @@
             "key": "ConceptDescription-conceptShortDescription"
           },
           "value": "IMpsSpecific short description"
+        },
+        {
+          "property": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "ConceptDescription-helpUrl"
+          },
+          "value": "https://user.doc.example.com/test/bla?query\u003dvalue#anchor"
         }
       ],
       "containments": [],
@@ -499,7 +912,9 @@
           ]
         }
       ],
-      "annotations": [],
+      "annotations": [
+        "7304430018007898756"
+      ],
       "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg3NTI"
     },
     {
@@ -559,7 +974,9 @@
           ]
         }
       ],
-      "annotations": [],
+      "annotations": [
+        "7304430018007898760"
+      ],
       "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg3NTI"
     },
     {
@@ -619,7 +1036,9 @@
           ]
         }
       ],
-      "annotations": [],
+      "annotations": [
+        "7304430018007898764"
+      ],
       "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg3NTI"
     },
     {
@@ -795,6 +1214,7 @@
         }
       ],
       "annotations": [
+        "7304430018007898792",
         "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg3ODc-ConceptDescription"
       ],
       "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRi"
@@ -822,6 +1242,14 @@
             "key": "ConceptDescription-conceptShortDescription"
           },
           "value": "AllMpsSpecific short description"
+        },
+        {
+          "property": {
+            "language": "io-lionweb-mps-specific",
+            "version": "0",
+            "key": "ConceptDescription-helpUrl"
+          },
+          "value": "http://function"
         }
       ],
       "containments": [],
@@ -878,7 +1306,9 @@
           ]
         }
       ],
-      "annotations": [],
+      "annotations": [
+        "7304430018007898797"
+      ],
       "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg3ODc"
     },
     {
@@ -938,7 +1368,9 @@
           ]
         }
       ],
-      "annotations": [],
+      "annotations": [
+        "7304430018007898801"
+      ],
       "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg3ODc"
     },
     {
@@ -998,7 +1430,9 @@
           ]
         }
       ],
-      "annotations": [],
+      "annotations": [
+        "7304430018007898805"
+      ],
       "parent": "MGZiYTMxNTYtNDE4Zi00ODAyLTgwYmItZDFmYWM0MDk4YWRiLzczMDQ0MzAwMTgwMDc4OTg3ODc"
     }
   ]

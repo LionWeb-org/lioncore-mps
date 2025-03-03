@@ -884,6 +884,11 @@
             <ref role="3bR37D" node="6jI_U5e9kIC" resolve="io.lionweb.mps.m3.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6luz6qwmk9a" role="3bR37C">
+          <node concept="3bR9La" id="6luz6qwmk9b" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:14x5$qAUbkv" resolve="jetbrains.mps.lang.resources" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="5wsogBcGDLI" role="3989C9">

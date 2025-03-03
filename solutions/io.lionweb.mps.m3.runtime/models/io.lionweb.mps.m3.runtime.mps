@@ -2737,9 +2737,6 @@
               <node concept="1rXfSq" id="6LPkCA$5SRC" role="HW$Y0">
                 <ref role="37wK5l" node="6LPkCA$4HpE" resolve="getDeprecated" />
               </node>
-              <node concept="1rXfSq" id="6luz6qtPy1Y" role="HW$Y0">
-                <ref role="37wK5l" node="6luz6qtN5il" resolve="getKeyedDescription" />
-              </node>
             </node>
           </node>
         </node>
