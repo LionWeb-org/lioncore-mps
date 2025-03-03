@@ -1180,9 +1180,7 @@
               <node concept="37vLTw" id="6luz6qww_CD" role="37wK5m">
                 <ref role="3cqZAo" node="6luz6qww$sL" resolve="helpUrl" />
               </node>
-              <node concept="Xl_RD" id="6luz6qwwA5a" role="37wK5m">
-                <property role="Xl_RC" value="{MPS_HELP_URL}" />
-              </node>
+              <node concept="Xl_RD" id="6luz6qwwA5a" role="37wK5m" />
             </node>
           </node>
         </node>
