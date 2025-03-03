@@ -35,6 +35,7 @@
     <dependency reexport="false">3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)</dependency>
     <dependency reexport="false">60791ea2-7a1d-4862-a1ef-f87878cc3b6e(io.lionweb.mps.converter.TestComputedProperty)</dependency>
     <dependency reexport="false">1ec6d5e7-6402-4c18-95d0-6e0906eb1ff1(io.lionweb.mps.converter.TestEnum)</dependency>
+    <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:76d927fd-3a5a-4e40-865b-7c2d329ca675:MultiRefLang" version="1" />
@@ -68,6 +69,7 @@
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
+    <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="76d927fd-3a5a-4e40-865b-7c2d329ca675(MultiRefLang)" version="0" />
     <module reference="9d6d7230-3178-4b3f-a837-7c0180c86207(io.lionweb.lionweb.java)" version="0" />

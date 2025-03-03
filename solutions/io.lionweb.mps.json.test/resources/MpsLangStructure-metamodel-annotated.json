@@ -1382,7 +1382,7 @@
             "version": "0",
             "key": "ConceptDescription-helpUrl"
           },
-          "value": "https://www.jetbrains.com/help/mps/2021.1/structure.html"
+          "value": "{MPS_HELP_URL}structure.html"
         }
       ],
       "containments": [],
@@ -2581,7 +2581,7 @@
             "version": "0",
             "key": "ConceptDescription-helpUrl"
           },
-          "value": "https://www.jetbrains.com/help/mps/2021.1/structure.html"
+          "value": "{MPS_HELP_URL}structure.html"
         }
       ],
       "containments": [],
@@ -3650,7 +3650,7 @@
             "version": "0",
             "key": "ConceptDescription-helpUrl"
           },
-          "value": "https://www.jetbrains.com/help/mps/2021.1/structure.html"
+          "value": "{MPS_HELP_URL}structure.html"
         }
       ],
       "containments": [],
@@ -4798,7 +4798,7 @@
             "version": "0",
             "key": "ConceptDescription-helpUrl"
           },
-          "value": "https://www.jetbrains.com/help/mps/2021.1/structure.html"
+          "value": "{MPS_HELP_URL}structure.html"
         }
       ],
       "containments": [],
@@ -5964,7 +5964,7 @@
             "version": "0",
             "key": "ConceptDescription-helpUrl"
           },
-          "value": "https://www.jetbrains.com/help/mps/2021.1/structure.html"
+          "value": "{MPS_HELP_URL}structure.html"
         }
       ],
       "containments": [],
