@@ -574,6 +574,11 @@
             <ref role="3bR37D" node="RuBGkv2iXR" resolve="io.lionweb.mps.specific" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6luz6qtR9Gd" role="3bR37C">
+          <node concept="3bR9La" id="6luz6qtR9Ge" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:14x5$qAUbkv" resolve="jetbrains.mps.lang.resources" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="6fYiNFaW8NT" role="2G$12L">
         <property role="BnDLt" value="true" />
