@@ -38,7 +38,7 @@ mpsBuilds {
     mpsDefaults.pathVariables.put("mps-extensions.home", projectDir.resolve("build/dependencies/de.itemis.mps.extensions"))
 }
 
-task<JavaExec>("runCommandLineTool") {
+tasks.register<JavaExec>("runCommandLineTool") {
     dependsOn("resolveGenerationDependencies")
 
     val mpsHome = configurations

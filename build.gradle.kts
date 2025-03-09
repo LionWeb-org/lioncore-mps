@@ -62,45 +62,45 @@ bundledDependencies {
 
 group = "io.lionweb"
 
-task<Jar>("sourcesJar") {
+tasks.register<Jar>("sourcesJar") {
     archiveClassifier.set("sources")
 }
 
-task<Jar>("javadocJar") {
+tasks.register<Jar>("javadocJar") {
     archiveClassifier.set("javadoc")
 }
 
-task<Exec>("testCmdLineExport-library") {
+tasks.register<Exec>("testCmdLineExport-library") {
     workingDir("./test-project")
     commandLine("./scripts/export-library.sh")
 }
 
-task<Exec>("testCmdLineExport-multiple") {
+tasks.register<Exec>("testCmdLineExport-multiple") {
     workingDir("./test-project")
     commandLine("./scripts/export-multiple.sh")
 }
 
-task<Exec>("testCmdLineExport-foo") {
+tasks.register<Exec>("testCmdLineExport-foo") {
     workingDir("./test-project")
     commandLine("./scripts/export-foo.sh")
 }
 
-task<Exec>("testCmdLineExport-configs") {
+tasks.register<Exec>("testCmdLineExport-configs") {
     workingDir("./test-project")
     commandLine("./scripts/export-configs.sh")
 }
 
-task<Exec>("testCmdLineExport-DependsOnMpsExtension-externalLib") {
+tasks.register<Exec>("testCmdLineExport-DependsOnMpsExtension-externalLib") {
     workingDir("./test-project-externalLib")
     commandLine("./scripts/export-DependsOnMpsExtensions.sh")
 }
 
-task<Exec>("testCmdLineExport-foo-externalLib") {
+tasks.register<Exec>("testCmdLineExport-foo-externalLib") {
     workingDir("./test-project-externalLib")
     commandLine("./scripts/export-foo.sh")
 }
 
-task("testCmdLineExport") {
+tasks.register("testCmdLineExport") {
     dependsOn("testCmdLineExport-library")
     dependsOn("testCmdLineExport-multiple")
     dependsOn("testCmdLineExport-foo")

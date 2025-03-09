@@ -36,7 +36,7 @@ mpsBuilds {
     mpsDefaults.pathVariables.put("lionweb-mps.home", projectDir.resolve("build/dependencies/io.lionweb.mps"))
 }
 
-task<JavaExec>("runCommandLineTool") {
+tasks.register<JavaExec>("runCommandLineTool") {
     dependsOn("resolveGenerationDependencies")
 
     val mpsHome = configurations
