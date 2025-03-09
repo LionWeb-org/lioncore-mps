@@ -8,6 +8,7 @@ plugins {
 val mpsVersionSuffix: String by project
 val lionwebRelease: String by project
 val mpsVersion: String by project
+val jbrVersion: String by project
 val lionwebVersion: String by project
 
 repositories {
@@ -18,12 +19,22 @@ repositories {
 
 dependencies {
     "mps"("com.jetbrains:mps:$mpsVersion")
+    jbr("com.jetbrains.jdk:jbr_jcef:$jbrVersion")
     "generation"("io.lionweb.lionweb-mps:lionweb-mps-$mpsVersionSuffix-lw$lionwebRelease:$lionwebVersion")
 }
 
-tasks.generateBuildscript {
-    args("--macro=lionweb-mps.home::${projectDir.resolve("build/dependencies/io.lionweb.mps")}")
+mpsBuilds {
+    create<MainBuild>("main") {
+        buildSolutionDescriptor = file("solutions/test-project.build/test-project.build.msd")
+        buildProjectName = "LionWeb-MPS-Test-Project"
+        buildFile = file("build.xml")
+    }
+    mpsDefaults.pathVariables += "lionweb-mps.home::${projectDir.resolve("build/dependencies/io.lionweb.mps")}"
 }
+
+//tasks.generateBuildscript {
+//    args("--macro=lionweb-mps.home::${projectDir.resolve("build/dependencies/io.lionweb.mps")}")
+//}
 
 tasks.assembleMps {
     antProperties.putAll(antProperties.get())
