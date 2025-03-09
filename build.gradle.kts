@@ -38,13 +38,13 @@ dependencies {
 mpsBuilds {
     val main = create<MainBuild>("main") {
         buildSolutionDescriptor = file("solutions/io.lionweb.mps.build/io.lionweb.mps.build.msd")
-        buildProjectName = "LionWeb-MPS"
+        buildProjectName = "io.lionweb.mps"
         buildFile = file("build.xml")
     }
     create<TestBuild>("test") {
         dependsOn(main)
         buildSolutionDescriptor = file("solutions/io.lionweb.mps.build.test/io.lionweb.mps.build.test.msd")
-        buildProjectName = "LionWeb-MPS-test"
+        buildProjectName = "io.lionweb.mps.test"
         buildFile = file("build-test.xml")
     }
 }
