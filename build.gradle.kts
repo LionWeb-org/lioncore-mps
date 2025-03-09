@@ -1,9 +1,7 @@
 // based on https://github.com/specificlanguages/mps-gradle-plugin-sample
 
 import org.apache.tools.ant.taskdefs.condition.Os
-import java.util.regex.Matcher
-import java.util.regex.Pattern
-
+import com.specificlanguages.mps.MainBuild
 
 plugins {
     id("com.specificlanguages.mps")
@@ -18,6 +16,7 @@ val mpsVersionSuffix: String by project
 val lionwebRelease: String by project
 val lionwebJavaVersion: String by project
 val mpsVersion: String by project
+val jbrVersion: String by project
 val mpsExtensionsVersion: String by project
 val apacheCliVersion: String by project
 
@@ -29,9 +28,29 @@ repositories {
 
 dependencies {
     "mps"("com.jetbrains:mps:$mpsVersion")
+    jbr("com.jetbrains.jdk:jbr_jcef:$jbrVersion")
     // only needed for tests, but such a config is missing
     // https://github.com/specificlanguages/mps-gradle-plugin/issues/9
     // "generation" ("de.itemis.mps:extensions:$mpsExtensionsVersion")
+}
+
+mpsBuilds {
+    create<MainBuild>("main") {
+        buildSolutionDescriptor = file("solutions/io.lionweb.mps.build/io.lionweb.mps.build.msd")
+        buildProjectName = "LionWeb-MPS"
+        buildFile = file("build.xml")
+    }
+}
+
+bundledDependencies {
+    register("libs") {
+        destinationDir = file("solutions/io.lionweb.lionweb.java/libs")
+        dependency("io.lionweb.lionweb-java:lionweb-java-$lionwebRelease-core:$lionwebJavaVersion")
+    }
+    register("apacheCli") {
+        destinationDir = file("solutions/org.apache.commons.cli/libs")
+        dependency("commons-cli:commons-cli:$apacheCliVersion")
+    }
 }
 
 group = "io.lionweb"
@@ -155,18 +174,6 @@ publishing {
                 }
             }
         }
-    }
-}
-
-
-stubs {
-    register("libs") {
-        destinationDir("solutions/io.lionweb.lionweb.java/libs")
-        dependency("io.lionweb.lionweb-java:lionweb-java-$lionwebRelease-core:$lionwebJavaVersion")
-    }
-    register("apacheCli") {
-        destinationDir("solutions/org.apache.commons.cli/libs")
-        dependency("commons-cli:commons-cli:$apacheCliVersion")
     }
 }
 
