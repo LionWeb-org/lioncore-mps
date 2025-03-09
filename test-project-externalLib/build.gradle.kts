@@ -8,11 +8,11 @@ plugins {
     `maven-publish`
 }
 
+val releaseVersion: String by project
 val mpsVersionSuffix: String by project
 val lionwebRelease: String by project
 val mpsVersion: String by project
 val jbrVersion: String by project
-val lionwebVersion: String by project
 val mpsExtensionsVersion: String by project
 
 repositories {
@@ -24,7 +24,7 @@ repositories {
 dependencies {
     "mps"("com.jetbrains:mps:$mpsVersion")
     jbr("com.jetbrains.jdk:jbr_jcef:$jbrVersion")
-    "generation"("io.lionweb.lionweb-mps:lionweb-mps-$mpsVersionSuffix-lw$lionwebRelease:$lionwebVersion")
+    "generation"("io.lionweb.lionweb-mps:lionweb-mps-$mpsVersionSuffix-lw$lionwebRelease:$releaseVersion")
     "generation"("de.itemis.mps:extensions:$mpsExtensionsVersion")
 }
 
@@ -38,7 +38,7 @@ mpsBuilds {
     mpsDefaults.pathVariables.put("mps-extensions.home", projectDir.resolve("build/dependencies/de.itemis.mps.extensions"))
 }
 
-task<JavaExec>("runCommandLineTool") {
+tasks.register<JavaExec>("runCommandLineTool") {
     dependsOn("resolveGenerationDependencies")
 
     val mpsHome = configurations
