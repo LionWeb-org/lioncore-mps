@@ -2,6 +2,7 @@
 
 import org.apache.tools.ant.taskdefs.condition.Os
 import com.specificlanguages.mps.MainBuild
+import com.specificlanguages.mps.TestBuild
 
 plugins {
     id("com.specificlanguages.mps")
@@ -35,10 +36,16 @@ dependencies {
 }
 
 mpsBuilds {
-    create<MainBuild>("main") {
+    val main = create<MainBuild>("main") {
         buildSolutionDescriptor = file("solutions/io.lionweb.mps.build/io.lionweb.mps.build.msd")
         buildProjectName = "LionWeb-MPS"
         buildFile = file("build.xml")
+    }
+    create<TestBuild>("test") {
+        dependsOn(main)
+        buildSolutionDescriptor = file("solutions/io.lionweb.mps.build.test/io.lionweb.mps.build.test.msd")
+        buildProjectName = "LionWeb-MPS-test"
+        buildFile = file("build-test.xml")
     }
 }
 
@@ -219,3 +226,5 @@ release {
         pushOptions.add("--force")
     }
 }
+
+tasks.withType(com.specificlanguages.mps.RunAnt::class).configureEach { environment.putAll(System.getenv()) }

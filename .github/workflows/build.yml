@@ -27,8 +27,7 @@ jobs:
         cache-disabled: false
 
     - name: Build and test LionWeb-MPS
-#      run:  xvfb-run ./gradlew checkMps publishToMavenLocal
-      run:  xvfb-run ./gradlew publishToMavenLocal
+      run:  xvfb-run ./gradlew testMps publishToMavenLocal
 
     - name: Publish Test Results
       uses: EnricoMi/publish-unit-test-result-action@v2
