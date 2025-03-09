@@ -11,8 +11,8 @@ plugins {
     id("net.researchgate.release")
 }
 
-val releaseVersion: String = (project.version) as String
-val isReleaseVersion = !releaseVersion.endsWith("SNAPSHOT")
+val lionwebVersion: String by project
+val isReleaseVersion = !lionwebVersion.endsWith("SNAPSHOT")
 val mpsVersionSuffix: String by project
 val lionwebRelease: String by project
 val lionwebJavaVersion: String by project
@@ -140,7 +140,7 @@ publishing {
             pom {
                 name.set(concatenatedArtifact)
                 description.set("MPS APIs for the LionWeb system for MPS $mpsVersionSuffix, LionWeb release $lionwebRelease")
-                version = releaseVersion
+                version = lionwebVersion
                 packaging = "zip"
                 url.set("https://github.com/LionWeb-io/lionweb-mps")
 
@@ -218,7 +218,7 @@ signing {
 }
 
 release {
-    tagTemplate.set("$mpsVersionSuffix-lw$lionwebRelease-${releaseVersion.replace(snapshotSuffix.get(), "")}")
+    tagTemplate.set("$mpsVersionSuffix-lw$lionwebRelease-${lionwebVersion.replace(snapshotSuffix.get(), "")}")
     buildTasks.set(listOf("publish"))
     git {
         requireBranch.set("")
