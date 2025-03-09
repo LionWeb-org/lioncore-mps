@@ -1,9 +1,8 @@
 // based on https://github.com/specificlanguages/mps-gradle-plugin-sample
 
 import org.apache.tools.ant.taskdefs.condition.Os
-import java.util.regex.Matcher
-import java.util.regex.Pattern
-
+import com.specificlanguages.mps.MainBuild
+import com.specificlanguages.mps.TestBuild
 
 plugins {
     id("com.specificlanguages.mps")
@@ -18,6 +17,7 @@ val mpsVersionSuffix: String by project
 val lionwebRelease: String by project
 val lionwebJavaVersion: String by project
 val mpsVersion: String by project
+val jbrVersion: String by project
 val mpsExtensionsVersion: String by project
 val apacheCliVersion: String by project
 
@@ -29,9 +29,35 @@ repositories {
 
 dependencies {
     "mps"("com.jetbrains:mps:$mpsVersion")
+    jbr("com.jetbrains.jdk:jbr_jcef:$jbrVersion")
     // only needed for tests, but such a config is missing
     // https://github.com/specificlanguages/mps-gradle-plugin/issues/9
     // "generation" ("de.itemis.mps:extensions:$mpsExtensionsVersion")
+}
+
+mpsBuilds {
+    val main = create<MainBuild>("main") {
+        buildSolutionDescriptor = file("solutions/io.lionweb.mps.build/io.lionweb.mps.build.msd")
+        buildProjectName = "io.lionweb.mps"
+        buildFile = file("build.xml")
+    }
+    create<TestBuild>("test") {
+        dependsOn(main)
+        buildSolutionDescriptor = file("solutions/io.lionweb.mps.build.test/io.lionweb.mps.build.test.msd")
+        buildProjectName = "io.lionweb.mps.test"
+        buildFile = file("build-test.xml")
+    }
+}
+
+bundledDependencies {
+    register("libs") {
+        destinationDir = file("solutions/io.lionweb.lionweb.java/libs")
+        dependency("io.lionweb.lionweb-java:lionweb-java-$lionwebRelease-core:$lionwebJavaVersion")
+    }
+    register("apacheCli") {
+        destinationDir = file("solutions/org.apache.commons.cli/libs")
+        dependency("commons-cli:commons-cli:$apacheCliVersion")
+    }
 }
 
 group = "io.lionweb"
@@ -158,18 +184,6 @@ publishing {
     }
 }
 
-
-stubs {
-    register("libs") {
-        destinationDir("solutions/io.lionweb.lionweb.java/libs")
-        dependency("io.lionweb.lionweb-java:lionweb-java-$lionwebRelease-core:$lionwebJavaVersion")
-    }
-    register("apacheCli") {
-        destinationDir("solutions/org.apache.commons.cli/libs")
-        dependency("commons-cli:commons-cli:$apacheCliVersion")
-    }
-}
-
 configurations.getByName("libs") {
     attributes {
         attribute(Attribute.of("org.gradle.dependency.bundling", String::class.java), "external")
@@ -212,3 +226,5 @@ release {
         pushOptions.add("--force")
     }
 }
+
+tasks.withType(com.specificlanguages.mps.RunAnt::class).configureEach { environment.putAll(System.getenv()) }
