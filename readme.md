@@ -113,18 +113,21 @@ The example assumes we merge `mps2021.1` into `mps2021.2`.
    * `mpsVersion` full _target_ MPS version (`2021.2.6`)
    * `mpsExtensionsVersion` latest version of [MPS-extensions](https://jetbrains.github.io/MPS-extensions/) for the _target_ MPS version (`2021.2.2631.1360a64`)
 5. Run the Migration Assistant.
-6. Run all tests. (*TODO* Some elucidation on how to do this precisely, and what tests should absolutely not fail, and what can be safely ignored.)
-7. Update the build model. (*TODO* Some elucidation might be required here as well.)
-8. Repeat steps 3-6 for the test projects, residing in `test-project/` and `test-project-externalLib/`.
-  **Note** Before and after opening these projects in MPS:
-    * Make sure to rename their build model files (the `.mps` files in the `models/` directory under the one solution under `solutions/` of either project) to not have the `-ignore` suffix.
-    * Make sure to put those suffixes back in place before continuing with the next step (#9).
-9. Check that the following Gradle tasks execute without failure from the CLI: `publishToMavenLocal`, `testCmdLineExport`.
-10. Commit the changes, and push the branch (`mps2012.2-migration`).
-11. Check that the [GitHub Action triggered by the push](https://github.com/LionWeb-io/lionweb-mps/actions) runs successfully.
+6. Update the (two) build models, triggering the “Reload Modules From Disk” intention when and where needed.
+7. Check the entire project using “Check Project”.
+  Investigate and fix any errors outside the module named “`xx_broken`”.
+8. Rebuild the (entire) project.
+9. Run all tests, in the standard way from within MPS using “Run 'All Tests in Project'”.
+  **Note** that not all tests will succeed when run within MPS: some that succeed when run in CI (i.e.: in the GitHub Action), and some that are currently broken.
+  The former can be recognized by them throwing a `jetbrains.mps.baseLanguage.unitTest.execution.server.InProcessExecutionFilter$TestSetNotToBeExecutedInProcessException`.
+  The latter can be recognized by them residing in the “`xx_broken`” module.
+10. Repeat steps 3-9 for the test projects, residing in `test-project/` and `test-project-externalLib/`.
+11. Check that the following Gradle tasks execute without failure from the CLI: `publishToMavenLocal`, `testCmdLineExport`.
+12. Commit the changes, and push the branch (`mps2012.2-migration`).
+13. Check that the [GitHub Action triggered by the push](https://github.com/LionWeb-io/lionweb-mps/actions) runs successfully.
   (If not: sorry to hear the build feels like that, and good luck with that... Some nasty debugging lies ahead of you...)
-12. *Provided everything works*, merge the `mps2021.2-migration` branch back into `mps2021.2`.
-13. Create a release — see the next section.
+14. *Provided everything works*, merge the `mps2021.2-migration` branch back into `mps2021.2`.
+15. Create a release — see the next section.
 
 
 ## Publishing and Releasing
