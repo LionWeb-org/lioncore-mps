@@ -733,6 +733,29 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="7ZVRpg_pBLV" role="1SL9yI">
+      <property role="TrG5h" value="Utf8Annotated" />
+      <node concept="3cqZAl" id="7ZVRpg_pBLW" role="3clF45" />
+      <node concept="3clFbS" id="7ZVRpg_pBLX" role="3clF47">
+        <node concept="3clFbF" id="7ZVRpg_pBLY" role="3cqZAp">
+          <node concept="2OqwBi" id="7ZVRpg_pBLZ" role="3clFbG">
+            <node concept="2WthIp" id="7ZVRpg_pBM0" role="2Oq$k0" />
+            <node concept="2XshWL" id="7ZVRpg_pBM1" role="2OqNvi">
+              <ref role="2WH_rO" node="5M8g5cT6Owk" resolve="exportAnnotated" />
+              <node concept="pHN19" id="7ZVRpg_pBM2" role="2XxRq1">
+                <node concept="2V$Bhx" id="6$Vbq$b177i" role="2V$M_3">
+                  <property role="2V$B1T" value="63c09674-565f-4cbb-add6-f15c4e540c84" />
+                  <property role="2V$B1Q" value="io.lionweb.mps.converter.TestUtf8" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="7ZVRpg_pBM4" role="2XxRq1">
+                <property role="Xl_RC" value="TestUtf8-metamodel-annotated.json" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1LZb2c" id="6luz6qu3XNH" role="1SL9yI">
       <property role="TrG5h" value="TestMpsSpecific" />
       <node concept="3cqZAl" id="6luz6qu3XNI" role="3clF45" />
@@ -2067,6 +2090,32 @@
                 <node concept="2V$Bhx" id="1xqd6ptRM2B" role="2V$M_3">
                   <property role="2V$B1T" value="76d927fd-3a5a-4e40-865b-7c2d329ca675" />
                   <property role="2V$B1Q" value="MultiRefLang" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="7ZVRpg_pDHb" role="1SL9yI">
+      <property role="TrG5h" value="Utf8" />
+      <node concept="3cqZAl" id="7ZVRpg_pDHc" role="3clF45" />
+      <node concept="3clFbS" id="7ZVRpg_pDHd" role="3clF47">
+        <node concept="3clFbF" id="7ZVRpg_pDHe" role="3cqZAp">
+          <node concept="2OqwBi" id="7ZVRpg_pDHf" role="3clFbG">
+            <node concept="2WthIp" id="7ZVRpg_pDHg" role="2Oq$k0" />
+            <node concept="2XshWL" id="7ZVRpg_pDHh" role="2OqNvi">
+              <ref role="2WH_rO" node="5ocQ9W1vGKB" resolve="convert" />
+              <node concept="Xl_RD" id="7ZVRpg_pDHi" role="2XxRq1">
+                <property role="Xl_RC" value="TestUtf8-metamodel-annotated.json" />
+              </node>
+              <node concept="Xl_RD" id="7ZVRpg_pDHj" role="2XxRq1">
+                <property role="Xl_RC" value="io.lionweb.mps.converter.TestUtf8" />
+              </node>
+              <node concept="pHN19" id="7ZVRpg_pDHk" role="2XxRq1">
+                <node concept="2V$Bhx" id="6$Vbq$b16Oa" role="2V$M_3">
+                  <property role="2V$B1T" value="63c09674-565f-4cbb-add6-f15c4e540c84" />
+                  <property role="2V$B1Q" value="io.lionweb.mps.converter.TestUtf8" />
                 </node>
               </node>
             </node>
