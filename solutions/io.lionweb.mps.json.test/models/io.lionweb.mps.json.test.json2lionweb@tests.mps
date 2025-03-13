@@ -104,9 +104,6 @@
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
-        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -2703,36 +2700,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="4R9pospmzHD" role="3cqZAp" />
-        <node concept="3cpWs8" id="6jbF0BobB4R" role="3cqZAp">
-          <node concept="3cpWsn" id="6jbF0BobB4S" role="3cpWs9">
-            <property role="TrG5h" value="attributeFinder" />
-            <node concept="3uibUv" id="6jbF0BobB4T" role="1tU5fm">
-              <ref role="3uigEE" to="y7p:pPZz6cPvUw" resolve="LionWebAttributeFinder" />
-            </node>
-            <node concept="2ShNRf" id="6jbF0BobB4U" role="33vP2m">
-              <node concept="1pGfFk" id="6jbF0BobB4V" role="2ShVmc">
-                <ref role="37wK5l" to="y7p:5AGBwuFEKL7" resolve="LionWebAttributeFinder" />
-                <node concept="37vLTw" id="6jbF0BobB4W" role="37wK5m">
-                  <ref role="3cqZAo" node="6jbF0BobBqx" resolve="repository" />
-                </node>
-                <node concept="2ShNRf" id="6jbF0BobB4X" role="37wK5m">
-                  <node concept="1pGfFk" id="6jbF0BobB4Y" role="2ShVmc">
-                    <ref role="37wK5l" to="y7p:DUXtGZOlxP" resolve="LionCoreConstants" />
-                    <node concept="37vLTw" id="6jbF0BobB4Z" role="37wK5m">
-                      <ref role="3cqZAo" node="6jbF0BobBqx" resolve="repository" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2ShNRf" id="6jbF0BobB50" role="37wK5m">
-                  <node concept="HV5vD" id="6jbF0BobB51" role="2ShVmc">
-                    <ref role="HV5vE" to="y7p:18UigYOOPLq" resolve="MetaAdapterByDeclarationHelper" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="6jbF0BobB52" role="3cqZAp" />
         <node concept="3clFbF" id="3FWZcLVXMF6" role="3cqZAp">
           <node concept="2OqwBi" id="3FWZcLVXMF7" role="3clFbG">
             <node concept="liA8E" id="3FWZcLVXMF9" role="2OqNvi">
@@ -2765,9 +2732,7 @@
                         <property role="2V$B1Q" value="io.lionweb.mps.converter.TestLang2" />
                       </node>
                     </node>
-                    <node concept="37vLTw" id="6jbF0BobC3V" role="37wK5m">
-                      <ref role="3cqZAo" node="6jbF0BobB4S" resolve="attributeFinder" />
-                    </node>
+                    <node concept="1jGwE1" id="6$Vbq$b7kwY" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -2981,36 +2946,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="4R9pospmzIG" role="3cqZAp" />
-        <node concept="3cpWs8" id="6jbF0BobE5W" role="3cqZAp">
-          <node concept="3cpWsn" id="6jbF0BobE5X" role="3cpWs9">
-            <property role="TrG5h" value="attributeFinder" />
-            <node concept="3uibUv" id="6jbF0BobE5Y" role="1tU5fm">
-              <ref role="3uigEE" to="y7p:pPZz6cPvUw" resolve="LionWebAttributeFinder" />
-            </node>
-            <node concept="2ShNRf" id="6jbF0BobE5Z" role="33vP2m">
-              <node concept="1pGfFk" id="6jbF0BobE60" role="2ShVmc">
-                <ref role="37wK5l" to="y7p:5AGBwuFEKL7" resolve="LionWebAttributeFinder" />
-                <node concept="37vLTw" id="6jbF0BobE61" role="37wK5m">
-                  <ref role="3cqZAo" node="6jbF0BobErF" resolve="repository" />
-                </node>
-                <node concept="2ShNRf" id="6jbF0BobE62" role="37wK5m">
-                  <node concept="1pGfFk" id="6jbF0BobE63" role="2ShVmc">
-                    <ref role="37wK5l" to="y7p:DUXtGZOlxP" resolve="LionCoreConstants" />
-                    <node concept="37vLTw" id="6jbF0BobE64" role="37wK5m">
-                      <ref role="3cqZAo" node="6jbF0BobErF" resolve="repository" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2ShNRf" id="6jbF0BobE65" role="37wK5m">
-                  <node concept="HV5vD" id="6jbF0BobE66" role="2ShVmc">
-                    <ref role="HV5vE" to="y7p:18UigYOOPLq" resolve="MetaAdapterByDeclarationHelper" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="6jbF0BobE67" role="3cqZAp" />
         <node concept="3clFbF" id="4R9pospmzIH" role="3cqZAp">
           <node concept="2OqwBi" id="4R9pospmzII" role="3clFbG">
             <node concept="37vLTw" id="4R9pospmzIJ" role="2Oq$k0">
@@ -3046,9 +2981,7 @@
                         <property role="2V$B1Q" value="io.lionweb.mps.converter.TestLang2" />
                       </node>
                     </node>
-                    <node concept="37vLTw" id="6jbF0BobGfr" role="37wK5m">
-                      <ref role="3cqZAo" node="6jbF0BobE5X" resolve="attributeFinder" />
-                    </node>
+                    <node concept="1jGwE1" id="6$Vbq$b7lgU" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -3476,36 +3409,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="4R9posq5S5K" role="3cqZAp" />
-        <node concept="3cpWs8" id="6jbF0Bob_9c" role="3cqZAp">
-          <node concept="3cpWsn" id="6jbF0Bob_9d" role="3cpWs9">
-            <property role="TrG5h" value="attributeFinder" />
-            <node concept="3uibUv" id="6jbF0Bob_9e" role="1tU5fm">
-              <ref role="3uigEE" to="y7p:pPZz6cPvUw" resolve="LionWebAttributeFinder" />
-            </node>
-            <node concept="2ShNRf" id="6jbF0Bob_9f" role="33vP2m">
-              <node concept="1pGfFk" id="6jbF0Bob_9g" role="2ShVmc">
-                <ref role="37wK5l" to="y7p:5AGBwuFEKL7" resolve="LionWebAttributeFinder" />
-                <node concept="37vLTw" id="6jbF0Bob_9h" role="37wK5m">
-                  <ref role="3cqZAo" node="6jbF0Bob_pb" resolve="repository" />
-                </node>
-                <node concept="2ShNRf" id="6jbF0Bob_9i" role="37wK5m">
-                  <node concept="1pGfFk" id="6jbF0Bob_9j" role="2ShVmc">
-                    <ref role="37wK5l" to="y7p:DUXtGZOlxP" resolve="LionCoreConstants" />
-                    <node concept="37vLTw" id="6jbF0Bob_9k" role="37wK5m">
-                      <ref role="3cqZAo" node="6jbF0Bob_pb" resolve="repository" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2ShNRf" id="6jbF0Bob_9l" role="37wK5m">
-                  <node concept="HV5vD" id="6jbF0Bob_9m" role="2ShVmc">
-                    <ref role="HV5vE" to="y7p:18UigYOOPLq" resolve="MetaAdapterByDeclarationHelper" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="6jbF0Bob_9n" role="3cqZAp" />
         <node concept="3clFbF" id="4R9posq5S5L" role="3cqZAp">
           <node concept="2OqwBi" id="4R9posq5S5M" role="3clFbG">
             <node concept="37vLTw" id="4R9posq5S5N" role="2Oq$k0">
@@ -3530,9 +3433,7 @@
                         <property role="2V$B1Q" value="io.lionweb.mps.converter.TestCustomDatatype" />
                       </node>
                     </node>
-                    <node concept="37vLTw" id="6jbF0Bob_Ax" role="37wK5m">
-                      <ref role="3cqZAo" node="6jbF0Bob_9d" resolve="attributeFinder" />
-                    </node>
+                    <node concept="1jGwE1" id="6$Vbq$b7jlv" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -4636,36 +4537,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="1xqd6ptaZxs" role="3cqZAp" />
-        <node concept="3cpWs8" id="6jbF0BobvNA" role="3cqZAp">
-          <node concept="3cpWsn" id="6jbF0BobvNB" role="3cpWs9">
-            <property role="TrG5h" value="attributeFinder" />
-            <node concept="3uibUv" id="6jbF0BobvA9" role="1tU5fm">
-              <ref role="3uigEE" to="y7p:pPZz6cPvUw" resolve="LionWebAttributeFinder" />
-            </node>
-            <node concept="2ShNRf" id="6jbF0BobvNC" role="33vP2m">
-              <node concept="1pGfFk" id="6jbF0BobvND" role="2ShVmc">
-                <ref role="37wK5l" to="y7p:5AGBwuFEKL7" resolve="LionWebAttributeFinder" />
-                <node concept="37vLTw" id="6jbF0BobvNE" role="37wK5m">
-                  <ref role="3cqZAo" node="6jbF0BobrLs" resolve="repository" />
-                </node>
-                <node concept="2ShNRf" id="6jbF0BobvNF" role="37wK5m">
-                  <node concept="1pGfFk" id="6jbF0BobvNG" role="2ShVmc">
-                    <ref role="37wK5l" to="y7p:DUXtGZOlxP" resolve="LionCoreConstants" />
-                    <node concept="37vLTw" id="6jbF0BobvNH" role="37wK5m">
-                      <ref role="3cqZAo" node="6jbF0BobrLs" resolve="repository" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2ShNRf" id="6jbF0BobvNI" role="37wK5m">
-                  <node concept="HV5vD" id="6jbF0BobvNJ" role="2ShVmc">
-                    <ref role="HV5vE" to="y7p:18UigYOOPLq" resolve="MetaAdapterByDeclarationHelper" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="6jbF0Bobm7N" role="3cqZAp" />
         <node concept="3clFbF" id="1xqd6ptaZxt" role="3cqZAp">
           <node concept="2OqwBi" id="1xqd6ptaZxu" role="3clFbG">
             <node concept="37vLTw" id="1xqd6ptaZxv" role="2Oq$k0">
@@ -4705,9 +4576,7 @@
                         <property role="2V$B1Q" value="library" />
                       </node>
                     </node>
-                    <node concept="37vLTw" id="6jbF0Bobxby" role="37wK5m">
-                      <ref role="3cqZAo" node="6jbF0BobvNB" resolve="attributeFinder" />
-                    </node>
+                    <node concept="1jGwE1" id="6$Vbq$b7hLb" role="37wK5m" />
                   </node>
                   <node concept="2YIFZM" id="3FWZcLVUZgN" role="HW$Y0">
                     <ref role="37wK5l" to="kte7:3FWZcLVUM0z" resolve="toUsedLanguage" />
@@ -4718,9 +4587,7 @@
                         <property role="2V$B1Q" value="io.lionweb.mps.converter.TestAnnotation" />
                       </node>
                     </node>
-                    <node concept="37vLTw" id="6jbF0BobxTd" role="37wK5m">
-                      <ref role="3cqZAo" node="6jbF0BobvNB" resolve="attributeFinder" />
-                    </node>
+                    <node concept="1jGwE1" id="6$Vbq$b7hlZ" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -5142,36 +5009,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="5TNjoy1ZBFh" role="3cqZAp" />
-        <node concept="3cpWs8" id="6jbF0BobHzi" role="3cqZAp">
-          <node concept="3cpWsn" id="6jbF0BobHzj" role="3cpWs9">
-            <property role="TrG5h" value="attributeFinder" />
-            <node concept="3uibUv" id="6jbF0BobHzk" role="1tU5fm">
-              <ref role="3uigEE" to="y7p:pPZz6cPvUw" resolve="LionWebAttributeFinder" />
-            </node>
-            <node concept="2ShNRf" id="6jbF0BobHzl" role="33vP2m">
-              <node concept="1pGfFk" id="6jbF0BobHzm" role="2ShVmc">
-                <ref role="37wK5l" to="y7p:5AGBwuFEKL7" resolve="LionWebAttributeFinder" />
-                <node concept="37vLTw" id="6jbF0BobHzn" role="37wK5m">
-                  <ref role="3cqZAo" node="6jbF0BobHM8" resolve="repository" />
-                </node>
-                <node concept="2ShNRf" id="6jbF0BobHzo" role="37wK5m">
-                  <node concept="1pGfFk" id="6jbF0BobHzp" role="2ShVmc">
-                    <ref role="37wK5l" to="y7p:DUXtGZOlxP" resolve="LionCoreConstants" />
-                    <node concept="37vLTw" id="6jbF0BobHzq" role="37wK5m">
-                      <ref role="3cqZAo" node="6jbF0BobHM8" resolve="repository" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2ShNRf" id="6jbF0BobHzr" role="37wK5m">
-                  <node concept="HV5vD" id="6jbF0BobHzs" role="2ShVmc">
-                    <ref role="HV5vE" to="y7p:18UigYOOPLq" resolve="MetaAdapterByDeclarationHelper" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="6jbF0BobHzt" role="3cqZAp" />
         <node concept="3clFbF" id="5TNjoy1ZBFi" role="3cqZAp">
           <node concept="2OqwBi" id="5TNjoy1ZBFj" role="3clFbG">
             <node concept="37vLTw" id="5TNjoy1ZBFk" role="2Oq$k0">
@@ -5200,9 +5037,7 @@
                         <property role="2V$B1Q" value="io.lionweb.mps.converter.TestRefs" />
                       </node>
                     </node>
-                    <node concept="37vLTw" id="6jbF0BobIiD" role="37wK5m">
-                      <ref role="3cqZAo" node="6jbF0BobHzj" resolve="attributeFinder" />
-                    </node>
+                    <node concept="1jGwE1" id="6$Vbq$b7mYn" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -7492,37 +7327,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="5JNiskiVWM0" role="3cqZAp" />
-        <node concept="3cpWs8" id="6jbF0BobzWy" role="3cqZAp">
-          <node concept="3cpWsn" id="6jbF0BobzWz" role="3cpWs9">
-            <property role="TrG5h" value="attributeFinder" />
-            <node concept="3uibUv" id="6jbF0BobzW$" role="1tU5fm">
-              <ref role="3uigEE" to="y7p:pPZz6cPvUw" resolve="LionWebAttributeFinder" />
-            </node>
-            <node concept="2ShNRf" id="6jbF0BobzW_" role="33vP2m">
-              <node concept="1pGfFk" id="6jbF0BobzWA" role="2ShVmc">
-                <ref role="37wK5l" to="y7p:5AGBwuFEKL7" resolve="LionWebAttributeFinder" />
-                <node concept="37vLTw" id="6jbF0BobzWB" role="37wK5m">
-                  <ref role="3cqZAo" node="6jbF0Bob$6d" resolve="repository" />
-                </node>
-                <node concept="2ShNRf" id="6jbF0BobzWC" role="37wK5m">
-                  <node concept="1pGfFk" id="6jbF0BobzWD" role="2ShVmc">
-                    <ref role="37wK5l" to="y7p:DUXtGZOlxP" resolve="LionCoreConstants" />
-                    <node concept="37vLTw" id="6jbF0BobzWE" role="37wK5m">
-                      <ref role="3cqZAo" node="6jbF0Bob$6d" resolve="repository" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2ShNRf" id="6jbF0BobzWF" role="37wK5m">
-                  <node concept="HV5vD" id="6jbF0BobzWG" role="2ShVmc">
-                    <ref role="HV5vE" to="y7p:18UigYOOPLq" resolve="MetaAdapterByDeclarationHelper" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="6jbF0BobzWH" role="3cqZAp" />
-        <node concept="3clFbH" id="6jbF0BobzVv" role="3cqZAp" />
         <node concept="3clFbF" id="5JNiskiVWM1" role="3cqZAp">
           <node concept="2OqwBi" id="5JNiskiVWM2" role="3clFbG">
             <node concept="37vLTw" id="5JNiskiVWM3" role="2Oq$k0">
@@ -7551,9 +7355,7 @@
                         <property role="2V$B1Q" value="library" />
                       </node>
                     </node>
-                    <node concept="37vLTw" id="6jbF0Bob$NC" role="37wK5m">
-                      <ref role="3cqZAo" node="6jbF0BobzWz" resolve="attributeFinder" />
-                    </node>
+                    <node concept="1jGwE1" id="6$Vbq$b7iL7" role="37wK5m" />
                   </node>
                   <node concept="2YIFZM" id="3FWZcLW4Vx7" role="HW$Y0">
                     <ref role="37wK5l" to="kte7:3FWZcLW4NDt" resolve="specific" />
@@ -8278,36 +8080,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="6LPkCA_EbVI" role="3cqZAp" />
-        <node concept="3cpWs8" id="6jbF0BobLj2" role="3cqZAp">
-          <node concept="3cpWsn" id="6jbF0BobLj3" role="3cpWs9">
-            <property role="TrG5h" value="attributeFinder" />
-            <node concept="3uibUv" id="6jbF0BobLj4" role="1tU5fm">
-              <ref role="3uigEE" to="y7p:pPZz6cPvUw" resolve="LionWebAttributeFinder" />
-            </node>
-            <node concept="2ShNRf" id="6jbF0BobLj5" role="33vP2m">
-              <node concept="1pGfFk" id="6jbF0BobLj6" role="2ShVmc">
-                <ref role="37wK5l" to="y7p:5AGBwuFEKL7" resolve="LionWebAttributeFinder" />
-                <node concept="37vLTw" id="6jbF0BobLj7" role="37wK5m">
-                  <ref role="3cqZAo" node="6jbF0BobLU9" resolve="repository" />
-                </node>
-                <node concept="2ShNRf" id="6jbF0BobLj8" role="37wK5m">
-                  <node concept="1pGfFk" id="6jbF0BobLj9" role="2ShVmc">
-                    <ref role="37wK5l" to="y7p:DUXtGZOlxP" resolve="LionCoreConstants" />
-                    <node concept="37vLTw" id="6jbF0BobLja" role="37wK5m">
-                      <ref role="3cqZAo" node="6jbF0BobLU9" resolve="repository" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2ShNRf" id="6jbF0BobLjb" role="37wK5m">
-                  <node concept="HV5vD" id="6jbF0BobLjc" role="2ShVmc">
-                    <ref role="HV5vE" to="y7p:18UigYOOPLq" resolve="MetaAdapterByDeclarationHelper" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="6jbF0BobLjd" role="3cqZAp" />
         <node concept="3clFbF" id="3FWZcLW7boR" role="3cqZAp">
           <node concept="2OqwBi" id="3FWZcLW7boS" role="3clFbG">
             <node concept="37vLTw" id="3FWZcLW7boT" role="2Oq$k0">
@@ -8332,9 +8104,7 @@
                         <property role="2V$B1Q" value="io.lionweb.mps.converter.TestLang" />
                       </node>
                     </node>
-                    <node concept="37vLTw" id="6jbF0BobO5s" role="37wK5m">
-                      <ref role="3cqZAo" node="6jbF0BobLj3" resolve="attributeFinder" />
-                    </node>
+                    <node concept="1jGwE1" id="6$Vbq$b7oNl" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -11873,35 +11643,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="7ZVRpg_pL2n" role="3cqZAp" />
-        <node concept="3cpWs8" id="7ZVRpg_pL2o" role="3cqZAp">
-          <node concept="3cpWsn" id="7ZVRpg_pL2p" role="3cpWs9">
-            <property role="TrG5h" value="attributeFinder" />
-            <node concept="3uibUv" id="7ZVRpg_pL2q" role="1tU5fm">
-              <ref role="3uigEE" to="y7p:pPZz6cPvUw" resolve="LionWebAttributeFinder" />
-            </node>
-            <node concept="2ShNRf" id="7ZVRpg_pL2r" role="33vP2m">
-              <node concept="1pGfFk" id="7ZVRpg_pL2s" role="2ShVmc">
-                <ref role="37wK5l" to="y7p:5AGBwuFEKL7" resolve="LionWebAttributeFinder" />
-                <node concept="37vLTw" id="7ZVRpg_pL2t" role="37wK5m">
-                  <ref role="3cqZAo" node="7ZVRpg_pL06" resolve="repository" />
-                </node>
-                <node concept="2ShNRf" id="7ZVRpg_pL2u" role="37wK5m">
-                  <node concept="1pGfFk" id="7ZVRpg_pL2v" role="2ShVmc">
-                    <ref role="37wK5l" to="y7p:DUXtGZOlxP" resolve="LionCoreConstants" />
-                    <node concept="37vLTw" id="7ZVRpg_pL2w" role="37wK5m">
-                      <ref role="3cqZAo" node="7ZVRpg_pL06" resolve="repository" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2ShNRf" id="7ZVRpg_pL2x" role="37wK5m">
-                  <node concept="HV5vD" id="7ZVRpg_pL2y" role="2ShVmc">
-                    <ref role="HV5vE" to="y7p:18UigYOOPLq" resolve="MetaAdapterByDeclarationHelper" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="7ZVRpg_pL2z" role="3cqZAp" />
         <node concept="3clFbF" id="7ZVRpg_pL2$" role="3cqZAp">
           <node concept="2OqwBi" id="7ZVRpg_pL2_" role="3clFbG">
@@ -11927,9 +11668,7 @@
                         <property role="2V$B1Q" value="io.lionweb.mps.converter.TestUtf8" />
                       </node>
                     </node>
-                    <node concept="37vLTw" id="7ZVRpg_pL2S" role="37wK5m">
-                      <ref role="3cqZAo" node="7ZVRpg_pL2p" resolve="attributeFinder" />
-                    </node>
+                    <node concept="1jGwE1" id="6$Vbq$b7gtX" role="37wK5m" />
                   </node>
                 </node>
               </node>
