@@ -27,8 +27,9 @@
     <import index="apzt" ref="r:ea3bdd37-0680-4524-8252-d8093e3b6903(io.lionweb.mps.converter.util)" />
     <import index="m8w9" ref="r:6f1f08ee-098f-4244-ab7d-593d31c55c1e(io.lionweb.mps.json.sorted)" />
     <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" />
-    <import index="e8bb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.ids(MPS.Core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="e8bb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.ids(MPS.Core/)" />
+    <import index="7x5y" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.charset(JDK/)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -1609,9 +1610,13 @@
             </node>
             <node concept="2ShNRf" id="5TNjoy254Xz" role="33vP2m">
               <node concept="1pGfFk" id="5TNjoy254X$" role="2ShVmc">
-                <ref role="37wK5l" to="guwi:~FileReader.&lt;init&gt;(java.io.File)" resolve="FileReader" />
+                <ref role="37wK5l" to="guwi:~FileReader.&lt;init&gt;(java.io.File,java.nio.charset.Charset)" resolve="FileReader" />
                 <node concept="37vLTw" id="5TNjoy254X_" role="37wK5m">
                   <ref role="3cqZAo" node="5lijfVJWAwv" resolve="file" />
+                </node>
+                <node concept="10M0yZ" id="7ZVRpg_pu5c" role="37wK5m">
+                  <ref role="3cqZAo" to="7x5y:~StandardCharsets.UTF_8" resolve="UTF_8" />
+                  <ref role="1PxDUh" to="7x5y:~StandardCharsets" resolve="StandardCharsets" />
                 </node>
               </node>
             </node>
@@ -2686,6 +2691,10 @@
                   <node concept="37vLTw" id="2GPsfcb8Q7K" role="37wK5m">
                     <ref role="3cqZAo" node="24j7TNH2ado" resolve="file" />
                   </node>
+                  <node concept="10M0yZ" id="7ZVRpg_oNRf" role="37wK5m">
+                    <ref role="1PxDUh" to="7x5y:~StandardCharsets" resolve="StandardCharsets" />
+                    <ref role="3cqZAo" to="7x5y:~StandardCharsets.UTF_8" resolve="UTF_8" />
+                  </node>
                 </node>
               </node>
               <node concept="3uibUv" id="2GPsfcb8UI8" role="1tU5fm">
@@ -2818,9 +2827,13 @@
             </node>
             <node concept="2ShNRf" id="5TNjoy24N6U" role="33vP2m">
               <node concept="1pGfFk" id="5TNjoy24N6V" role="2ShVmc">
-                <ref role="37wK5l" to="guwi:~FileReader.&lt;init&gt;(java.io.File)" resolve="FileReader" />
+                <ref role="37wK5l" to="guwi:~FileReader.&lt;init&gt;(java.io.File,java.nio.charset.Charset)" resolve="FileReader" />
                 <node concept="37vLTw" id="5TNjoy24N6W" role="37wK5m">
                   <ref role="3cqZAo" node="24j7TNH2ado" resolve="file" />
+                </node>
+                <node concept="10M0yZ" id="7ZVRpg_pxw6" role="37wK5m">
+                  <ref role="3cqZAo" to="7x5y:~StandardCharsets.UTF_8" resolve="UTF_8" />
+                  <ref role="1PxDUh" to="7x5y:~StandardCharsets" resolve="StandardCharsets" />
                 </node>
               </node>
             </node>

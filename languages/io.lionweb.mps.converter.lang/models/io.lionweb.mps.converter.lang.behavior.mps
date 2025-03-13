@@ -27,6 +27,7 @@
     <import index="y7p" ref="r:3303ef0b-a58e-4f50-b3cb-bd3d7aaf3653(io.lionweb.mps.m3.runtime)" />
     <import index="j5yh" ref="r:137003c8-aa9f-4bda-ae9b-f5d7ec2da82c(io.lionweb.mps.json.idmapper)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="7x5y" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.charset(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
@@ -98,6 +99,9 @@
       </concept>
       <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
         <child id="1164991057263" name="throwable" index="YScLw" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -611,6 +615,9 @@
                 <node concept="1pGfFk" id="rW84$cqZZY" role="2ShVmc">
                   <ref role="37wK5l" to="wyt6:~IllegalStateException.&lt;init&gt;(java.lang.String)" resolve="IllegalStateException" />
                   <node concept="3cpWs3" id="rW84$cr1ZO" role="37wK5m">
+                    <node concept="Xl_RD" id="rW84$cr0jo" role="3uHU7B">
+                      <property role="Xl_RC" value="Unresolved targets: " />
+                    </node>
                     <node concept="2OqwBi" id="5AAy18vbRra" role="3uHU7w">
                       <node concept="2OqwBi" id="5AAy18vbMtK" role="2Oq$k0">
                         <node concept="37vLTw" id="rW84$cr2wZ" role="2Oq$k0">
@@ -647,9 +654,6 @@
                           <property role="Xl_RC" value=", " />
                         </node>
                       </node>
-                    </node>
-                    <node concept="Xl_RD" id="rW84$cr0jo" role="3uHU7B">
-                      <property role="Xl_RC" value="Unresolved targets: " />
                     </node>
                   </node>
                 </node>
@@ -950,9 +954,13 @@
             </node>
             <node concept="2ShNRf" id="4Vn6yFagYCv" role="33vP2m">
               <node concept="1pGfFk" id="4Vn6yFagYCw" role="2ShVmc">
-                <ref role="37wK5l" to="guwi:~FileWriter.&lt;init&gt;(java.io.File)" resolve="FileWriter" />
+                <ref role="37wK5l" to="guwi:~FileWriter.&lt;init&gt;(java.io.File,java.nio.charset.Charset)" resolve="FileWriter" />
                 <node concept="37vLTw" id="4Vn6yFagYCx" role="37wK5m">
                   <ref role="3cqZAo" node="39$JcGF9wes" resolve="file" />
+                </node>
+                <node concept="10M0yZ" id="7ZVRpg_oNRf" role="37wK5m">
+                  <ref role="1PxDUh" to="7x5y:~StandardCharsets" resolve="StandardCharsets" />
+                  <ref role="3cqZAo" to="7x5y:~StandardCharsets.UTF_8" resolve="UTF_8" />
                 </node>
               </node>
             </node>
@@ -1720,6 +1728,9 @@
                 <node concept="1pGfFk" id="rW84$cr9uI" role="2ShVmc">
                   <ref role="37wK5l" to="wyt6:~IllegalStateException.&lt;init&gt;(java.lang.String)" resolve="IllegalStateException" />
                   <node concept="3cpWs3" id="rW84$cr9uJ" role="37wK5m">
+                    <node concept="Xl_RD" id="rW84$cr9uL" role="3uHU7B">
+                      <property role="Xl_RC" value="Unresolved languages: " />
+                    </node>
                     <node concept="2OqwBi" id="5AAy18vbFG1" role="3uHU7w">
                       <node concept="2OqwBi" id="5AAy18vb_FA" role="2Oq$k0">
                         <node concept="37vLTw" id="rW84$cr9uK" role="2Oq$k0">
@@ -1756,9 +1767,6 @@
                           <property role="Xl_RC" value=", " />
                         </node>
                       </node>
-                    </node>
-                    <node concept="Xl_RD" id="rW84$cr9uL" role="3uHU7B">
-                      <property role="Xl_RC" value="Unresolved languages: " />
                     </node>
                   </node>
                 </node>
@@ -1960,9 +1968,13 @@
             </node>
             <node concept="2ShNRf" id="1q44RFT064W" role="33vP2m">
               <node concept="1pGfFk" id="1q44RFT064X" role="2ShVmc">
-                <ref role="37wK5l" to="guwi:~FileWriter.&lt;init&gt;(java.io.File)" resolve="FileWriter" />
+                <ref role="37wK5l" to="guwi:~FileWriter.&lt;init&gt;(java.io.File,java.nio.charset.Charset)" resolve="FileWriter" />
                 <node concept="37vLTw" id="1q44RFT064Y" role="37wK5m">
                   <ref role="3cqZAo" node="1q44RFT063B" resolve="file" />
+                </node>
+                <node concept="10M0yZ" id="7ZVRpg_oWLP" role="37wK5m">
+                  <ref role="1PxDUh" to="7x5y:~StandardCharsets" resolve="StandardCharsets" />
+                  <ref role="3cqZAo" to="7x5y:~StandardCharsets.UTF_8" resolve="UTF_8" />
                 </node>
               </node>
             </node>
@@ -2165,6 +2177,9 @@
                 <node concept="1pGfFk" id="rW84$crLQx" role="2ShVmc">
                   <ref role="37wK5l" to="wyt6:~IllegalStateException.&lt;init&gt;(java.lang.String)" resolve="IllegalStateException" />
                   <node concept="3cpWs3" id="rW84$crLQy" role="37wK5m">
+                    <node concept="Xl_RD" id="rW84$crLQ$" role="3uHU7B">
+                      <property role="Xl_RC" value="Unresolved languages: " />
+                    </node>
                     <node concept="2OqwBi" id="5AAy18vbZPv" role="3uHU7w">
                       <node concept="2OqwBi" id="5AAy18vbW3r" role="2Oq$k0">
                         <node concept="37vLTw" id="rW84$crLQz" role="2Oq$k0">
@@ -2196,9 +2211,6 @@
                           <property role="Xl_RC" value=", " />
                         </node>
                       </node>
-                    </node>
-                    <node concept="Xl_RD" id="rW84$crLQ$" role="3uHU7B">
-                      <property role="Xl_RC" value="Unresolved languages: " />
                     </node>
                   </node>
                 </node>
@@ -2393,9 +2405,13 @@
             </node>
             <node concept="2ShNRf" id="5sACIIt4yor" role="33vP2m">
               <node concept="1pGfFk" id="7qGUpN3CLJ1" role="2ShVmc">
-                <ref role="37wK5l" to="guwi:~FileWriter.&lt;init&gt;(java.io.File)" resolve="FileWriter" />
+                <ref role="37wK5l" to="guwi:~FileWriter.&lt;init&gt;(java.io.File,java.nio.charset.Charset)" resolve="FileWriter" />
                 <node concept="37vLTw" id="7qGUpN3CLQx" role="37wK5m">
                   <ref role="3cqZAo" node="7qGUpN3BVbh" resolve="file" />
+                </node>
+                <node concept="10M0yZ" id="7ZVRpg_oUJM" role="37wK5m">
+                  <ref role="3cqZAo" to="7x5y:~StandardCharsets.UTF_8" resolve="UTF_8" />
+                  <ref role="1PxDUh" to="7x5y:~StandardCharsets" resolve="StandardCharsets" />
                 </node>
               </node>
             </node>
