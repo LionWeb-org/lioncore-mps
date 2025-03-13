@@ -2293,6 +2293,45 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtD" id="6$Vbq$b88b8" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="io.lionweb.mps.converter.TestUtf8" />
+        <property role="3LESm3" value="63c09674-565f-4cbb-add6-f15c4e540c84" />
+        <node concept="398BVA" id="6$Vbq$b88lT" role="3LF7KH">
+          <ref role="398BVh" node="5wsogBcGDKe" resolve="lionweb-mps.home" />
+          <node concept="2Ry0Ak" id="6$Vbq$b88lZ" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="6$Vbq$b88m4" role="2Ry0An">
+              <property role="2Ry0Am" value="io.lionweb.mps.converter.TestUtf8" />
+              <node concept="2Ry0Ak" id="6$Vbq$b88m9" role="2Ry0An">
+                <property role="2Ry0Am" value="io.lionweb.mps.converter.TestUtf8.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="6$Vbq$b88sA" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="6$Vbq$b88sB" role="1HemKq">
+            <node concept="398BVA" id="6$Vbq$b88sq" role="3LXTmr">
+              <ref role="398BVh" node="5wsogBcGDKe" resolve="lionweb-mps.home" />
+              <node concept="2Ry0Ak" id="6$Vbq$b88sr" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="6$Vbq$b88ss" role="2Ry0An">
+                  <property role="2Ry0Am" value="io.lionweb.mps.converter.TestUtf8" />
+                  <node concept="2Ry0Ak" id="6$Vbq$b88st" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="6$Vbq$b88sC" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtA" id="3RxvfZghCzp" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="io.lionweb.mps.converter.test.support" />
