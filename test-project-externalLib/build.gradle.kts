@@ -8,9 +8,6 @@ plugins {
     `maven-publish`
 }
 
-val releaseVersion: String by project
-val mpsVersionSuffix: String by project
-val lionwebRelease: String by project
 val mpsVersion: String by project
 val jbrVersion: String by project
 val mpsExtensionsVersion: String by project
@@ -24,7 +21,7 @@ repositories {
 dependencies {
     "mps"("com.jetbrains:mps:$mpsVersion")
     jbr("com.jetbrains.jdk:jbr_jcef:$jbrVersion")
-    api("io.lionweb.lionweb-mps:lionweb-mps-$mpsVersionSuffix-lw$lionwebRelease:$releaseVersion")
+    api(project(":"))
     api("de.itemis.mps:extensions:$mpsExtensionsVersion")
 }
 
