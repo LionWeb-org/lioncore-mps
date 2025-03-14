@@ -133,8 +133,6 @@ publishing {
             artifactId = concatenatedArtifact
             artifact(tasks.getByName("sourcesJar"))
             artifact(tasks.getByName("javadocJar"))
-            // Put resolved versions of dependencies into POM files -- uncomment as soon as we have any dependencies
-            versionMapping { usage("java-runtime") { fromResolutionOf("generation") } }
 
             pom {
                 name.set(concatenatedArtifact)
