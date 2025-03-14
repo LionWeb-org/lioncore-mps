@@ -21,6 +21,7 @@
     <import index="wy2b" ref="9d6d7230-3178-4b3f-a837-7c0180c86207/java:com.google.gson(io.lionweb.lionweb.java/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
+    <import index="7x5y" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.charset(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -3544,9 +3545,13 @@
               <ref role="37wK5l" to="c9jv:~JsonReader.&lt;init&gt;(java.io.Reader)" resolve="JsonReader" />
               <node concept="2ShNRf" id="53Tt6VyTYWY" role="37wK5m">
                 <node concept="1pGfFk" id="53Tt6VyTYWZ" role="2ShVmc">
-                  <ref role="37wK5l" to="guwi:~FileReader.&lt;init&gt;(java.io.File)" resolve="FileReader" />
+                  <ref role="37wK5l" to="guwi:~FileReader.&lt;init&gt;(java.io.File,java.nio.charset.Charset)" resolve="FileReader" />
                   <node concept="37vLTw" id="53Tt6VyTYX0" role="37wK5m">
                     <ref role="3cqZAo" node="6YbypMzlcQt" resolve="configFile" />
+                  </node>
+                  <node concept="10M0yZ" id="7ZVRpg_oNRf" role="37wK5m">
+                    <ref role="3cqZAo" to="7x5y:~StandardCharsets.UTF_8" resolve="UTF_8" />
+                    <ref role="1PxDUh" to="7x5y:~StandardCharsets" resolve="StandardCharsets" />
                   </node>
                 </node>
               </node>
@@ -3554,8 +3559,8 @@
           </node>
         </node>
       </node>
-      <node concept="3uibUv" id="53Tt6VyTYX5" role="Sfmx6">
-        <ref role="3uigEE" to="guwi:~FileNotFoundException" resolve="FileNotFoundException" />
+      <node concept="3uibUv" id="7ZVRpg_pl0I" role="Sfmx6">
+        <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
       </node>
     </node>
     <node concept="2tJIrI" id="53Tt6VyU1aq" role="jymVt" />
