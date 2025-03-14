@@ -13,7 +13,6 @@ val jbrVersion: String by project
 val mpsExtensionsVersion: String by project
 
 repositories {
-    mavenLocal()
     maven(url = "https://artifacts.itemis.cloud/repository/maven-mps")
     mavenCentral()
 }

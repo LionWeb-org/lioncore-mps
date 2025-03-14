@@ -24,7 +24,6 @@ val apacheCliVersion: String by project
 repositories {
     maven(url = "https://artifacts.itemis.cloud/repository/maven-mps")
     mavenCentral()
-    mavenLocal()
 }
 
 dependencies {
