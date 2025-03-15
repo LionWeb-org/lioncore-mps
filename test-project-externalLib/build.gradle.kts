@@ -24,8 +24,8 @@ repositories {
 dependencies {
     "mps"("com.jetbrains:mps:$mpsVersion")
     jbr("com.jetbrains.jdk:jbr_jcef:$jbrVersion")
-    "generation"("io.lionweb.lionweb-mps:lionweb-mps-$mpsVersionSuffix-lw$lionwebRelease:$releaseVersion")
-    "generation"("de.itemis.mps:extensions:$mpsExtensionsVersion")
+    api("io.lionweb.lionweb-mps:lionweb-mps-$mpsVersionSuffix-lw$lionwebRelease:$releaseVersion")
+    api("de.itemis.mps:extensions:$mpsExtensionsVersion")
 }
 
 mpsBuilds {
@@ -39,7 +39,7 @@ mpsBuilds {
 }
 
 tasks.register<JavaExec>("runCommandLineTool") {
-    dependsOn("resolveGenerationDependencies")
+    dependsOn(tasks.resolveMpsLibraries)
 
     val mpsHome = configurations
             .getByName("mps")
@@ -65,5 +65,3 @@ tasks.register<JavaExec>("runCommandLineTool") {
         setArgsString(propArgs)
     }
 }
-
-tasks.withType(com.specificlanguages.mps.RunAnt::class).configureEach { environment.putAll(System.getenv()) }

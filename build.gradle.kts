@@ -28,11 +28,10 @@ repositories {
 }
 
 dependencies {
-    "mps"("com.jetbrains:mps:$mpsVersion")
+    mps("com.jetbrains:mps:$mpsVersion")
     jbr("com.jetbrains.jdk:jbr_jcef:$jbrVersion")
-    // only needed for tests, but such a config is missing
-    // https://github.com/specificlanguages/mps-gradle-plugin/issues/9
-    // "generation" ("de.itemis.mps:extensions:$mpsExtensionsVersion")
+
+    testImplementation("de.itemis.mps:extensions:$mpsExtensionsVersion")
 }
 
 mpsBuilds {
