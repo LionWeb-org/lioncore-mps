@@ -8,15 +8,11 @@ plugins {
     `maven-publish`
 }
 
-val releaseVersion: String by project
-val mpsVersionSuffix: String by project
-val lionwebRelease: String by project
 val mpsVersion: String by project
 val jbrVersion: String by project
 val mpsExtensionsVersion: String by project
 
 repositories {
-    mavenLocal()
     maven(url = "https://artifacts.itemis.cloud/repository/maven-mps")
     mavenCentral()
 }
@@ -24,8 +20,8 @@ repositories {
 dependencies {
     "mps"("com.jetbrains:mps:$mpsVersion")
     jbr("com.jetbrains.jdk:jbr_jcef:$jbrVersion")
-    "generation"("io.lionweb.lionweb-mps:lionweb-mps-$mpsVersionSuffix-lw$lionwebRelease:$releaseVersion")
-    "generation"("de.itemis.mps:extensions:$mpsExtensionsVersion")
+    api(project(":"))
+    api("de.itemis.mps:extensions:$mpsExtensionsVersion")
 }
 
 mpsBuilds {
@@ -39,7 +35,7 @@ mpsBuilds {
 }
 
 tasks.register<JavaExec>("runCommandLineTool") {
-    dependsOn("resolveGenerationDependencies")
+    dependsOn(tasks.resolveMpsLibraries)
 
     val mpsHome = configurations
             .getByName("mps")
@@ -65,5 +61,3 @@ tasks.register<JavaExec>("runCommandLineTool") {
         setArgsString(propArgs)
     }
 }
-
-tasks.withType(com.specificlanguages.mps.RunAnt::class).configureEach { environment.putAll(System.getenv()) }

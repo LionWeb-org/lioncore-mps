@@ -24,15 +24,13 @@ val apacheCliVersion: String by project
 repositories {
     maven(url = "https://artifacts.itemis.cloud/repository/maven-mps")
     mavenCentral()
-    mavenLocal()
 }
 
 dependencies {
-    "mps"("com.jetbrains:mps:$mpsVersion")
+    mps("com.jetbrains:mps:$mpsVersion")
     jbr("com.jetbrains.jdk:jbr_jcef:$jbrVersion")
-    // only needed for tests, but such a config is missing
-    // https://github.com/specificlanguages/mps-gradle-plugin/issues/9
-    // "generation" ("de.itemis.mps:extensions:$mpsExtensionsVersion")
+
+    testImplementation("de.itemis.mps:extensions:$mpsExtensionsVersion")
 }
 
 mpsBuilds {
@@ -134,8 +132,6 @@ publishing {
             artifactId = concatenatedArtifact
             artifact(tasks.getByName("sourcesJar"))
             artifact(tasks.getByName("javadocJar"))
-            // Put resolved versions of dependencies into POM files -- uncomment as soon as we have any dependencies
-            versionMapping { usage("java-runtime") { fromResolutionOf("generation") } }
 
             pom {
                 name.set(concatenatedArtifact)
@@ -226,5 +222,3 @@ release {
         pushOptions.add("--force")
     }
 }
-
-tasks.withType(com.specificlanguages.mps.RunAnt::class).configureEach { environment.putAll(System.getenv()) }
