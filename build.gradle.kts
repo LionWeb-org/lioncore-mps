@@ -222,5 +222,3 @@ release {
         pushOptions.add("--force")
     }
 }
-
-tasks.withType(com.specificlanguages.mps.RunAnt::class).configureEach { environment.putAll(System.getenv()) }

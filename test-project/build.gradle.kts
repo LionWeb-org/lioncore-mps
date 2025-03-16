@@ -59,5 +59,3 @@ tasks.register<JavaExec>("runCommandLineTool") {
         setArgsString(propArgs)
     }
 }
-
-tasks.withType(com.specificlanguages.mps.RunAnt::class).configureEach { environment.putAll(System.getenv()) }
