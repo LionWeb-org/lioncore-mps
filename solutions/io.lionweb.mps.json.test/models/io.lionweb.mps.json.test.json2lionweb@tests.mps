@@ -11940,6 +11940,19 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="1qxNWuVK99O" role="3cqZAp">
+          <node concept="3cpWsn" id="1qxNWuVK99P" role="3cpWs9">
+            <property role="TrG5h" value="lionWebVersion" />
+            <node concept="3uibUv" id="1qxNWuVK93n" role="1tU5fm">
+              <ref role="3uigEE" to="6peh:1KsTggJdZdW" resolve="LionWebVersionAdapter_2023_1" />
+            </node>
+            <node concept="2ShNRf" id="1qxNWuVK99Q" role="33vP2m">
+              <node concept="HV5vD" id="1qxNWuVK99R" role="2ShVmc">
+                <ref role="HV5vE" to="6peh:1KsTggJdZdW" resolve="LionWebVersionAdapter_2023_1" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="7ZVRpg_pL0b" role="3cqZAp">
           <node concept="3cpWsn" id="7ZVRpg_pL0c" role="3cpWs9">
             <property role="TrG5h" value="converter" />
@@ -11949,6 +11962,9 @@
             <node concept="2ShNRf" id="7ZVRpg_pL0e" role="33vP2m">
               <node concept="1pGfFk" id="7ZVRpg_pL0f" role="2ShVmc">
                 <ref role="37wK5l" to="6peh:5lijfVJTSc9" resolve="M1ToJson" />
+                <node concept="37vLTw" id="1qxNWuVMu5C" role="37wK5m">
+                  <ref role="3cqZAo" node="1qxNWuVK99P" resolve="lionWebVersion" />
+                </node>
                 <node concept="37vLTw" id="7ZVRpg_pL0g" role="37wK5m">
                   <ref role="3cqZAo" node="7ZVRpg_pL06" resolve="repository" />
                 </node>
@@ -12011,6 +12027,9 @@
                 <ref role="37wK5l" to="kte7:5lijfVJWApT" resolve="M1JsonComparer" />
                 <node concept="Xl_RD" id="7ZVRpg_pL0E" role="37wK5m">
                   <property role="Xl_RC" value="TestUtf8.json" />
+                </node>
+                <node concept="37vLTw" id="1qxNWuVMui_" role="37wK5m">
+                  <ref role="3cqZAo" node="1qxNWuVK99P" resolve="lionWebVersion" />
                 </node>
               </node>
             </node>

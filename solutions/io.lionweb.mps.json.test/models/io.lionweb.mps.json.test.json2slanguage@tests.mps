@@ -812,6 +812,19 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="1qxNWuVK99O" role="3cqZAp">
+          <node concept="3cpWsn" id="1qxNWuVK99P" role="3cpWs9">
+            <property role="TrG5h" value="lionWebVersion" />
+            <node concept="3uibUv" id="1qxNWuVK93n" role="1tU5fm">
+              <ref role="3uigEE" to="6peh:1KsTggJdZdW" resolve="LionWebVersionAdapter_2023_1" />
+            </node>
+            <node concept="2ShNRf" id="1qxNWuVK99Q" role="33vP2m">
+              <node concept="HV5vD" id="1qxNWuVK99R" role="2ShVmc">
+                <ref role="HV5vE" to="6peh:1KsTggJdZdW" resolve="LionWebVersionAdapter_2023_1" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6luz6qu42fX" role="3cqZAp">
           <node concept="3cpWsn" id="6luz6qu42fY" role="3cpWs9">
             <property role="TrG5h" value="converter" />
@@ -821,6 +834,9 @@
             <node concept="2ShNRf" id="6luz6qu42g0" role="33vP2m">
               <node concept="1pGfFk" id="6luz6qu42g1" role="2ShVmc">
                 <ref role="37wK5l" to="6peh:24j7TNH1A2A" resolve="M2ToJson" />
+                <node concept="37vLTw" id="1qxNWuVMyYn" role="37wK5m">
+                  <ref role="3cqZAo" node="1qxNWuVK99P" resolve="lionWebVersion" />
+                </node>
                 <node concept="37vLTw" id="6luz6qu42g2" role="37wK5m">
                   <ref role="3cqZAo" node="6luz6qu42fS" resolve="repository" />
                 </node>
@@ -886,6 +902,9 @@
                 <node concept="Xl_RD" id="6luz6qu3XNQ" role="37wK5m">
                   <property role="Xl_RC" value="TestMpsSpecific-metamodel.json" />
                 </node>
+                <node concept="37vLTw" id="1qxNWuVMzs1" role="37wK5m">
+                  <ref role="3cqZAo" node="1qxNWuVK99P" resolve="lionWebVersion" />
+                </node>
               </node>
             </node>
           </node>
@@ -923,6 +942,19 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="1qxNWuVM$0H" role="3cqZAp">
+          <node concept="3cpWsn" id="1qxNWuVM$0I" role="3cpWs9">
+            <property role="TrG5h" value="lionWebVersion" />
+            <node concept="3uibUv" id="1qxNWuVM$0J" role="1tU5fm">
+              <ref role="3uigEE" to="6peh:1KsTggJdZdW" resolve="LionWebVersionAdapter_2023_1" />
+            </node>
+            <node concept="2ShNRf" id="1qxNWuVM$0K" role="33vP2m">
+              <node concept="HV5vD" id="1qxNWuVM$0L" role="2ShVmc">
+                <ref role="HV5vE" to="6peh:1KsTggJdZdW" resolve="LionWebVersionAdapter_2023_1" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6luz6qu49TX" role="3cqZAp">
           <node concept="3cpWsn" id="6luz6qu49TY" role="3cpWs9">
             <property role="TrG5h" value="converter" />
@@ -932,6 +964,9 @@
             <node concept="2ShNRf" id="6luz6qu49U0" role="33vP2m">
               <node concept="1pGfFk" id="6luz6qu49U1" role="2ShVmc">
                 <ref role="37wK5l" to="6peh:24j7TNH1A2A" resolve="M2ToJson" />
+                <node concept="37vLTw" id="1qxNWuVM$pB" role="37wK5m">
+                  <ref role="3cqZAo" node="1qxNWuVM$0I" resolve="lionWebVersion" />
+                </node>
                 <node concept="37vLTw" id="6luz6qu49U2" role="37wK5m">
                   <ref role="3cqZAo" node="6luz6qu49TS" resolve="repository" />
                 </node>
@@ -1009,6 +1044,9 @@
                 <ref role="37wK5l" to="kte7:24j7TNH2adB" resolve="M2JsonComparer" />
                 <node concept="Xl_RD" id="6luz6qu3XNG" role="37wK5m">
                   <property role="Xl_RC" value="TestMpsSpecific-metamodel-annotated.json" />
+                </node>
+                <node concept="37vLTw" id="1qxNWuVM$UZ" role="37wK5m">
+                  <ref role="3cqZAo" node="1qxNWuVM$0I" resolve="lionWebVersion" />
                 </node>
               </node>
             </node>
