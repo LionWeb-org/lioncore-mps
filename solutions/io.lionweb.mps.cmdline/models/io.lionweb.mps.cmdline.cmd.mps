@@ -30,6 +30,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="aoz0" ref="r:d60048c8-25ba-4e49-bf73-bc4371af9b2e(io.lionweb.mps.converter.lang.behavior)" />
+    <import index="7x5y" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.charset(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -561,12 +562,6 @@
           <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
         </node>
       </node>
-      <node concept="37vLTG" id="4fqYzE89NdI" role="3clF46">
-        <property role="TrG5h" value="lionwebVersion" />
-        <node concept="3uibUv" id="4fqYzE89NtG" role="1tU5fm">
-          <ref role="3uigEE" to="6peh:1KsTggJdySE" resolve="ILionWebVersionAdapter" />
-        </node>
-      </node>
       <node concept="3uibUv" id="V4Ro9JjPXJ" role="Sfmx6">
         <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
       </node>
@@ -575,6 +570,12 @@
           <node concept="1dT_AC" id="53Tt6VyVouG" role="1dT_Ay">
             <property role="1dT_AB" value="Wrapper for constructor().execute(), but simplifies reflective invocation to battle classloaders" />
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4fqYzE89NdI" role="3clF46">
+        <property role="TrG5h" value="lionwebVersion" />
+        <node concept="3uibUv" id="4fqYzE89NtG" role="1tU5fm">
+          <ref role="3uigEE" to="6peh:1KsTggJdySE" resolve="ILionWebVersionAdapter" />
         </node>
       </node>
     </node>
@@ -1715,9 +1716,13 @@
             </node>
             <node concept="2ShNRf" id="1q44RFT064W" role="33vP2m">
               <node concept="1pGfFk" id="1q44RFT064X" role="2ShVmc">
-                <ref role="37wK5l" to="guwi:~FileWriter.&lt;init&gt;(java.io.File)" resolve="FileWriter" />
+                <ref role="37wK5l" to="guwi:~FileWriter.&lt;init&gt;(java.io.File,java.nio.charset.Charset)" resolve="FileWriter" />
                 <node concept="37vLTw" id="6YbypMzs5Tv" role="37wK5m">
                   <ref role="3cqZAo" node="12kZjFJeq_C" resolve="outputFile" />
+                </node>
+                <node concept="10M0yZ" id="7ZVRpg_oNRf" role="37wK5m">
+                  <ref role="3cqZAo" to="7x5y:~StandardCharsets.UTF_8" resolve="UTF_8" />
+                  <ref role="1PxDUh" to="7x5y:~StandardCharsets" resolve="StandardCharsets" />
                 </node>
               </node>
             </node>
