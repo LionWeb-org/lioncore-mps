@@ -1233,6 +1233,11 @@
             <node concept="2ShNRf" id="24j7TNH1Zdj" role="33vP2m">
               <node concept="1pGfFk" id="24j7TNH1Zd6" role="2ShVmc">
                 <ref role="37wK5l" to="6peh:24j7TNH1A2A" resolve="M2ToJson" />
+                <node concept="2ShNRf" id="4fqYzE87Uh2" role="37wK5m">
+                  <node concept="HV5vD" id="4fqYzE87UDh" role="2ShVmc">
+                    <ref role="HV5vE" to="6peh:1KsTggJeQM5" resolve="LionWebVersionAdapter" />
+                  </node>
+                </node>
                 <node concept="37vLTw" id="24j7TNH1ZtD" role="37wK5m">
                   <ref role="3cqZAo" node="24j7TNH1xBO" resolve="repository" />
                 </node>

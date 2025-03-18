@@ -249,6 +249,13 @@
         <property id="8575328350543493365" name="message" index="huDt6" />
         <property id="2423417345669755629" name="filter" index="1eyWvh" />
       </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
       <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
@@ -3708,6 +3715,14 @@
   </node>
   <node concept="312cEu" id="5sACIIsA0s2">
     <property role="TrG5h" value="LionCore2JsonConverter" />
+    <node concept="312cEg" id="1KsTggJigp4" role="jymVt">
+      <property role="TrG5h" value="lionwebVersion" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="1KsTggJiaon" role="1B3o_S" />
+      <node concept="3uibUv" id="1KsTggJifZ0" role="1tU5fm">
+        <ref role="3uigEE" to="6peh:1KsTggJdySE" resolve="ILionWebVersionAdapter" />
+      </node>
+    </node>
     <node concept="312cEg" id="39$JcGF4Bul" role="jymVt">
       <property role="TrG5h" value="constants" />
       <property role="3TUv4t" value="true" />
@@ -3962,6 +3977,19 @@
       <node concept="3cqZAl" id="5sACIIsA0tC" role="3clF45" />
       <node concept="3Tm1VV" id="5sACIIsA0tD" role="1B3o_S" />
       <node concept="3clFbS" id="5sACIIsA0tE" role="3clF47">
+        <node concept="3clFbF" id="1KsTggJinol" role="3cqZAp">
+          <node concept="37vLTI" id="1KsTggJipVX" role="3clFbG">
+            <node concept="37vLTw" id="1KsTggJiqD$" role="37vLTx">
+              <ref role="3cqZAo" node="1KsTggJilXl" resolve="lionwebVersion" />
+            </node>
+            <node concept="2OqwBi" id="1KsTggJinF6" role="37vLTJ">
+              <node concept="Xjq3P" id="1KsTggJinoj" role="2Oq$k0" />
+              <node concept="2OwXpG" id="1KsTggJioij" role="2OqNvi">
+                <ref role="2Oxat5" node="1KsTggJigp4" resolve="lionwebVersion" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="39$JcGF4KpU" role="3cqZAp">
           <node concept="37vLTI" id="39$JcGF4M6a" role="3clFbG">
             <node concept="37vLTw" id="39$JcGF4MB9" role="37vLTx">
@@ -4019,6 +4047,12 @@
           <node concept="1rXfSq" id="5M3rB6BJsKz" role="3clFbG">
             <ref role="37wK5l" node="5M3rB6BJsKu" resolve="initBuiltins" />
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="1KsTggJilXl" role="3clF46">
+        <property role="TrG5h" value="lionwebVersion" />
+        <node concept="3uibUv" id="1KsTggJimDH" role="1tU5fm">
+          <ref role="3uigEE" to="6peh:1KsTggJdySE" resolve="ILionWebVersionAdapter" />
         </node>
       </node>
       <node concept="37vLTG" id="5sACIIsA0ul" role="3clF46">
@@ -4358,7 +4392,15 @@
             </node>
             <node concept="2ShNRf" id="5sACIIsGOsT" role="33vP2m">
               <node concept="1pGfFk" id="5sACIIsGR8p" role="2ShVmc">
-                <ref role="37wK5l" to="imb3:~Language.&lt;init&gt;(java.lang.String)" resolve="Language" />
+                <ref role="37wK5l" to="imb3:~Language.&lt;init&gt;(io.lionweb.lioncore.java.LionWebVersion,java.lang.String)" resolve="Language" />
+                <node concept="2OqwBi" id="1KsTggJjmHC" role="37wK5m">
+                  <node concept="37vLTw" id="1KsTggJji5p" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1KsTggJigp4" resolve="lionwebVersion" />
+                  </node>
+                  <node concept="liA8E" id="1KsTggJjrQx" role="2OqNvi">
+                    <ref role="37wK5l" to="6peh:1KsTggJdRV8" resolve="getVersion" />
+                  </node>
+                </node>
                 <node concept="2OqwBi" id="5sACIIsHSyW" role="37wK5m">
                   <node concept="37vLTw" id="5sACIIsHPkW" role="2Oq$k0">
                     <ref role="3cqZAo" node="5sACIIsA0wZ" resolve="lc" />
@@ -4732,7 +4774,15 @@
                 </node>
                 <node concept="2ShNRf" id="5sACIIsLHgb" role="33vP2m">
                   <node concept="1pGfFk" id="5sACIIsLHgc" role="2ShVmc">
-                    <ref role="37wK5l" to="imb3:~Concept.&lt;init&gt;(java.lang.String)" resolve="Concept" />
+                    <ref role="37wK5l" to="imb3:~Concept.&lt;init&gt;(io.lionweb.lioncore.java.LionWebVersion,java.lang.String)" resolve="Concept" />
+                    <node concept="2OqwBi" id="1KsTggJjWRQ" role="37wK5m">
+                      <node concept="37vLTw" id="1KsTggJjRGI" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1KsTggJigp4" resolve="lionwebVersion" />
+                      </node>
+                      <node concept="liA8E" id="1KsTggJk2g9" role="2OqNvi">
+                        <ref role="37wK5l" to="6peh:1KsTggJdRV8" resolve="getVersion" />
+                      </node>
+                    </node>
                     <node concept="2OqwBi" id="5sACIIsLHgd" role="37wK5m">
                       <node concept="37vLTw" id="5sACIIsLHge" role="2Oq$k0">
                         <ref role="3cqZAo" node="5sACIIsA0xu" resolve="lc" />
@@ -4870,12 +4920,20 @@
                   </node>
                   <node concept="2ShNRf" id="5sACIIsN_zw" role="33vP2m">
                     <node concept="1pGfFk" id="5sACIIsNCBI" role="2ShVmc">
-                      <ref role="37wK5l" to="imb3:~Interface.&lt;init&gt;(java.lang.String)" resolve="Interface" />
-                      <node concept="2OqwBi" id="5sACIIsNL$y" role="37wK5m">
-                        <node concept="37vLTw" id="5sACIIsNHsK" role="2Oq$k0">
+                      <ref role="37wK5l" to="imb3:~Interface.&lt;init&gt;(io.lionweb.lioncore.java.LionWebVersion,java.lang.String)" resolve="Interface" />
+                      <node concept="2OqwBi" id="1KsTggJkvE7" role="37wK5m">
+                        <node concept="37vLTw" id="1KsTggJkqra" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1KsTggJigp4" resolve="lionwebVersion" />
+                        </node>
+                        <node concept="liA8E" id="1KsTggJk$Wv" role="2OqNvi">
+                          <ref role="37wK5l" to="6peh:1KsTggJdRV8" resolve="getVersion" />
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="1KsTggJkMNi" role="37wK5m">
+                        <node concept="37vLTw" id="1KsTggJkMNj" role="2Oq$k0">
                           <ref role="3cqZAo" node="5sACIIsA0xu" resolve="lc" />
                         </node>
-                        <node concept="3TrcHB" id="5sACIIsNOdq" role="2OqNvi">
+                        <node concept="3TrcHB" id="1KsTggJkMNk" role="2OqNvi">
                           <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                         </node>
                       </node>
@@ -4973,7 +5031,15 @@
                   </node>
                   <node concept="2ShNRf" id="7W6jYlzIn96" role="33vP2m">
                     <node concept="1pGfFk" id="7W6jYlzIrGC" role="2ShVmc">
-                      <ref role="37wK5l" to="imb3:~Annotation.&lt;init&gt;()" resolve="Annotation" />
+                      <ref role="37wK5l" to="imb3:~Annotation.&lt;init&gt;(io.lionweb.lioncore.java.LionWebVersion)" resolve="Annotation" />
+                      <node concept="2OqwBi" id="1KsTggJkXnf" role="37wK5m">
+                        <node concept="37vLTw" id="1KsTggJkS2b" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1KsTggJigp4" resolve="lionwebVersion" />
+                        </node>
+                        <node concept="liA8E" id="1KsTggJl2O_" role="2OqNvi">
+                          <ref role="37wK5l" to="6peh:1KsTggJdRV8" resolve="getVersion" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -5629,7 +5695,15 @@
                 </node>
                 <node concept="2ShNRf" id="5sACIIsPXW0" role="33vP2m">
                   <node concept="1pGfFk" id="5sACIIsQ0Uw" role="2ShVmc">
-                    <ref role="37wK5l" to="imb3:~Containment.&lt;init&gt;(java.lang.String)" resolve="Containment" />
+                    <ref role="37wK5l" to="imb3:~Containment.&lt;init&gt;(io.lionweb.lioncore.java.LionWebVersion,java.lang.String)" resolve="Containment" />
+                    <node concept="2OqwBi" id="1KsTggJllN0" role="37wK5m">
+                      <node concept="37vLTw" id="1KsTggJlgrd" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1KsTggJigp4" resolve="lionwebVersion" />
+                      </node>
+                      <node concept="liA8E" id="1KsTggJlr4X" role="2OqNvi">
+                        <ref role="37wK5l" to="6peh:1KsTggJdRV8" resolve="getVersion" />
+                      </node>
+                    </node>
                     <node concept="2OqwBi" id="5sACIIsQaoI" role="37wK5m">
                       <node concept="37vLTw" id="5sACIIsQ7lo" role="2Oq$k0">
                         <ref role="3cqZAo" node="5sACIIsA0AO" resolve="lc" />
@@ -5777,12 +5851,20 @@
                   </node>
                   <node concept="2ShNRf" id="5sACIIsRA07" role="33vP2m">
                     <node concept="1pGfFk" id="5sACIIsRBZv" role="2ShVmc">
-                      <ref role="37wK5l" to="imb3:~Reference.&lt;init&gt;(java.lang.String)" resolve="Reference" />
-                      <node concept="2OqwBi" id="5sACIIsRJ$e" role="37wK5m">
-                        <node concept="37vLTw" id="5sACIIsRGxw" role="2Oq$k0">
+                      <ref role="37wK5l" to="imb3:~Reference.&lt;init&gt;(io.lionweb.lioncore.java.LionWebVersion,java.lang.String)" resolve="Reference" />
+                      <node concept="2OqwBi" id="1KsTggJlSVx" role="37wK5m">
+                        <node concept="37vLTw" id="1KsTggJlNBu" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1KsTggJigp4" resolve="lionwebVersion" />
+                        </node>
+                        <node concept="liA8E" id="1KsTggJlYnf" role="2OqNvi">
+                          <ref role="37wK5l" to="6peh:1KsTggJdRV8" resolve="getVersion" />
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="1KsTggJm7LK" role="37wK5m">
+                        <node concept="37vLTw" id="1KsTggJm7LL" role="2Oq$k0">
                           <ref role="3cqZAo" node="5sACIIsA0AO" resolve="lc" />
                         </node>
-                        <node concept="3TrcHB" id="5sACIIsRKZQ" role="2OqNvi">
+                        <node concept="3TrcHB" id="1KsTggJm7LM" role="2OqNvi">
                           <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                         </node>
                       </node>
@@ -5916,7 +5998,15 @@
                   </node>
                   <node concept="2ShNRf" id="5sACIIsSCFe" role="33vP2m">
                     <node concept="1pGfFk" id="7m$Awvu7YZK" role="2ShVmc">
-                      <ref role="37wK5l" to="imb3:~Property.&lt;init&gt;()" resolve="Property" />
+                      <ref role="37wK5l" to="imb3:~Property.&lt;init&gt;(io.lionweb.lioncore.java.LionWebVersion)" resolve="Property" />
+                      <node concept="2OqwBi" id="1KsTggJmipg" role="37wK5m">
+                        <node concept="37vLTw" id="1KsTggJmd4g" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1KsTggJigp4" resolve="lionwebVersion" />
+                        </node>
+                        <node concept="liA8E" id="1KsTggJmlCS" role="2OqNvi">
+                          <ref role="37wK5l" to="6peh:1KsTggJdRV8" resolve="getVersion" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -6415,7 +6505,26 @@
                 </node>
                 <node concept="2ShNRf" id="5sACIIsVxH3" role="33vP2m">
                   <node concept="1pGfFk" id="7m$Awvu7YZI" role="2ShVmc">
-                    <ref role="37wK5l" to="imb3:~PrimitiveType.&lt;init&gt;()" resolve="PrimitiveType" />
+                    <ref role="37wK5l" to="imb3:~PrimitiveType.&lt;init&gt;(io.lionweb.lioncore.java.LionWebVersion,java.lang.String)" resolve="PrimitiveType" />
+                    <node concept="2OqwBi" id="1KsTggJmIuY" role="37wK5m">
+                      <node concept="37vLTw" id="1KsTggJmD26" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1KsTggJigp4" resolve="lionwebVersion" />
+                      </node>
+                      <node concept="liA8E" id="1KsTggJmO4T" role="2OqNvi">
+                        <ref role="37wK5l" to="6peh:1KsTggJdRV8" resolve="getVersion" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="1KsTggJnGKI" role="37wK5m">
+                      <node concept="37vLTw" id="1KsTggJnGKJ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6VkSF6cpXbj" resolve="idMapper" />
+                      </node>
+                      <node concept="liA8E" id="1KsTggJnGKK" role="2OqNvi">
+                        <ref role="37wK5l" to="teza:5M3rB6Ae5uD" resolve="mapPrimitive" />
+                        <node concept="37vLTw" id="1KsTggJnGKL" role="37wK5m">
+                          <ref role="3cqZAo" node="5sACIIsVkso" resolve="ptLc" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -6438,21 +6547,25 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="5sACIIsVOKq" role="3cqZAp">
-              <node concept="2OqwBi" id="5sACIIsVRzs" role="3clFbG">
-                <node concept="37vLTw" id="5sACIIsVOKo" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5sACIIsA0Cw" resolve="ptJson" />
-                </node>
-                <node concept="liA8E" id="5sACIIsVUGO" role="2OqNvi">
-                  <ref role="37wK5l" to="tzx8:~M3Node.setID(java.lang.String)" resolve="setID" />
-                  <node concept="2OqwBi" id="6VkSF6crKbe" role="37wK5m">
-                    <node concept="37vLTw" id="6VkSF6crHV3" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6VkSF6cpXbj" resolve="idMapper" />
-                    </node>
-                    <node concept="liA8E" id="6VkSF6crNMR" role="2OqNvi">
-                      <ref role="37wK5l" to="teza:5M3rB6Ae5uD" resolve="mapPrimitive" />
-                      <node concept="37vLTw" id="6VkSF6crPTu" role="37wK5m">
-                        <ref role="3cqZAo" node="5sACIIsVkso" resolve="ptLc" />
+            <node concept="1X3_iC" id="1KsTggJnM2x" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="5sACIIsVOKq" role="8Wnug">
+                <node concept="2OqwBi" id="5sACIIsVRzs" role="3clFbG">
+                  <node concept="37vLTw" id="5sACIIsVOKo" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5sACIIsA0Cw" resolve="ptJson" />
+                  </node>
+                  <node concept="liA8E" id="5sACIIsVUGO" role="2OqNvi">
+                    <ref role="37wK5l" to="tzx8:~M3Node.setID(java.lang.String)" resolve="setID" />
+                    <node concept="2OqwBi" id="6VkSF6crKbe" role="37wK5m">
+                      <node concept="37vLTw" id="6VkSF6crHV3" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6VkSF6cpXbj" resolve="idMapper" />
+                      </node>
+                      <node concept="liA8E" id="6VkSF6crNMR" role="2OqNvi">
+                        <ref role="37wK5l" to="teza:5M3rB6Ae5uD" resolve="mapPrimitive" />
+                        <node concept="37vLTw" id="6VkSF6crPTu" role="37wK5m">
+                          <ref role="3cqZAo" node="5sACIIsVkso" resolve="ptLc" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -6537,7 +6650,15 @@
                   </node>
                   <node concept="2ShNRf" id="5sACIIsWB6F" role="33vP2m">
                     <node concept="1pGfFk" id="7m$Awvu7YZM" role="2ShVmc">
-                      <ref role="37wK5l" to="imb3:~Enumeration.&lt;init&gt;()" resolve="Enumeration" />
+                      <ref role="37wK5l" to="imb3:~Enumeration.&lt;init&gt;(io.lionweb.lioncore.java.LionWebVersion)" resolve="Enumeration" />
+                      <node concept="2OqwBi" id="1KsTggJmwjA" role="37wK5m">
+                        <node concept="37vLTw" id="1KsTggJmqTo" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1KsTggJigp4" resolve="lionwebVersion" />
+                        </node>
+                        <node concept="liA8E" id="1KsTggJmzE8" role="2OqNvi">
+                          <ref role="37wK5l" to="6peh:1KsTggJdRV8" resolve="getVersion" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -6732,14 +6853,32 @@
             </node>
             <node concept="2ShNRf" id="5sACIIsYcKX" role="33vP2m">
               <node concept="1pGfFk" id="5sACIIsYf13" role="2ShVmc">
-                <ref role="37wK5l" to="imb3:~EnumerationLiteral.&lt;init&gt;(java.lang.String)" resolve="EnumerationLiteral" />
-                <node concept="2OqwBi" id="5sACIIsYlMS" role="37wK5m">
-                  <node concept="37vLTw" id="5sACIIsYj0_" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5sACIIsA0Ej" resolve="lc" />
+                <ref role="37wK5l" to="imb3:~EnumerationLiteral.&lt;init&gt;(io.lionweb.lioncore.java.LionWebVersion)" resolve="EnumerationLiteral" />
+                <node concept="2OqwBi" id="1KsTggJo_8a" role="37wK5m">
+                  <node concept="37vLTw" id="1KsTggJovBV" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1KsTggJigp4" resolve="lionwebVersion" />
                   </node>
-                  <node concept="3TrcHB" id="5sACIIsYnQm" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  <node concept="liA8E" id="1KsTggJoEwH" role="2OqNvi">
+                    <ref role="37wK5l" to="6peh:1KsTggJdRV8" resolve="getVersion" />
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1KsTggJnXaI" role="3cqZAp">
+          <node concept="2OqwBi" id="1KsTggJo0PN" role="3clFbG">
+            <node concept="37vLTw" id="1KsTggJnXaG" role="2Oq$k0">
+              <ref role="3cqZAo" node="5sACIIsY8xf" resolve="json" />
+            </node>
+            <node concept="liA8E" id="1KsTggJo4$e" role="2OqNvi">
+              <ref role="37wK5l" to="imb3:~EnumerationLiteral.setName(java.lang.String)" resolve="setName" />
+              <node concept="2OqwBi" id="1KsTggJodg$" role="37wK5m">
+                <node concept="37vLTw" id="1KsTggJo9W6" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5sACIIsA0Ej" resolve="lc" />
+                </node>
+                <node concept="3TrcHB" id="1KsTggJog$H" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
             </node>
