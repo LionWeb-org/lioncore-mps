@@ -175,6 +175,10 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
+      <concept id="1160998861373" name="jetbrains.mps.baseLanguage.structure.AssertStatement" flags="nn" index="1gVbGN">
+        <child id="1160998896846" name="condition" index="1gVkn0" />
+        <child id="1160998916832" name="message" index="1gVpfI" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -391,6 +395,9 @@
         <property role="TrG5h" value="lionwebVersion" />
         <node concept="3uibUv" id="1KsTggJ$opZ" role="1tU5fm">
           <ref role="3uigEE" to="6peh:1KsTggJdySE" resolve="ILionWebVersionAdapter" />
+        </node>
+        <node concept="2AHcQZ" id="pwT61fEp1D" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
         </node>
       </node>
       <node concept="37vLTG" id="48csSBPZs88" role="3clF46">
@@ -1121,6 +1128,24 @@
           </node>
         </node>
         <node concept="3clFbH" id="4TKJARV8geF" role="3cqZAp" />
+        <node concept="1gVbGN" id="pwT61fAH34" role="3cqZAp">
+          <node concept="3clFbC" id="pwT61fAUhp" role="1gVkn0">
+            <node concept="3cmrfG" id="pwT61fAVGQ" role="3uHU7w">
+              <property role="3cmrfH" value="2" />
+            </node>
+            <node concept="3cpWs3" id="pwT61fAT41" role="3uHU7B">
+              <node concept="3cmrfG" id="pwT61fASd1" role="3uHU7B">
+                <property role="3cmrfH" value="1" />
+              </node>
+              <node concept="3cmrfG" id="pwT61fAT5b" role="3uHU7w">
+                <property role="3cmrfH" value="1" />
+              </node>
+            </node>
+          </node>
+          <node concept="Xl_RD" id="pwT61fAY4f" role="1gVpfI">
+            <property role="Xl_RC" value="Axiom" />
+          </node>
+        </node>
         <node concept="3clFbF" id="5M3rB6BBr0d" role="3cqZAp">
           <node concept="1rXfSq" id="5M3rB6BBr0c" role="3clFbG">
             <ref role="37wK5l" node="5M3rB6BBr07" resolve="initBuiltins" />
@@ -1131,6 +1156,9 @@
         <property role="TrG5h" value="lionwebVersion" />
         <node concept="3uibUv" id="1KsTggJpYy8" role="1tU5fm">
           <ref role="3uigEE" to="6peh:1KsTggJdySE" resolve="ILionWebVersionAdapter" />
+        </node>
+        <node concept="2AHcQZ" id="pwT61fCZVf" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
         </node>
       </node>
       <node concept="37vLTG" id="48csSBNSpzW" role="3clF46">
@@ -10717,6 +10745,9 @@
         <property role="TrG5h" value="lionwebVersion" />
         <node concept="3uibUv" id="1KsTggJ$EUF" role="1tU5fm">
           <ref role="3uigEE" to="6peh:1KsTggJdySE" resolve="ILionWebVersionAdapter" />
+        </node>
+        <node concept="2AHcQZ" id="pwT61fE$me" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
         </node>
       </node>
       <node concept="37vLTG" id="utjSYFlODT" role="3clF46">

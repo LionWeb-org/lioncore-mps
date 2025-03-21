@@ -848,6 +848,9 @@
             <node concept="2ShNRf" id="2A0cGJdRE9J" role="33vP2m">
               <node concept="1pGfFk" id="2A0cGJdRE9K" role="2ShVmc">
                 <ref role="37wK5l" to="6peh:5wsogBctgVc" resolve="Deserializer" />
+                <node concept="37vLTw" id="4fqYzE8mnda" role="37wK5m">
+                  <ref role="3cqZAo" node="4fqYzE8aqNm" resolve="lionwebVersion" />
+                </node>
                 <node concept="37vLTw" id="5wsogBctiIh" role="37wK5m">
                   <ref role="3cqZAo" node="5sACIIsjktS" resolve="input" />
                 </node>
@@ -869,9 +872,6 @@
                       <ref role="3cqZAo" node="7OJcYqy6BQK" resolve="constants" />
                     </node>
                   </node>
-                </node>
-                <node concept="37vLTw" id="4fqYzE8mnda" role="37wK5m">
-                  <ref role="3cqZAo" node="4fqYzE8aqNm" resolve="lionwebVersion" />
                 </node>
               </node>
             </node>
@@ -1035,15 +1035,15 @@
           </node>
         </node>
       </node>
-      <node concept="37vLTG" id="5lijfVJWAs0" role="3clF46">
-        <property role="TrG5h" value="testFile" />
-        <node concept="17QB3L" id="5lijfVJWArZ" role="1tU5fm" />
-      </node>
       <node concept="37vLTG" id="pwT61flBEc" role="3clF46">
         <property role="TrG5h" value="lionwebVersion" />
         <node concept="3uibUv" id="pwT61flCPn" role="1tU5fm">
           <ref role="3uigEE" to="6peh:1KsTggJdySE" resolve="ILionWebVersionAdapter" />
         </node>
+      </node>
+      <node concept="37vLTG" id="5lijfVJWAs0" role="3clF46">
+        <property role="TrG5h" value="testFile" />
+        <node concept="17QB3L" id="5lijfVJWArZ" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="5lijfVJWAB7" role="jymVt" />
@@ -1396,14 +1396,14 @@
             <node concept="2ShNRf" id="5TNjoy254Wl" role="33vP2m">
               <node concept="1pGfFk" id="5TNjoy254Wm" role="2ShVmc">
                 <ref role="37wK5l" to="6peh:5s4Z0e0nc6h" resolve="M1Serializer" />
+                <node concept="37vLTw" id="pwT61fl$qh" role="37wK5m">
+                  <ref role="3cqZAo" node="pwT61fljqd" resolve="lionwebVersion" />
+                </node>
                 <node concept="37vLTw" id="5TNjoy254Wn" role="37wK5m">
                   <ref role="3cqZAo" node="5TNjoy254We" resolve="writer" />
                 </node>
                 <node concept="3clFbT" id="5TNjoy254Wo" role="37wK5m">
                   <property role="3clFbU" value="true" />
-                </node>
-                <node concept="37vLTw" id="pwT61fl$qh" role="37wK5m">
-                  <ref role="3cqZAo" node="pwT61fljqd" resolve="lionwebVersion" />
                 </node>
               </node>
             </node>
@@ -2527,15 +2527,15 @@
           </node>
         </node>
       </node>
-      <node concept="37vLTG" id="24j7TNH2adS" role="3clF46">
-        <property role="TrG5h" value="testFile" />
-        <node concept="17QB3L" id="24j7TNH2adT" role="1tU5fm" />
-      </node>
       <node concept="37vLTG" id="pwT61flRrx" role="3clF46">
         <property role="TrG5h" value="lionwebVersion" />
         <node concept="3uibUv" id="pwT61flRvc" role="1tU5fm">
           <ref role="3uigEE" to="6peh:1KsTggJdySE" resolve="ILionWebVersionAdapter" />
         </node>
+      </node>
+      <node concept="37vLTG" id="24j7TNH2adS" role="3clF46">
+        <property role="TrG5h" value="testFile" />
+        <node concept="17QB3L" id="24j7TNH2adT" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="24j7TNH2adU" role="jymVt" />
@@ -2659,14 +2659,14 @@
             <node concept="2ShNRf" id="5TNjoy24N62" role="33vP2m">
               <node concept="1pGfFk" id="5TNjoy24N63" role="2ShVmc">
                 <ref role="37wK5l" to="6peh:5s4Z0e0nceW" resolve="M2Serializer" />
+                <node concept="37vLTw" id="pwT61flQKg" role="37wK5m">
+                  <ref role="3cqZAo" node="pwT61flPQV" resolve="lionwebVersion" />
+                </node>
                 <node concept="37vLTw" id="5TNjoy24N64" role="37wK5m">
                   <ref role="3cqZAo" node="5TNjoy24N5V" resolve="writer" />
                 </node>
                 <node concept="3clFbT" id="5TNjoy24N65" role="37wK5m">
                   <property role="3clFbU" value="true" />
-                </node>
-                <node concept="37vLTw" id="pwT61flQKg" role="37wK5m">
-                  <ref role="3cqZAo" node="pwT61flPQV" resolve="lionwebVersion" />
                 </node>
               </node>
             </node>

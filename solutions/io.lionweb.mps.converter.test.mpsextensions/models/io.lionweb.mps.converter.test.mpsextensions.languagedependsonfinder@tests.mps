@@ -1307,11 +1307,11 @@
             <node concept="2ShNRf" id="24j7TNH2$Kp" role="33vP2m">
               <node concept="1pGfFk" id="24j7TNH2$Kq" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:24j7TNH2adB" resolve="M2JsonComparer" />
-                <node concept="37vLTw" id="5ocQ9W1x_dS" role="37wK5m">
-                  <ref role="3cqZAo" node="5ocQ9W1x$Xx" resolve="fileName" />
-                </node>
                 <node concept="37vLTw" id="1qxNWuVK7Dr" role="37wK5m">
                   <ref role="3cqZAo" node="1qxNWuVK7l5" resolve="lionWebVersion" />
+                </node>
+                <node concept="37vLTw" id="5ocQ9W1x_dS" role="37wK5m">
+                  <ref role="3cqZAo" node="5ocQ9W1x$Xx" resolve="fileName" />
                 </node>
               </node>
             </node>

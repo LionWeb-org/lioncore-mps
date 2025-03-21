@@ -930,14 +930,14 @@
                 <node concept="2ShNRf" id="39$JcGF9wfK" role="33vP2m">
                   <node concept="1pGfFk" id="39$JcGF9wfL" role="2ShVmc">
                     <ref role="37wK5l" to="6peh:5s4Z0e0nc6h" resolve="M1Serializer" />
+                    <node concept="37vLTw" id="4fqYzE89aKo" role="37wK5m">
+                      <ref role="3cqZAo" node="4fqYzE87JFk" resolve="lionwebVersion" />
+                    </node>
                     <node concept="37vLTw" id="39$JcGF9wfM" role="37wK5m">
                       <ref role="3cqZAo" node="4Vn6yFagY5V" resolve="fileWriter" />
                     </node>
                     <node concept="3clFbT" id="5wsogBcASCf" role="37wK5m">
                       <property role="3clFbU" value="true" />
-                    </node>
-                    <node concept="37vLTw" id="4fqYzE89aKo" role="37wK5m">
-                      <ref role="3cqZAo" node="4fqYzE87JFk" resolve="lionwebVersion" />
                     </node>
                   </node>
                 </node>
@@ -1971,14 +1971,14 @@
                 <node concept="2ShNRf" id="1q44RFT064L" role="33vP2m">
                   <node concept="1pGfFk" id="1q44RFT064M" role="2ShVmc">
                     <ref role="37wK5l" to="6peh:5s4Z0e0nceW" resolve="M2Serializer" />
+                    <node concept="37vLTw" id="4fqYzE89lWr" role="37wK5m">
+                      <ref role="3cqZAo" node="4fqYzE89eqt" resolve="lionwebVersion" />
+                    </node>
                     <node concept="37vLTw" id="1q44RFT064N" role="37wK5m">
                       <ref role="3cqZAo" node="1q44RFT064U" resolve="fileWriter" />
                     </node>
                     <node concept="3clFbT" id="1q44RFT064O" role="37wK5m">
                       <property role="3clFbU" value="true" />
-                    </node>
-                    <node concept="37vLTw" id="4fqYzE89lWr" role="37wK5m">
-                      <ref role="3cqZAo" node="4fqYzE89eqt" resolve="lionwebVersion" />
                     </node>
                   </node>
                 </node>
@@ -2429,14 +2429,14 @@
                 <node concept="2ShNRf" id="5sACIIt25Bl" role="33vP2m">
                   <node concept="1pGfFk" id="5sACIIt25Bm" role="2ShVmc">
                     <ref role="37wK5l" to="6peh:5s4Z0e0nceW" resolve="M2Serializer" />
+                    <node concept="37vLTw" id="1KsTggJiz5b" role="37wK5m">
+                      <ref role="3cqZAo" node="1KsTggJit2A" resolve="lionwebVersion" />
+                    </node>
                     <node concept="37vLTw" id="6VkSF6c$M5F" role="37wK5m">
                       <ref role="3cqZAo" node="4Vn6yFah9A3" resolve="fileWriter" />
                     </node>
                     <node concept="3clFbT" id="5wsogBcAWfP" role="37wK5m">
                       <property role="3clFbU" value="true" />
-                    </node>
-                    <node concept="37vLTw" id="1KsTggJiz5b" role="37wK5m">
-                      <ref role="3cqZAo" node="1KsTggJit2A" resolve="lionwebVersion" />
                     </node>
                   </node>
                 </node>
@@ -2667,14 +2667,14 @@
                 <node concept="2ShNRf" id="z1IqfFSPZF" role="33vP2m">
                   <node concept="1pGfFk" id="z1IqfFSPZG" role="2ShVmc">
                     <ref role="37wK5l" to="6peh:z1IqfFwqeg" resolve="Deserializer" />
+                    <node concept="37vLTw" id="1KsTggJhE7E" role="37wK5m">
+                      <ref role="3cqZAo" node="1KsTggJhA$U" resolve="lionwebVersion" />
+                    </node>
                     <node concept="37vLTw" id="z1IqfFSPZH" role="37wK5m">
                       <ref role="3cqZAo" node="z1IqfFSMnI" resolve="inputStream" />
                     </node>
                     <node concept="37vLTw" id="7OJcYqxWMqb" role="37wK5m">
                       <ref role="3cqZAo" node="7OJcYqxWMq4" resolve="jsonConstants" />
-                    </node>
-                    <node concept="37vLTw" id="1KsTggJhE7E" role="37wK5m">
-                      <ref role="3cqZAo" node="1KsTggJhA$U" resolve="lionwebVersion" />
                     </node>
                   </node>
                 </node>
@@ -3000,6 +3000,9 @@
                 <node concept="2ShNRf" id="1apSfP9EUNX" role="33vP2m">
                   <node concept="1pGfFk" id="1apSfP9EUNY" role="2ShVmc">
                     <ref role="37wK5l" to="6peh:z1IqfFwqeg" resolve="Deserializer" />
+                    <node concept="37vLTw" id="1KsTggJhIHf" role="37wK5m">
+                      <ref role="3cqZAo" node="1KsTggJhFqU" resolve="lionwebVersion" />
+                    </node>
                     <node concept="37vLTw" id="1apSfP9EUNZ" role="37wK5m">
                       <ref role="3cqZAo" node="1apSfP9EUNO" resolve="inputStream" />
                     </node>
@@ -3026,9 +3029,6 @@
                           </node>
                         </node>
                       </node>
-                    </node>
-                    <node concept="37vLTw" id="1KsTggJhIHf" role="37wK5m">
-                      <ref role="3cqZAo" node="1KsTggJhFqU" resolve="lionwebVersion" />
                     </node>
                   </node>
                 </node>

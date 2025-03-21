@@ -345,6 +345,9 @@
                 <node concept="2ShNRf" id="5ocQ9W1xKKp" role="33vP2m">
                   <node concept="1pGfFk" id="5ocQ9W1xKKq" role="2ShVmc">
                     <ref role="37wK5l" to="6peh:z1IqfFwqeg" resolve="Deserializer" />
+                    <node concept="37vLTw" id="4fqYzE8kj_P" role="37wK5m">
+                      <ref role="3cqZAo" node="4fqYzE8keNj" resolve="lionwebVersion" />
+                    </node>
                     <node concept="2ShNRf" id="5ocQ9W1xKKr" role="37wK5m">
                       <node concept="1pGfFk" id="5ocQ9W1xKKs" role="2ShVmc">
                         <ref role="37wK5l" to="guwi:~BufferedInputStream.&lt;init&gt;(java.io.InputStream)" resolve="BufferedInputStream" />
@@ -355,9 +358,6 @@
                     </node>
                     <node concept="37vLTw" id="7OJcYqxWWKX" role="37wK5m">
                       <ref role="3cqZAo" node="7OJcYqxWWKQ" resolve="jsonConstants" />
-                    </node>
-                    <node concept="37vLTw" id="4fqYzE8kj_P" role="37wK5m">
-                      <ref role="3cqZAo" node="4fqYzE8keNj" resolve="lionwebVersion" />
                     </node>
                   </node>
                 </node>
@@ -687,11 +687,11 @@
             <node concept="2ShNRf" id="1xqd6pt3WZx" role="33vP2m">
               <node concept="1pGfFk" id="1xqd6pt3WZy" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:24j7TNH2adB" resolve="M2JsonComparer" />
-                <node concept="37vLTw" id="1xqd6pt3WZz" role="37wK5m">
-                  <ref role="3cqZAo" node="1xqd6pt3WZI" resolve="fileName" />
-                </node>
                 <node concept="37vLTw" id="pwT61flXkh" role="37wK5m">
                   <ref role="3cqZAo" node="4fqYzE8kht0" resolve="lionwebVersion" />
+                </node>
+                <node concept="37vLTw" id="1xqd6pt3WZz" role="37wK5m">
+                  <ref role="3cqZAo" node="1xqd6pt3WZI" resolve="fileName" />
                 </node>
               </node>
             </node>
@@ -897,11 +897,11 @@
             <node concept="2ShNRf" id="6_BZUoIhBF5" role="33vP2m">
               <node concept="1pGfFk" id="6_BZUoIhBF6" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:24j7TNH2adB" resolve="M2JsonComparer" />
-                <node concept="37vLTw" id="6_BZUoIhBF7" role="37wK5m">
-                  <ref role="3cqZAo" node="6_BZUoIhBFi" resolve="fileName" />
-                </node>
                 <node concept="37vLTw" id="pwT61flXNh" role="37wK5m">
                   <ref role="3cqZAo" node="pwT61flU9V" resolve="lionwebVersion" />
+                </node>
+                <node concept="37vLTw" id="6_BZUoIhBF7" role="37wK5m">
+                  <ref role="3cqZAo" node="6_BZUoIhBFi" resolve="fileName" />
                 </node>
               </node>
             </node>

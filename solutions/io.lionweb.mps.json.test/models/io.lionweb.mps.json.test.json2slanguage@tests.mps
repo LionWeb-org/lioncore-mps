@@ -323,11 +323,11 @@
             <node concept="2ShNRf" id="24j7TNH2$Kp" role="33vP2m">
               <node concept="1pGfFk" id="24j7TNH2$Kq" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:24j7TNH2adB" resolve="M2JsonComparer" />
-                <node concept="37vLTw" id="5ocQ9W1x_dS" role="37wK5m">
-                  <ref role="3cqZAo" node="5ocQ9W1x$Xx" resolve="fileName" />
-                </node>
                 <node concept="37vLTw" id="pwT61fq85u" role="37wK5m">
                   <ref role="3cqZAo" node="pwT61fq6XE" resolve="lionwebVersion" />
+                </node>
+                <node concept="37vLTw" id="5ocQ9W1x_dS" role="37wK5m">
+                  <ref role="3cqZAo" node="5ocQ9W1x$Xx" resolve="fileName" />
                 </node>
               </node>
             </node>
@@ -484,11 +484,11 @@
             <node concept="2ShNRf" id="5M8g5cT6OwV" role="33vP2m">
               <node concept="1pGfFk" id="5M8g5cT6OwW" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:24j7TNH2adB" resolve="M2JsonComparer" />
-                <node concept="37vLTw" id="5M8g5cT6OwX" role="37wK5m">
-                  <ref role="3cqZAo" node="5M8g5cT6Own" resolve="fileName" />
-                </node>
                 <node concept="37vLTw" id="pwT61fq9qC" role="37wK5m">
                   <ref role="3cqZAo" node="pwT61fq8iH" resolve="lionwebVersion" />
+                </node>
+                <node concept="37vLTw" id="5M8g5cT6OwX" role="37wK5m">
+                  <ref role="3cqZAo" node="5M8g5cT6Own" resolve="fileName" />
                 </node>
               </node>
             </node>
@@ -899,11 +899,11 @@
             <node concept="2ShNRf" id="6luz6qu42gn" role="33vP2m">
               <node concept="1pGfFk" id="6luz6qu42go" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:24j7TNH2adB" resolve="M2JsonComparer" />
-                <node concept="Xl_RD" id="6luz6qu3XNQ" role="37wK5m">
-                  <property role="Xl_RC" value="TestMpsSpecific-metamodel.json" />
-                </node>
                 <node concept="37vLTw" id="1qxNWuVMzs1" role="37wK5m">
                   <ref role="3cqZAo" node="1qxNWuVK99P" resolve="lionWebVersion" />
+                </node>
+                <node concept="Xl_RD" id="6luz6qu3XNQ" role="37wK5m">
+                  <property role="Xl_RC" value="TestMpsSpecific-metamodel.json" />
                 </node>
               </node>
             </node>
@@ -1042,11 +1042,11 @@
             <node concept="2ShNRf" id="6luz6qu49Us" role="33vP2m">
               <node concept="1pGfFk" id="6luz6qu49Ut" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:24j7TNH2adB" resolve="M2JsonComparer" />
-                <node concept="Xl_RD" id="6luz6qu3XNG" role="37wK5m">
-                  <property role="Xl_RC" value="TestMpsSpecific-metamodel-annotated.json" />
-                </node>
                 <node concept="37vLTw" id="1qxNWuVM$UZ" role="37wK5m">
                   <ref role="3cqZAo" node="1qxNWuVM$0I" resolve="lionWebVersion" />
+                </node>
+                <node concept="Xl_RD" id="6luz6qu3XNG" role="37wK5m">
+                  <property role="Xl_RC" value="TestMpsSpecific-metamodel-annotated.json" />
                 </node>
               </node>
             </node>
@@ -1236,11 +1236,11 @@
             <node concept="2ShNRf" id="6rp9bELPEAv" role="33vP2m">
               <node concept="1pGfFk" id="6rp9bELPEAw" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:24j7TNH2adB" resolve="M2JsonComparer" />
-                <node concept="Xl_RD" id="6rp9bELPII8" role="37wK5m">
-                  <property role="Xl_RC" value="MpsLangStructure-metamodel-annotated.json" />
-                </node>
                 <node concept="37vLTw" id="pwT61fq4Oa" role="37wK5m">
                   <ref role="3cqZAo" node="4fqYzE8keNj" resolve="lionwebVersion" />
+                </node>
+                <node concept="Xl_RD" id="6rp9bELPII8" role="37wK5m">
+                  <property role="Xl_RC" value="MpsLangStructure-metamodel-annotated.json" />
                 </node>
               </node>
             </node>
@@ -1444,11 +1444,11 @@
             <node concept="2ShNRf" id="6rp9bELPR8P" role="33vP2m">
               <node concept="1pGfFk" id="6rp9bELPR8Q" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:24j7TNH2adB" resolve="M2JsonComparer" />
-                <node concept="Xl_RD" id="6rp9bELPR8R" role="37wK5m">
-                  <property role="Xl_RC" value="MpsLangCore-metamodel-annotated.json" />
-                </node>
                 <node concept="37vLTw" id="pwT61fq5yF" role="37wK5m">
                   <ref role="3cqZAo" node="pwT61fq4TO" resolve="lionwebVersion" />
+                </node>
+                <node concept="Xl_RD" id="6rp9bELPR8R" role="37wK5m">
+                  <property role="Xl_RC" value="MpsLangCore-metamodel-annotated.json" />
                 </node>
               </node>
             </node>
@@ -1629,11 +1629,11 @@
             <node concept="2ShNRf" id="6LPkCA$RA8n" role="33vP2m">
               <node concept="1pGfFk" id="6LPkCA$RA8o" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:24j7TNH2adB" resolve="M2JsonComparer" />
-                <node concept="Xl_RD" id="6LPkCA$RC1i" role="37wK5m">
-                  <property role="Xl_RC" value="MpsDeprecated-metamodel-special.json" />
-                </node>
                 <node concept="37vLTw" id="pwT61fq6Kq" role="37wK5m">
                   <ref role="3cqZAo" node="pwT61fq5Cl" resolve="lionwebVersion" />
+                </node>
+                <node concept="Xl_RD" id="6LPkCA$RC1i" role="37wK5m">
+                  <property role="Xl_RC" value="MpsDeprecated-metamodel-special.json" />
                 </node>
               </node>
             </node>
@@ -1738,6 +1738,9 @@
                 <node concept="2ShNRf" id="5ocQ9W1vI8C" role="33vP2m">
                   <node concept="1pGfFk" id="5ocQ9W1vI8D" role="2ShVmc">
                     <ref role="37wK5l" to="6peh:z1IqfFwqeg" resolve="Deserializer" />
+                    <node concept="37vLTw" id="4fqYzE8kCbY" role="37wK5m">
+                      <ref role="3cqZAo" node="4fqYzE8kySe" resolve="lionwebVersion" />
+                    </node>
                     <node concept="2ShNRf" id="5ocQ9W1vI8E" role="37wK5m">
                       <node concept="1pGfFk" id="5ocQ9W1vI8F" role="2ShVmc">
                         <ref role="37wK5l" to="guwi:~BufferedInputStream.&lt;init&gt;(java.io.InputStream)" resolve="BufferedInputStream" />
@@ -1769,9 +1772,6 @@
                           </node>
                         </node>
                       </node>
-                    </node>
-                    <node concept="37vLTw" id="4fqYzE8kCbY" role="37wK5m">
-                      <ref role="3cqZAo" node="4fqYzE8kySe" resolve="lionwebVersion" />
                     </node>
                   </node>
                 </node>

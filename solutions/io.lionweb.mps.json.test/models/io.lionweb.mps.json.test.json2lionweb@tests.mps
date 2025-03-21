@@ -917,11 +917,11 @@
             <node concept="2ShNRf" id="5lijfVJZgVT" role="33vP2m">
               <node concept="1pGfFk" id="5lijfVJZgVU" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:5lijfVJWApT" resolve="M1JsonComparer" />
-                <node concept="Xl_RD" id="5lijfVJZgVV" role="37wK5m">
-                  <property role="Xl_RC" value="bobs-library-closure.json" />
-                </node>
                 <node concept="37vLTw" id="pwT61fpGFQ" role="37wK5m">
                   <ref role="3cqZAo" node="pwT61fpFxV" resolve="lionwebVersion" />
+                </node>
+                <node concept="Xl_RD" id="5lijfVJZgVV" role="37wK5m">
+                  <property role="Xl_RC" value="bobs-library-closure.json" />
                 </node>
               </node>
             </node>
@@ -1340,11 +1340,11 @@
             <node concept="2ShNRf" id="5lijfVJZ$Re" role="33vP2m">
               <node concept="1pGfFk" id="5lijfVJZ$Rf" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:5lijfVJWApT" resolve="M1JsonComparer" />
-                <node concept="37vLTw" id="5lijfVJZ_sE" role="37wK5m">
-                  <ref role="3cqZAo" node="5lijfVJZ$Qu" resolve="fileName" />
-                </node>
                 <node concept="37vLTw" id="pwT61fpJzl" role="37wK5m">
                   <ref role="3cqZAo" node="pwT61fpITS" resolve="lionwebVersion" />
+                </node>
+                <node concept="37vLTw" id="5lijfVJZ_sE" role="37wK5m">
+                  <ref role="3cqZAo" node="5lijfVJZ$Qu" resolve="fileName" />
                 </node>
               </node>
             </node>
@@ -1822,11 +1822,11 @@
             <node concept="2ShNRf" id="4R9pospjyHu" role="33vP2m">
               <node concept="1pGfFk" id="4R9pospjyHv" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:5lijfVJWApT" resolve="M1JsonComparer" />
-                <node concept="Xl_RD" id="4R9pospjyHw" role="37wK5m">
-                  <property role="Xl_RC" value="test3-keyed.json" />
-                </node>
                 <node concept="37vLTw" id="pwT61fpSAG" role="37wK5m">
                   <ref role="3cqZAo" node="pwT61fpPJE" resolve="lionwebVersion" />
+                </node>
+                <node concept="Xl_RD" id="4R9pospjyHw" role="37wK5m">
+                  <property role="Xl_RC" value="test3-keyed.json" />
                 </node>
               </node>
             </node>
@@ -2065,11 +2065,11 @@
             <node concept="2ShNRf" id="4R9pospjHPC" role="33vP2m">
               <node concept="1pGfFk" id="4R9pospjHPD" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:5lijfVJWApT" resolve="M1JsonComparer" />
-                <node concept="Xl_RD" id="4R9pospjHPE" role="37wK5m">
-                  <property role="Xl_RC" value="test3-unkeyed.json" />
-                </node>
                 <node concept="37vLTw" id="pwT61fpTA2" role="37wK5m">
                   <ref role="3cqZAo" node="pwT61fpSVl" resolve="lionwebVersion" />
+                </node>
+                <node concept="Xl_RD" id="4R9pospjHPE" role="37wK5m">
+                  <property role="Xl_RC" value="test3-unkeyed.json" />
                 </node>
               </node>
             </node>
@@ -2689,11 +2689,11 @@
             <node concept="2ShNRf" id="4R9pospmzHk" role="33vP2m">
               <node concept="1pGfFk" id="4R9pospmzHl" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:5lijfVJWApT" resolve="M1JsonComparer" />
-                <node concept="Xl_RD" id="4R9pospmzHm" role="37wK5m">
-                  <property role="Xl_RC" value="test2-keyed.json" />
-                </node>
                 <node concept="37vLTw" id="pwT61fpMSV" role="37wK5m">
                   <ref role="3cqZAo" node="pwT61fpLgm" resolve="lionwebVersion" />
+                </node>
+                <node concept="Xl_RD" id="4R9pospmzHm" role="37wK5m">
+                  <property role="Xl_RC" value="test2-keyed.json" />
                 </node>
               </node>
             </node>
@@ -2954,11 +2954,11 @@
             <node concept="2ShNRf" id="4R9pospmzIn" role="33vP2m">
               <node concept="1pGfFk" id="4R9pospmzIo" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:5lijfVJWApT" resolve="M1JsonComparer" />
-                <node concept="Xl_RD" id="4R9pospmzIp" role="37wK5m">
-                  <property role="Xl_RC" value="test2-unkeyed.json" />
-                </node>
                 <node concept="37vLTw" id="pwT61fpORP" role="37wK5m">
                   <ref role="3cqZAo" node="pwT61fpNc9" resolve="lionwebVersion" />
+                </node>
+                <node concept="Xl_RD" id="4R9pospmzIp" role="37wK5m">
+                  <property role="Xl_RC" value="test2-unkeyed.json" />
                 </node>
               </node>
             </node>
@@ -3518,11 +3518,11 @@
             <node concept="2ShNRf" id="4R9posq5S5r" role="33vP2m">
               <node concept="1pGfFk" id="4R9posq5S5s" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:5lijfVJWApT" resolve="M1JsonComparer" />
-                <node concept="Xl_RD" id="4R9posq5S5t" role="37wK5m">
-                  <property role="Xl_RC" value="customDatatype.json" />
-                </node>
                 <node concept="37vLTw" id="pwT61flWds" role="37wK5m">
                   <ref role="3cqZAo" node="pwT61flU9V" resolve="lionwebVersion" />
+                </node>
+                <node concept="Xl_RD" id="4R9posq5S5t" role="37wK5m">
+                  <property role="Xl_RC" value="customDatatype.json" />
                 </node>
               </node>
             </node>
@@ -3775,11 +3775,11 @@
             <node concept="2ShNRf" id="18UigYOLJ22" role="33vP2m">
               <node concept="1pGfFk" id="18UigYOLJ23" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:5lijfVJWApT" resolve="M1JsonComparer" />
-                <node concept="Xl_RD" id="18UigYOLJ24" role="37wK5m">
-                  <property role="Xl_RC" value="multiRef.json" />
-                </node>
                 <node concept="37vLTw" id="pwT61fpWKo" role="37wK5m">
                   <ref role="3cqZAo" node="pwT61fpVpp" resolve="lionwebVersion" />
+                </node>
+                <node concept="Xl_RD" id="18UigYOLJ24" role="37wK5m">
+                  <property role="Xl_RC" value="multiRef.json" />
                 </node>
               </node>
             </node>
@@ -4415,11 +4415,11 @@
             <node concept="2ShNRf" id="1xqd6ptaZwh" role="33vP2m">
               <node concept="1pGfFk" id="1xqd6ptaZwi" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:5lijfVJWApT" resolve="M1JsonComparer" />
-                <node concept="Xl_RD" id="1xqd6ptaZwj" role="37wK5m">
-                  <property role="Xl_RC" value="TestAnnotation.json" />
-                </node>
                 <node concept="37vLTw" id="pwT61fpy17" role="37wK5m">
                   <ref role="3cqZAo" node="4fqYzE8keNj" resolve="lionwebVersion" />
+                </node>
+                <node concept="Xl_RD" id="1xqd6ptaZwj" role="37wK5m">
+                  <property role="Xl_RC" value="TestAnnotation.json" />
                 </node>
               </node>
             </node>
@@ -5101,11 +5101,11 @@
             <node concept="2ShNRf" id="5TNjoy1ZBDg" role="33vP2m">
               <node concept="1pGfFk" id="5TNjoy1ZBDh" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:5lijfVJWApT" resolve="M1JsonComparer" />
-                <node concept="Xl_RD" id="5TNjoy1ZBDi" role="37wK5m">
-                  <property role="Xl_RC" value="TestReferences.json" />
-                </node>
                 <node concept="37vLTw" id="pwT61fpZq8" role="37wK5m">
                   <ref role="3cqZAo" node="pwT61fpYah" resolve="lionwebVersion" />
+                </node>
+                <node concept="Xl_RD" id="5TNjoy1ZBDi" role="37wK5m">
+                  <property role="Xl_RC" value="TestReferences.json" />
                 </node>
               </node>
             </node>
@@ -7535,11 +7535,11 @@
             <node concept="2ShNRf" id="5JNiskiVWKh" role="33vP2m">
               <node concept="1pGfFk" id="5JNiskiVWKi" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:5lijfVJWApT" resolve="M1JsonComparer" />
-                <node concept="Xl_RD" id="5JNiskiVWKj" role="37wK5m">
-                  <property role="Xl_RC" value="TestBaseConceptProperties.json" />
-                </node>
                 <node concept="37vLTw" id="pwT61fp$k0" role="37wK5m">
                   <ref role="3cqZAo" node="pwT61fpyFo" resolve="lionwebVersion" />
+                </node>
+                <node concept="Xl_RD" id="5JNiskiVWKj" role="37wK5m">
+                  <property role="Xl_RC" value="TestBaseConceptProperties.json" />
                 </node>
               </node>
             </node>
@@ -7835,11 +7835,11 @@
             <node concept="2ShNRf" id="3FWZcLW7bnF" role="33vP2m">
               <node concept="1pGfFk" id="3FWZcLW7bnG" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:5lijfVJWApT" resolve="M1JsonComparer" />
-                <node concept="Xl_RD" id="3FWZcLW7bnH" role="37wK5m">
-                  <property role="Xl_RC" value="TestLang-instance.json" />
-                </node>
                 <node concept="37vLTw" id="pwT61fq3aW" role="37wK5m">
                   <ref role="3cqZAo" node="pwT61fq0zW" resolve="lionwebVersion" />
+                </node>
+                <node concept="Xl_RD" id="3FWZcLW7bnH" role="37wK5m">
+                  <property role="Xl_RC" value="TestLang-instance.json" />
                 </node>
               </node>
             </node>
@@ -9220,13 +9220,13 @@
             <node concept="2ShNRf" id="zA8J4HAADP" role="33vP2m">
               <node concept="1pGfFk" id="zA8J4HAADQ" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:5lijfVJWApT" resolve="M1JsonComparer" />
-                <node concept="37vLTw" id="zA8J4HAAEu" role="37wK5m">
-                  <ref role="3cqZAo" node="zA8J4HAAEr" resolve="filename" />
-                </node>
                 <node concept="2ShNRf" id="pwT61fpHS5" role="37wK5m">
                   <node concept="HV5vD" id="pwT61fpIs7" role="2ShVmc">
                     <ref role="HV5vE" to="6peh:1KsTggJeQM5" resolve="LionWebVersionAdapter" />
                   </node>
+                </node>
+                <node concept="37vLTw" id="zA8J4HAAEu" role="37wK5m">
+                  <ref role="3cqZAo" node="zA8J4HAAEr" resolve="filename" />
                 </node>
               </node>
             </node>
@@ -10687,11 +10687,11 @@
             <node concept="2ShNRf" id="nWBHrKnE8C" role="33vP2m">
               <node concept="1pGfFk" id="nWBHrKnE8D" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:5lijfVJWApT" resolve="M1JsonComparer" />
-                <node concept="37vLTw" id="nWBHrKnEN6" role="37wK5m">
-                  <ref role="3cqZAo" node="nWBHrKnE7w" resolve="filename" />
-                </node>
                 <node concept="37vLTw" id="pwT61fp_U3" role="37wK5m">
                   <ref role="3cqZAo" node="pwT61fp_ao" resolve="lionwebVersion" />
+                </node>
+                <node concept="37vLTw" id="nWBHrKnEN6" role="37wK5m">
+                  <ref role="3cqZAo" node="nWBHrKnE7w" resolve="filename" />
                 </node>
               </node>
             </node>
@@ -11251,11 +11251,11 @@
             <node concept="2ShNRf" id="2NSuNu8nRMP" role="33vP2m">
               <node concept="1pGfFk" id="2NSuNu8nRMQ" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:5lijfVJWApT" resolve="M1JsonComparer" />
-                <node concept="37vLTw" id="2NSuNu8nRNN" role="37wK5m">
-                  <ref role="3cqZAo" node="2NSuNu8nRNI" resolve="file" />
-                </node>
                 <node concept="37vLTw" id="pwT61fpBVV" role="37wK5m">
                   <ref role="3cqZAo" node="pwT61fpAJQ" resolve="lionwebVersion" />
+                </node>
+                <node concept="37vLTw" id="2NSuNu8nRNN" role="37wK5m">
+                  <ref role="3cqZAo" node="2NSuNu8nRNI" resolve="file" />
                 </node>
               </node>
             </node>
@@ -11681,11 +11681,11 @@
             <node concept="2ShNRf" id="2NSuNu8pw9e" role="33vP2m">
               <node concept="1pGfFk" id="2NSuNu8pw9f" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:5lijfVJWApT" resolve="M1JsonComparer" />
-                <node concept="37vLTw" id="2NSuNu8pw9g" role="37wK5m">
-                  <ref role="3cqZAo" node="2NSuNu8pw8B" resolve="file" />
-                </node>
                 <node concept="37vLTw" id="pwT61fpDRW" role="37wK5m">
                   <ref role="3cqZAo" node="pwT61fpC_h" resolve="lionwebVersion" />
+                </node>
+                <node concept="37vLTw" id="2NSuNu8pw9g" role="37wK5m">
+                  <ref role="3cqZAo" node="2NSuNu8pw8B" resolve="file" />
                 </node>
               </node>
             </node>
@@ -12025,11 +12025,11 @@
             <node concept="2ShNRf" id="7ZVRpg_pL0C" role="33vP2m">
               <node concept="1pGfFk" id="7ZVRpg_pL0D" role="2ShVmc">
                 <ref role="37wK5l" to="kte7:5lijfVJWApT" resolve="M1JsonComparer" />
-                <node concept="Xl_RD" id="7ZVRpg_pL0E" role="37wK5m">
-                  <property role="Xl_RC" value="TestUtf8.json" />
-                </node>
                 <node concept="37vLTw" id="1qxNWuVMui_" role="37wK5m">
                   <ref role="3cqZAo" node="1qxNWuVK99P" resolve="lionWebVersion" />
+                </node>
+                <node concept="Xl_RD" id="7ZVRpg_pL0E" role="37wK5m">
+                  <property role="Xl_RC" value="TestUtf8.json" />
                 </node>
               </node>
             </node>

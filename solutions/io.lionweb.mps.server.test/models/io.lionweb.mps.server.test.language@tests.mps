@@ -646,6 +646,9 @@
             <node concept="2ShNRf" id="7OJcYq_$ehH" role="33vP2m">
               <node concept="1pGfFk" id="7OJcYq_$ehI" role="2ShVmc">
                 <ref role="37wK5l" to="6peh:z1IqfFwqeg" resolve="Deserializer" />
+                <node concept="37vLTw" id="4fqYzE8awXL" role="37wK5m">
+                  <ref role="3cqZAo" node="4fqYzE8aqNm" resolve="lionwebVersion" />
+                </node>
                 <node concept="2OqwBi" id="7OJcYq_$ehJ" role="37wK5m">
                   <node concept="37vLTw" id="7OJcYq_$ehK" role="2Oq$k0">
                     <ref role="3cqZAo" node="7OJcYq_$ehs" resolve="response" />
@@ -680,9 +683,6 @@
                       </node>
                     </node>
                   </node>
-                </node>
-                <node concept="37vLTw" id="4fqYzE8awXL" role="37wK5m">
-                  <ref role="3cqZAo" node="4fqYzE8aqNm" resolve="lionwebVersion" />
                 </node>
               </node>
             </node>
@@ -774,14 +774,14 @@
             <node concept="2ShNRf" id="7OJcYq_$fMI" role="2Oq$k0">
               <node concept="1pGfFk" id="7OJcYq_$fMJ" role="2ShVmc">
                 <ref role="37wK5l" to="6peh:5s4Z0e0nc6h" resolve="M1Serializer" />
+                <node concept="37vLTw" id="4fqYzE8aD0m" role="37wK5m">
+                  <ref role="3cqZAo" node="4fqYzE8aBvH" resolve="lionwebVersion" />
+                </node>
                 <node concept="37vLTw" id="7OJcYq_$fMK" role="37wK5m">
                   <ref role="3cqZAo" node="7OJcYq_$fMC" resolve="writer" />
                 </node>
                 <node concept="3clFbT" id="7OJcYq_$fML" role="37wK5m">
                   <property role="3clFbU" value="true" />
-                </node>
-                <node concept="37vLTw" id="4fqYzE8aD0m" role="37wK5m">
-                  <ref role="3cqZAo" node="4fqYzE8aBvH" resolve="lionwebVersion" />
                 </node>
               </node>
             </node>
@@ -1706,6 +1706,9 @@
             <node concept="2ShNRf" id="7OJcYq__kEf" role="33vP2m">
               <node concept="1pGfFk" id="7OJcYq__kEg" role="2ShVmc">
                 <ref role="37wK5l" to="6peh:z1IqfFwqeg" resolve="Deserializer" />
+                <node concept="37vLTw" id="4fqYzE8kQk9" role="37wK5m">
+                  <ref role="3cqZAo" node="4fqYzE8kNr7" resolve="lionwebVersion" />
+                </node>
                 <node concept="2OqwBi" id="7OJcYq__kEh" role="37wK5m">
                   <node concept="37vLTw" id="7OJcYq__kEi" role="2Oq$k0">
                     <ref role="3cqZAo" node="7OJcYq__kDY" resolve="response" />
@@ -1740,9 +1743,6 @@
                       </node>
                     </node>
                   </node>
-                </node>
-                <node concept="37vLTw" id="4fqYzE8kQk9" role="37wK5m">
-                  <ref role="3cqZAo" node="4fqYzE8kNr7" resolve="lionwebVersion" />
                 </node>
               </node>
             </node>

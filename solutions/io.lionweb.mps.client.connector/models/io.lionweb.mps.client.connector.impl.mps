@@ -1484,6 +1484,9 @@
                 <node concept="2ShNRf" id="7jdzMamfK1n" role="33vP2m">
                   <node concept="1pGfFk" id="7jdzMamfK1o" role="2ShVmc">
                     <ref role="37wK5l" to="6peh:z1IqfFwqeg" resolve="Deserializer" />
+                    <node concept="37vLTw" id="1KsTggJhXkD" role="37wK5m">
+                      <ref role="3cqZAo" node="1KsTggJhPuO" resolve="lionwebVersion" />
+                    </node>
                     <node concept="2OqwBi" id="7jdzMamfK1p" role="37wK5m">
                       <node concept="37vLTw" id="7jdzMamfK1q" role="2Oq$k0">
                         <ref role="3cqZAo" node="7jdzMamfK1c" resolve="response" />
@@ -1508,9 +1511,6 @@
                         </node>
                         <node concept="10Nm6u" id="7OJcYqxWHRS" role="37wK5m" />
                       </node>
-                    </node>
-                    <node concept="37vLTw" id="1KsTggJhXkD" role="37wK5m">
-                      <ref role="3cqZAo" node="1KsTggJhPuO" resolve="lionwebVersion" />
                     </node>
                   </node>
                 </node>
