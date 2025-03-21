@@ -2361,6 +2361,14 @@
                 <node concept="37vLTw" id="5M3rB6C9ATK" role="37wK5m">
                   <ref role="3cqZAo" node="5M3rB6C9ATH" resolve="mapper" />
                 </node>
+                <node concept="2ShNRf" id="4ZQFfbQRXnx" role="37wK5m">
+                  <node concept="1pGfFk" id="4ZQFfbQRXYY" role="2ShVmc">
+                    <ref role="37wK5l" to="6peh:4ZQFfbQ9DSn" resolve="LionCoreFactory" />
+                    <node concept="37vLTw" id="4ZQFfbQRYNN" role="37wK5m">
+                      <ref role="3cqZAo" node="1KsTggJit2A" resolve="lionwebVersion" />
+                    </node>
+                  </node>
+                </node>
                 <node concept="2OqwBi" id="7qGUpN3CyCk" role="37wK5m">
                   <node concept="2OqwBi" id="7qGUpN3CwQg" role="2Oq$k0">
                     <node concept="13iPFW" id="5N2LjD7MN$7" role="2Oq$k0" />
